@@ -1,0 +1,79 @@
+baseurl: "https://microS21.classes.ryansafner.com/"
+languageCode: "en-us"
+title: "Microeconomic Analysis"
+theme: "ath-tufte-hugo_18-19"
+googleAnalytics: ""
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - \.yaml$
+  - _files$
+  - _cache$
+  - \.csl$
+permalinks:
+  post: "/:year/:month/:day/:slug/"
+buildFuture: true
+menu:
+  main:
+    - name: Syllabus
+      url: /syllabus/
+      weight: 1
+    - name: Assignments
+      url: /assignments/
+      weight: 3
+    - name: Schedule
+      url: /schedule/
+      weight: 2
+    - name: Reference
+      url: /reference/
+      weight: 4
+    - name: Slack
+      url: "https://hoodcollegeeconomics.slack.com"
+      weight: 6
+# Disable taxonomies
+taxonomies:
+  tag: ""
+  group: ""
+  category: ""
+params:
+  author: Ryan Safner
+  thumbnail: /images/micro_hex.png
+  instructor: 
+    name: Dr. Ryan Safner
+    email: safner@hood.edu
+    url: "https://www.ryansafner.com"
+    twitter: ryansafner
+    github: ryansafner
+    office: 118 Rosenstock
+  course:
+    number: ECON 306
+    semester: Fall 2020
+    days: "MW"
+    time: "2:00 PM–3:15 PM"
+    location: 'Meets on Zoom'
+    twitter: ryansafner
+    dates: >-
+      August 17–November 24, 2020
+    github: "ryansafner/microF20"
+    slack: "http://hoodcollegeeconomics.slack.com"
+    copyrightYear: "2020-2021"
+    contactDetails: >-
+      Office hours: TuTh 3:30–5:00PM on Zoom
+  university: 
+    name: Hood College
+    url: "https://www.hood.edu"
+  school:
+    name: George B. Delaplaine, Jr. School of Business
+    url: "https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business"
+  description: "Microeconomic analysis"
+  primaryColor: "#5E81AC"
+  secondaryColor: "#D08770"
+  credits: >-
+    Hex icon by Ryan Safner via [hexSticker](https://github.com/GuangchuangYu/hexSticker).<br> Course website based on [Andrew Heiss](https://econw19.classes.andrewheiss.com/). <br>[Nord color scheme](https://github.com/arcticicestudio/nord) from [Arctic Ice Studio](http://arcticicestudio.com/).
+  logo:
+    url: /images/micro_hex.png
+    alt: Microeconomics
+  meta:
+    twitterSite: "@ryansafner"
+    twitterCreator: "@ryansafner"
+    fbAuthor: "https://www.facebook.com/ryansafner"
