@@ -9,27 +9,18 @@
 
             {{- if .header }}
 
-            <td style="width:10%;text-align:center" class="mid-table-header">Reading</td>
-            <td style="width:10%;text-align:center" class="mid-table-header">Class</td>
+            <td style="width:10%;text-align:center" class="mid-table-header">Content</td>
             <td style="width:10%;text-align:center" class="mid-table-header">Slides</td>
             <td style="width:10%;text-align:center" class="mid-table-header">Practice</td>
             <td style="width:10%;text-align:center" class="mid-table-header">Assignment</td>
             {{- else }}
 
-            {{- if .reading }}
-            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/reading/{{ .reading }}/">
-                <i class="fas fa-book-reader fa-lg"></i></a></td>
+            {{- if .content }}
+            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/content/{{ .content }}/">
+                <i class="fas fa-info-circle fa-lg"></i></a></td>
             {{- else }}
             <td align="center" style="width:10%;text-align:center"><font color="f1f1f1">
-                <i class="fas fa-book-reader fa-lg"></i></font></td>
-            {{- end }}
-
-            {{- if .class }}
-            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/class/{{ .class }}/">
-                <i class="fas fa-info-circle"></i></a></td>
-            {{- else }}
-            <td align="center" style="width:10%;text-align:center"><font color="f1f1f1">
-                <i class="fas fa-info-circle"></i></i></font></td>
+                <i class="fas fa-info-circle fa-lg"></i></font></td>
             {{- end }}
 
             {{- if .slides }}
