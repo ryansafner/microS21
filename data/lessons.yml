@@ -6,7 +6,7 @@ lessons:
     assignment: "00-preliminary-survey"
 
   - title: "1.1 The Tools of Microeconomics"
-    class: "1.1-class"
+    class: "1.1-content"
     slides: "1.1-slides"
 
   - title: "1.2 Scarcity, Choice, and Cost"

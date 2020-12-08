@@ -48,17 +48,20 @@ params:
   course:
     number: ECON 306
     semester: Spring 2021
-    days: "MW"
-    time: "2:00 PM–3:15 PM"
+    days: >-
+      MW (Section 1)
+      TuTh (Section 2)
+    time: >-
+      2:00 PM–3:15 PM (Both Sections)
     location: 'Meets on Zoom'
     twitter: ryansafner
     dates: >-
-      August 17–November 24, 2020
-    github: "ryansafner/microF20"
+      February 1–May 21, 2021
+    github: "ryansafner/microS21"
     slack: "http://hoodcollegeeconomics.slack.com"
     copyrightYear: "2020-2021"
     contactDetails: >-
-      Office hours: TuTh 3:30–5:00PM on Zoom
+      Office hours: TBD on Zoom
   university: 
     name: Hood College
     url: "https://www.hood.edu"
