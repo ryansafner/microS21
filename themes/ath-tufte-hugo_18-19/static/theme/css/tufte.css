@@ -97,7 +97,7 @@ body {
     font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Oswald */
     font-style: normal;
     font-weight: 600;
-    text-transform: uppercase;
+    /*text-transform: uppercase; CHANGED */
     text-align: left;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
@@ -109,7 +109,7 @@ body {
   .wrap h2 {
     font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Oswald */
     font-weight: 400;
-    text-transform: uppercase;
+    /*text-transform: uppercase; CHANGED */
     text-align: left;
     margin-top: 1.25rem;
     margin-bottom: 0;
