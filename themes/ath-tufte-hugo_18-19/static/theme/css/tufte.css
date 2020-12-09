@@ -493,7 +493,7 @@ header > nav a {
   font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Oswald */
   font-weight: 600;
   /*letter-spacing: 0.1em;*/
-  text-transform: uppercase;
+  /*text-transform: uppercase; REMOVE UPPERCASE FROM NAV */
   color: #A5452B;
   padding-top: 1.5rem;
   text-decoration: none;
