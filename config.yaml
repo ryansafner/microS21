@@ -48,7 +48,7 @@ params:
   course:
     number: ECON 306
     semester: Spring 2021
-    days: >
+    days: |
       MW (Section 1)
       TuTh (Section 2)
     time: >-

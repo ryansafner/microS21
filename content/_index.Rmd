@@ -3,9 +3,9 @@ title: "Microeconomic Analysis"
 author: "Ryan Safner"
 ---
 
-^[{-} `r blogdown::shortcode("courseinfo")`] <span class="newthought">This site contains</span> the syllabus, schedule, and assignments for ECON 306: Microeconomic Analysis, held during Fall 2020 at Hood College.
+^[{-} `r blogdown::shortcode("courseinfo")`] <span class="newthought">This site contains</span> the syllabus, schedule, and assignments for **ECON 306 — Microeconomic Analysis**, held during **Spring 2021** at [Hood College](https://hood.edu).
 
-**Last Update**: [`r format(Sys.time(), "%X %a %b %d %Y")`](https://github.com/ryansafner/microS21/commits/master)
+**Last Update**: [`r format(Sys.time(), "%X %a %b %d %Y")`](https://github.com/ryansafner/microS21/commits/main)
 
 By the end of this course, you will: 
 
