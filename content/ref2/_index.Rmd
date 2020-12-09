@@ -1,0 +1,7 @@
+---
+slug: ref2
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+---
