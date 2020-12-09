@@ -96,7 +96,7 @@ ul.footer-links {
 .fake-header {
     font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 600;
-    text-transform: uppercase;
+    /*text-transform: uppercase; CHANGED */
     font-size: 1.2rem;
 }
 
