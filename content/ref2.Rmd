@@ -15,6 +15,15 @@ Look here over the course of the semester for resources, links, and tips on how 
 
 <span class="epigraph">Testing</span>
 
+
+<span class="epigraph">
+> Testing the quote
+
+Quote person
+
+</span>
+
+
 <!-- {% marginfigure 'url' 'caption' %}-->
 
 <!-- {% fullwidth 'url' 'caption' %}-->
