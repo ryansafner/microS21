@@ -1,4 +1,4 @@
-<table style="max-width:100%">
+<table style="max-width:50%">
     <tbody>
 
     {{- range .Site.Data.lessons }}
@@ -6,8 +6,8 @@
         <tr>
             <td align="right" style="width:20%;text-align:right">{{ .date }}</td>
             {{- if .content }}
-            <td align="center" style="h3;width:50%;text-align:center"><a href="{{ .Site.baseurl }}/content/{{ .content }}/">
-                {{ .title | markdownify}}</a></td>
+            <td align="left" style="h3;width:100%;text-align:left"><a href="{{ .Site.baseurl }}/content/{{ .content }}/">
+                {{ .title }}</a></td>
             {{- else }}
 
             {{- end }}
