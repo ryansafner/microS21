@@ -19,7 +19,7 @@ Look here over the course of the semester for resources, links, and tips on how 
 
 ## Link 1
 
-- [Guide1](/ref2/guide1)
+- [Guide1](/leref/guide1)
 
 {% newthought 'a new thought' %}
 
