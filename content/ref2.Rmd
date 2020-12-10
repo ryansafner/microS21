@@ -9,8 +9,18 @@ output:
 
 Look here over the course of the semester for resources, links, and tips on how to succeed in the course, how to write well, and other things of interest related to microeconomics.
 
+{% epigraph 'text of citation' 'author of citation' '<em>citation</em> source' %}
+
+<!-- {% marginfigure 'url' 'caption' %}-->
+
+<!-- {% fullwidth 'url' 'caption' %}-->
+
 # Links
 
 ## Link 1
 
 - [Guide1](/ref2/guide1)
+
+{% newthought 'a new thought' %}
+
+`r blogdown::shortcode("contentpage")`
