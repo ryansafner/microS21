@@ -13,15 +13,8 @@ Look here over the course of the semester for resources, links, and tips on how 
 
 <span class="newthought">A New Thought</span>
 
-<span class="epigraph">Testing</span>
 
-
-<span class="epigraph">
-> Testing the quote
-
-Quote person
-
-</span>
+<span class="epigraph"> '"Testing the quote"' 'Quote person' '*The Quoted* Souce'</span>
 
 
 <!-- {% marginfigure 'url' 'caption' %}-->
