@@ -15,6 +15,4 @@ Look here over the course of the semester for resources, links, and tips on how 
 
 - [Guide1](/leref/guide1)
 
-{% newthought 'a new thought' %}
-
 `r blogdown::shortcode("contentpage")`

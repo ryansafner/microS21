@@ -1,7 +1,7 @@
 baseurl: "https://microS21.classes.ryansafner.com/"
 languageCode: "en-us"
 title: "Microeconomic Analysis"
-theme: "ath-tufte-hugo_18-19"
+theme: "rvs-tufte-hugo"
 googleAnalytics: ""
 ignoreFiles:
   - \.Rmd$
