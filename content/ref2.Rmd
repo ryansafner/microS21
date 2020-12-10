@@ -11,6 +11,10 @@ Look here over the course of the semester for resources, links, and tips on how 
 
 {% epigraph 'text of citation' 'author of citation' '<em>citation</em> source' %}
 
+<span class="newthought">A New Thought</span>
+
+<span class="epigraph">Testing</span>
+
 <!-- {% marginfigure 'url' 'caption' %}-->
 
 <!-- {% fullwidth 'url' 'caption' %}-->
