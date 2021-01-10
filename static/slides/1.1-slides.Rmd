@@ -1,7 +1,7 @@
 ---
 title: "1.1 — The Tools of Microeconomics"
-subtitle: "ECON 306 • Microeconomic Analysis • Fall 2020"
-author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microF20"><i class="fa fa-github fa-fw"></i>ryansafner/microF20</a><br> <a href="https://microF20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microF20.classes.ryansafner.com</a><br>'
+subtitle: "ECON 306 • Microeconomic Analysis • Spring 2021"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microS21"><i class="fa fa-github fa-fw"></i>ryansafner/microS21</a><br> <a href="https://microS21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microS21.classes.ryansafner.com</a><br>'
 #date:
 output:
   xaringan::moon_reader:
@@ -32,6 +32,8 @@ knitr::opts_chunk$set(echo=F,
                       fig.retina=3,
                       fig.align = "center")
 library("tidyverse")
+
+xaringanExtra::use_tile_view()
 
 theme_slides <- theme_light() + 
   theme(
@@ -165,6 +167,71 @@ theme_slides <- theme_light() +
 
 .center[
 ![:scale 65%](../images/tweetmoney2.png)
+]
+
+---
+
+# Economics Can Be Difficult
+
+.pull-left[
+
+- Economics is hard!
+
+- We are literally retraining and rewiring your brain to see the world in a new way
+
+- If you “don't get it” you can't just try to memorize a bunch of facts
+
+- Not trying to scare you! I'd rather say this now than after Exam 1.
+  - Grades don't reflect your worth as a person!
+  - Comparative advantage: I'm awful at accounting, chemistry, etc. 
+
+]
+
+.pull-right[
+
+.center[
+![](../images/badtime.jpg)
+]
+]
+
+---
+
+# The Uses of Economics
+
+.pull-left[
+
+- Most of you will not become professional economists — that's OK
+  - Economics is a **liberal art**, useful to you even if it's not your career (unlike...let's just say, certain *other* discipines)
+  
+- Understand “how the world works”
+
+- A great **bullshit-detector**, especially about self-interested, squishy, or political statements
+
+
+]
+
+.pull-right[
+
+.center[
+![](../images/badtime.jpg)
+]
+]
+
+---
+
+- But be careful, *a little bit of knowledge* is a dangerous thing!
+
+
+- Mount Stupid
+
+- An application of the famous [“Dunning-Kreuger effect”](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) in social psychology
+
+.pull-right[
+.center[
+![](../images/)
+
+.source[Source: [SMBC](https://www.smbc-comics.com/?id=2475)]
+]
 ]
 
 ---
@@ -774,6 +841,25 @@ scale_linetype_manual(values = venn_lines) +
   geom_text(aes(x = xl, y = yl, label = l), size = 8, family = "Fira Sans Condensed") +
 coord_equal()
 ```
+
+---
+
+# Two Types 
+
+.pull-left[
+.content-box-red[
+.red[**Caution**:] Two types of mistakes:
+]
+1. Believing the model accurately describes reality (100%)
+
+2. Believing reality needs to be *corrected* because it doesn't match the model
+]
+
+.pull-right[
+.center[
+![](../images/citymodel.jpg)
+]
+]
 
 ---
 

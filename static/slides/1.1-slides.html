@@ -1,980 +1,804 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>1.1 — The Tools of Microeconomics</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Ryan Safner  Assistant Professor of Economics   safner@hood.edu   ryansafner/microF20   microF20.classes.ryansafner.com" />
-    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/5235085b15.js"></script>
-    <link rel="stylesheet" href="custom.css" type="text/css" />
-  </head>
-  <body>
-    <textarea id="source">
-class: center, middle, inverse, title-slide
-
-# 1.1 — The Tools of Microeconomics
-## ECON 306 • Microeconomic Analysis • Fall 2020
-### Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microF20"><i class="fa fa-github fa-fw"></i>ryansafner/microF20</a><br> <a href="https://microF20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microF20.classes.ryansafner.com</a><br>
-
+---
+title: "1.1 — The Tools of Microeconomics"
+subtitle: "ECON 306 • Microeconomic Analysis • Spring 2021"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microS21"><i class="fa fa-github fa-fw"></i>ryansafner/microS21</a><br> <a href="https://microS21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microS21.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    #seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: ocean #rainbow #monokai rainbow solarized-light #tomorrow-night -blue -eighties zenburn
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
 ---
 
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/tile-view/tile-view.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/tile-view/tile-view.js"></script>
 
 
-
-# *Micro*-economics
-
-.center[
-![:scale 70%](../images/microeconomics.jpg)
-]
-
----
-
-# Micro- vs. Macro-economics
-
-.pull-left[
-
-- What is “an economy?”
-
-- Where do aggregates (“GDP”, “unemployment”, &amp; “inflation”) come from? 
-
-- .hi[Micro]: [modelling] .hi-purple[Choices] and .hi-purple[consequences]
-
-- .hi[Macro]: [modelling] .hi-purple[Systemic interaction] of choosers &amp; .hi-purple[emergent behavior]
-
-]
-
-.pull-right[
-![:scale 100%](../images/macroeconomics.jpg)
-]
-
----
-
-# Where You Are Now
-
-.pull-left[
+<div id="micro-economics" class="section level1">
+<h1><em>Micro</em>-economics</h1>
+<p>.center[
+<img src="../images/microeconomics.jpg" alt=":scale 70%" />]</p>
+<hr />
+</div>
+<div id="micro--vs.-macro-economics" class="section level1">
+<h1>Micro- vs. Macro-economics</h1>
+<p>.pull-left[</p>
+<ul>
+<li><p>What is “an economy?”</p></li>
+<li><p>Where do aggregates (“GDP”, “unemployment”, &amp; “inflation”) come from?</p></li>
+<li><p>.hi[Micro]: [modelling] .hi-purple[Choices] and .hi-purple[consequences]</p></li>
+<li><p>.hi[Macro]: [modelling] .hi-purple[Systemic interaction] of choosers &amp; .hi-purple[emergent behavior]</p></li>
+</ul>
+<p>]</p>
+<p>.pull-right[
+<img src="../images/macroeconomics.jpg" alt=":scale 100%" />]</p>
+<hr />
+</div>
+<div id="where-you-are-now" class="section level1">
+<h1>Where You Are Now</h1>
+<p>.pull-left[
 - .hi-purple[Basic concepts] of markets, individuals (consumers &amp; firms), economies:
-    - ECON 205: Principles of Macroeconomics
-    - ECON 206: Principles of Microeconomics
-
-- .hi-purple[Modelling] markets, individuals (consumers &amp; firms), economies
-    - ECON 306: Microeconomic Analysis
-    - ECON 305: Macroeconomic Analysis&lt;sup&gt;1&lt;/sup&gt;
-]
-
-.pull-right[
+- ECON 205: Principles of Macroeconomics
+- ECON 206: Principles of Microeconomics</p>
+<ul>
+<li>.hi-purple[Modelling] markets, individuals (consumers &amp; firms), economies
+<ul>
+<li>ECON 306: Microeconomic Analysis</li>
+<li>ECON 305: Macroeconomic Analysis<sup>1</sup>
+]</li>
+</ul></li>
+</ul>
+<p>.pull-right[
 .center[
-![](../images/choices.jpg)
-]
-.footnote[&lt;sup&gt;1&lt;/sup&gt; Required for ECON majors only. Calculus I is required.]
-
-]
-
----
-
-# Economists Speak a Foreign Language...
-
-.pull-left[
-
-- Terms you “know” from ordinary life mean .hi-purple[very different things] to economists:
-
-&gt; Cost, efficiency, welfare, competition, marginal, equilibrium, profit, public good, discrimination, elasticity
-
-- Using these words’ “ordinary” meanings will lead to wrong economic conclusions!
-
-- You will need to .hi-purple[“relearn”] the economic meanings of these words
-]
-
-.pull-right[
-
+<img src="../images/choices.jpg" />]
+.footnote[<sup>1</sup> Required for ECON majors only. Calculus I is required.]]</p>
+<hr />
+</div>
+<div id="economists-speak-a-foreign-language" class="section level1">
+<h1>Economists Speak a Foreign Language…</h1>
+<p>.pull-left[</p>
+<ul>
+<li>Terms you “know” from ordinary life mean .hi-purple[very different things] to economists:</li>
+</ul>
+<blockquote>
+<p>Cost, efficiency, welfare, competition, marginal, equilibrium, profit, public good, discrimination, elasticity</p>
+</blockquote>
+<ul>
+<li><p>Using these words’ “ordinary” meanings will lead to wrong economic conclusions!</p></li>
+<li><p>You will need to .hi-purple[“relearn”] the economic meanings of these words
+]</p></li>
+</ul>
+<p>.pull-right[</p>
+<p>.center[
+<img src="../images/leo_point.PNG" />]
+]</p>
+<hr />
+</div>
+<div id="but-you-can-learn-it" class="section level1">
+<h1>…But You Can Learn It</h1>
+<p>.pull-left[</p>
+<ul>
+<li>You’ll need to master a new vocabulary:</li>
+</ul>
+<blockquote>
+<p>externality, marginal rate of substitution, marginal cost, consumer surplus, allocative efficiency</p>
+</blockquote>
+<ul>
+<li>Avoid excessive jargon, but these concepts are useful to explain reality!</li>
+</ul>
+<p>]</p>
+<p>.pull-right[</p>
+<p>.center[
+<img src="../images/translate.jpg" />]
+]</p>
+<hr />
+</div>
+<div id="but-you-can-learn-it-1" class="section level1">
+<h1>…But You Can Learn It</h1>
+<p>.pull-left[</p>
+<ul>
+<li><p>Everyone thinks they are <em>already</em> an economist and can speak this foreign language</p></li>
+<li><p>Be humble!</p></li>
+<li><p>Economics is <em>often</em> common sense, but reached via deep analytical thinking</p></li>
+</ul>
+<p>]</p>
+<p>.pull-right[</p>
+<p>.center[
+<img src="../images/expert.png" alt=":scale 100%" />]
+]</p>
+<hr />
+</div>
+<div id="economics-neq-business-or" class="section level1">
+<h1>Economics <span class="math inline">\(\neq\)</span> Business or $$$</h1>
+<p>.center[
+<img src="../images/tweetmoney.png" alt=":scale 80%" />]</p>
+<hr />
+</div>
+<div id="economics-neq-business-or-1" class="section level1">
+<h1>Economics <span class="math inline">\(\neq\)</span> Business or $$$</h1>
+<p>.center[
+<img src="../images/tweetmoney2.png" alt=":scale 65%" />]</p>
+<hr />
+</div>
+<div id="economics-can-be-difficult" class="section level1">
+<h1>Economics Can Be Difficult</h1>
+<p>.pull-left[</p>
+<ul>
+<li><p>Economics is hard!</p></li>
+<li><p>We are literally retraining and rewiring your brain to see the world in a new way</p></li>
+<li><p>If you “don’t get it” you can’t just try to memorize a bunch of facts</p></li>
+<li><p>Not trying to scare you! I’d rather say this now than after Exam 1.</p>
+<ul>
+<li>Grades don’t reflect your worth as a person!</li>
+<li>Comparative advantage: I’m awful at accounting, chemistry, etc.</li>
+</ul></li>
+</ul>
+<p>]</p>
+<p>.pull-right[</p>
+<p>.center[
+<img src="../images/badtime.jpg" />]
+]</p>
+<hr />
+</div>
+<div id="the-uses-of-economics" class="section level1">
+<h1>The Uses of Economics</h1>
+<p>.pull-left[</p>
+<ul>
+<li><p>Most of you will not become professional economists — that’s OK</p>
+<ul>
+<li>Economics is a <strong>liberal art</strong>, useful to you even if it’s not your career (unlike…let’s just say, certain <em>other</em> discipines)</li>
+</ul></li>
+<li><p>Understand “how the world works”</p></li>
+<li><p>A great <strong>bullshit-detector</strong>, especially about self-interested, squishy, or political statements</p></li>
+</ul>
+<p>]</p>
+<p>.pull-right[</p>
+<p>.center[
+<img src="../images/badtime.jpg" />]
+]</p>
+<hr />
+<ul>
+<li><p>But be careful, <em>a little bit of knowledge</em> is a dangerous thing!</p></li>
+<li><p>Mount Stupid</p></li>
+<li><p>An application of the famous <a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">“Dunning-Kreuger effect”</a> in social psychology</p></li>
+</ul>
+<p>.pull-right[
 .center[
-![](../images/leo_point.PNG)
+<img src="../images/" /></p>
+<p>.source[Source: <a href="https://www.smbc-comics.com/?id=2475">SMBC</a>]
 ]
+]</p>
+<hr />
+<p>class: inverse, center, middle</p>
+</div>
+<div id="the-tools-of-microeconomics" class="section level1">
+<h1>The Tools of Microeconomics</h1>
+<hr />
+</div>
+<div id="economics-as-a-way-of-thinking" class="section level1">
+<h1>Economics as a <em>Way of Thinking</em></h1>
+<p>.pull-left[</p>
+<ul>
+<li>Economics is a .hi-purple[way of thinking] based on a few core ideas:
+]</li>
+</ul>
+<hr />
+</div>
+<div id="economics-as-a-way-of-thinking-1" class="section level1">
+<h1>Economics as a <em>Way of Thinking</em></h1>
+<p>.pull-left[</p>
+<ul>
+<li><p>Economics is a .hi-purple[way of thinking] based on a few core ideas:</p></li>
+<li><p>.hi[People respond to incentives]</p>
+<ul>
+<li>Money, punishment, taxes and subsidies, risk of injury, reputation, profits, sex, effort, morals</li>
+</ul></li>
+</ul>
+<p>]</p>
+<p>.pull-right[</p>
+<p>.center[
+<img src="../images/incentive2.jpg" alt=":scale 70%" />]
+]</p>
+<hr />
+</div>
+<div id="economics-as-a-way-of-thinking-2" class="section level1">
+<h1>Economics as a <em>Way of Thinking</em></h1>
+<p>.pull-left[</p>
+<ul>
+<li><p>Economics is a .hi-purple[way of thinking] based on a few core ideas:</p></li>
+<li><p>.hi[People respond to incentives]</p>
+<ul>
+<li>Money, punishment, taxes and subsidies, risk of injury, reputation, profits, sex, effort, morals</li>
+</ul></li>
+<li><p>.hi[Environments adjust until they are in equilibrium]</p>
+<ul>
+<li>People adjust their choices until optimal, given others’ actions
+]</li>
+</ul></li>
+</ul>
+<p>.pull-right[</p>
+<p>.center[
+<img src="../images/incentive2.jpg" alt=":scale 70%" /></p>
+<p><img src="../images/equilibriumbalance.png" alt=":scale 70%" />
 ]
-
----
-
-# ...But You Can Learn It
-
-.pull-left[
-
-- You’ll need to master a new vocabulary:
-
-&gt; externality, marginal rate of substitution, marginal cost, consumer surplus, allocative efficiency
-
-- Avoid excessive jargon, but these concepts are useful to explain reality! 
-
-]
-
-.pull-right[
-
+]</p>
+<hr />
+<p>class: inverse, center, middle</p>
+</div>
+<div id="incentives" class="section level1">
+<h1>Incentives</h1>
+<hr />
+</div>
+<div id="incentives-example-subway-i" class="section level1">
+<h1>Incentives Example: Subway I</h1>
+<p>.center[
+<img src="../images/nycsubway.png" alt=":scale 50%" /></p>
+<p>The NYC Subway bans dogs unless they can be <a href="https://cityroom.blogs.nytimes.com/2009/09/30/answers-about-exploring-new-york-with-your-dog/?_r=0">“enclosed in a container”</a>
+]</p>
+<hr />
+</div>
+<div id="incentives-example-subway-ii" class="section level1">
+<h1>Incentives Example: Subway II</h1>
+<p>.center[
+<img src="../images/dogsubway2.jpg" alt=":scale 40%" /> <img src="../images/dogsubway1.jpg" alt=":scale 27%" /></p>
+<p>Pictures <a href="https://www.rover.com/blog/nyc-subway-dogs-fs/">Source</a>
+]</p>
+<hr />
+</div>
+<div id="incentives-example-rat-bounty" class="section level1">
+<h1>Incentives Example: Rat Bounty</h1>
+<p>.content-box-green[
+Some governments pay bounties to reduce pest populations such as rats.</p>
+<p>.green[<strong>Example</strong>]: Suppose the government were to pay $250 for every rat tail turned in.
+]</p>
+<p>–</p>
+<p>.center[
+<img src="../images/ratfarming.jpg" alt=":scale 45%" />]</p>
+<hr />
+</div>
+<div id="incentives-even-dolphins-understand-i" class="section level1">
+<h1>Incentives: Even Dolphins Understand I</h1>
+<p>.center[
+<img src="../images/dolphinincentives.png" alt=":scale 70%" />]</p>
+<p>.source[July 2 2003, <a href="https://www.theguardian.com/science/2003/jul/03/research.science">“Why Dolphins are Deep Thinkers”</a>, <em>The Guardian</em>]</p>
+<hr />
+</div>
+<div id="incentives-even-dolphins-understand-ii" class="section level1">
+<h1>Incentives: Even Dolphins Understand II</h1>
+<p>.center[
+<img src="../images/dolphinincentives2.png" />]</p>
+<p>.source[July 2 2003, <a href="https://www.theguardian.com/science/2003/jul/03/research.science">“Why Dolphins are Deep Thinkers”</a>, <em>The Guardian</em>]</p>
+<hr />
+</div>
+<div id="takeaways-about-incentives-i" class="section level1">
+<h1>Takeaways About Incentives I</h1>
+<p>.pull-left[</p>
+<ul>
+<li><p>People respond to (changes in) incentives</p></li>
+<li><p>People have goals they seek to attain</p></li>
+<li><p>Removing one alternative <span class="math inline">\(\neq\)</span> people <em>stop</em> persuing their goals</p></li>
+<li><p>People will seek (less preferred) alternative methods to attain goals</p></li>
+<li><p>.hi-purple[Unintended consequences]!</p></li>
+</ul>
+<p>]</p>
+<p>.pull-right[</p>
+<p>.center[
+<img src="../images/green_vehicles.PNG" />]
+]</p>
+<hr />
+</div>
+<div id="takeaways-about-incentives-ii" class="section level1">
+<h1>Takeaways About Incentives II</h1>
 .center[
-![](../images/translate.jpg)
-]
-]
-
----
-
-# ...But You Can Learn It
-
-.pull-left[
-
-- Everyone thinks they are *already* an economist and can speak this foreign language
-
-- Be humble!
-
-- Economics is *often* common sense, but reached via deep analytical thinking
-
-]
-
-.pull-right[
-
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Whenever I am working on policy decisions I think of this image… 🚴
+♂️ <a href="https://t.co/GE3yyDmjs0">pic.twitter.com/GE3yyDmjs0</a>
+</p>
+— Councillor Peter Fortune (<span class="citation">@PeterTFortune</span>) <a href="https://twitter.com/PeterTFortune/status/1159176114230763520?ref_src=twsrc%5Etfw">August 7, 2019</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>]</p>
+<hr />
+<p>class: inverse, center, middle</p>
+</div>
+<div id="equilibrium" class="section level1">
+<h1>Equilibrium</h1>
+<hr />
+</div>
+<div id="equilibrium-example-i" class="section level1">
+<h1>Equilibrium Example I</h1>
+<p>.pull-left[
 .center[
-![:scale 100%](../images/expert.png)
-]
-]
-
----
-
-# Economics `\(\neq\)` Business or $$$
-
+<img src="../images/eq1.png" />]]</p>
+<p>.pull-right[</p>
+<ul>
+<li><p>Suppose 2 roads connect Frederick and Washington</p></li>
+<li><p>100 cars commute</p></li>
+<li><p>Local road travel time: 30 min + 1 min/car</p></li>
+<li><p>Highway travel time: 1 hour (always)
+]</p></li>
+</ul>
+<hr />
+</div>
+<div id="equilibrium-example-i-1" class="section level1">
+<h1>Equilibrium Example I</h1>
+<p>.pull-left[
 .center[
-![:scale 80%](../images/tweetmoney.png)
-]
-
----
-
-# Economics `\(\neq\)` Business or $$$
-
+<img src="../images/eq1.png" />]]</p>
+<p>.pull-right[</p>
+<ul>
+<li><p>Suppose 2 roads connect Frederick and Washington</p></li>
+<li><p>100 cars commute</p></li>
+<li><p>Local road travel time: 30 min + 1 min/car</p></li>
+<li><p>Highway travel time: 1 hour (always)</p></li>
+<li><p>Assume people .hi[optimize]: choose road to <strong>minimize travel time</strong> between cities
+]</p></li>
+</ul>
+<hr />
+</div>
+<div id="equilibrium-example-ii" class="section level1">
+<h1>Equilibrium Example II</h1>
+<p>.pull-left[
 .center[
-![:scale 65%](../images/tweetmoney2.png)
-]
-
----
-
-class: inverse, center, middle
-
-# The Tools of Microeconomics
-
----
-
-# Economics as a *Way of Thinking*
-
-.pull-left[
-
-- Economics is a .hi-purple[way of thinking] based on a few core ideas:
-]
-
----
-
-# Economics as a *Way of Thinking*
-
-.pull-left[
-
-- Economics is a .hi-purple[way of thinking] based on a few core ideas:
-
-- .hi[People respond to incentives]
-    - Money, punishment, taxes and subsidies, risk of injury, reputation, profits, sex, effort, morals
-
-]
-
-.pull-right[
-
+<img src="../images/eq2.png" />]]</p>
+<p>.pull-right[</p>
+<ul>
+<li><p>Suppose 2 roads connect Frederick and Washington</p></li>
+<li><p>100 cars commute</p></li>
+<li><p>Local road travel time: 30 min + 1 min/car</p></li>
+<li><p>Highway travel time: 1 hour (always)</p></li>
+</ul>
+<p>.content-box-green[
+.green[<strong>Scenario I</strong>:] There are <strong>less than 30 cars</strong> on the local road
+- What will people do?]
+]</p>
+<hr />
+</div>
+<div id="equilibrium-example-iii" class="section level1">
+<h1>Equilibrium Example III</h1>
+<p>.pull-left[
 .center[
-![:scale 70%](../images/incentive2.jpg)
-]
-]
-
----
-
-# Economics as a *Way of Thinking*
-
-.pull-left[
-
-- Economics is a .hi-purple[way of thinking] based on a few core ideas:
-
-- .hi[People respond to incentives]
-    - Money, punishment, taxes and subsidies, risk of injury, reputation, profits, sex, effort, morals
-
-- .hi[Environments adjust until they are in equilibrium]
-    - People adjust their choices until optimal, given others’ actions
-]
-
-.pull-right[
-
+<img src="../images/eq3.png" />]]</p>
+<p>.pull-right[</p>
+<ul>
+<li><p>Suppose 2 roads connect Frederick and Washington</p></li>
+<li><p>100 cars commute</p></li>
+<li><p>Local road travel time: 30 min + 1 min/car</p></li>
+<li><p>Highway travel time: 1 hour (always)</p></li>
+</ul>
+<p>.content-box-green[
+.green[<strong>Scenario II</strong>:] There are <strong>more than 30 cars</strong> on the local road
+- What will people do?]
+]</p>
+<hr />
+</div>
+<div id="equilibrium-example-iv" class="section level1">
+<h1>Equilibrium Example IV</h1>
+<p>.pull-left[
 .center[
-![:scale 70%](../images/incentive2.jpg)
-
-![:scale 70%](../images/equilibriumbalance.png)
-]
-]
-
----
-
-class: inverse, center, middle
-
-# Incentives
-
----
-
-# Incentives Example: Subway I
-
+<img src="../images/eq4.png" />]]</p>
+<p>.pull-right[</p>
+<ul>
+<li><p>Suppose 2 roads connect Frederick and Washington</p></li>
+<li><p>100 cars commute</p></li>
+<li><p>Local road travel time: 30 min + 1 min/car</p></li>
+<li><p>Highway travel time: 1 hour (always)</p></li>
+</ul>
+<p>.content-box-green[
+.green[<strong>Equilibrium</strong>:] How many cars are on each road?
+- Why?]
+]</p>
+<hr />
+</div>
+<div id="equilibrium-example-v" class="section level1">
+<h1>Equilibrium Example V</h1>
+<p>.pull-left[
 .center[
-![:scale 50%](../images/nycsubway.png)
-
-The NYC Subway bans dogs unless they can be [“enclosed in a container”](https://cityroom.blogs.nytimes.com/2009/09/30/answers-about-exploring-new-york-with-your-dog/?_r=0)
-]
-
----
-
-# Incentives Example: Subway II
-
-.center[
-![:scale 40%](../images/dogsubway2.jpg) ![:scale 27%](../images/dogsubway1.jpg)
-
-Pictures [Source](https://www.rover.com/blog/nyc-subway-dogs-fs/)
-]
-
----
-
-# Incentives Example: Rat Bounty
-
-.content-box-green[
-Some governments pay bounties to reduce pest populations such as rats.
-
-.green[**Example**]: Suppose the government were to pay $250 for every rat tail turned in. 
-]
-
---
-
-.center[
-![:scale 45%](../images/ratfarming.jpg)
-]
-
----
-
-# Incentives: Even Dolphins Understand I
-
-.center[
-![:scale 70%](../images/dolphinincentives.png)
-]
-
-.source[July 2 2003, [“Why Dolphins are Deep Thinkers”](https://www.theguardian.com/science/2003/jul/03/research.science), *The Guardian*]
-
----
-
-# Incentives: Even Dolphins Understand II
-
-.center[
-![](../images/dolphinincentives2.png)
-]
-
-.source[July 2 2003, [“Why Dolphins are Deep Thinkers”](https://www.theguardian.com/science/2003/jul/03/research.science), *The Guardian*]
-
----
-
-# Takeaways About Incentives I
-
-.pull-left[
-
-- People respond to (changes in) incentives
-
-- People have goals they seek to attain
-
-- Removing one alternative `\(\neq\)` people *stop* persuing their goals
-
-- People will seek (less preferred) alternative methods to attain goals
-
-- .hi-purple[Unintended consequences]!
-
-] 
-
-.pull-right[
-
-.center[
-![](../images/green_vehicles.PNG)
-]
-]
-
----
-
-# Takeaways About Incentives II
-
-.center[
-&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Whenever I am working on policy decisions I think of this image... 🚴
-♂️ &lt;a href="https://t.co/GE3yyDmjs0"&gt;pic.twitter.com/GE3yyDmjs0&lt;/a&gt;&lt;/p&gt;&amp;mdash; Councillor Peter Fortune (@PeterTFortune) &lt;a href="https://twitter.com/PeterTFortune/status/1159176114230763520?ref_src=twsrc%5Etfw"&gt;August 7, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-]
-
----
-
-class: inverse, center, middle
-
-# Equilibrium
-
----
-
-# Equilibrium Example I
-
-.pull-left[
-.center[
-![](../images/eq1.png)
-]
-]
-
-.pull-right[
-
-- Suppose 2 roads connect Frederick and Washington
-
-- 100 cars commute
-
-- Local road travel time: 30 min + 1 min/car
-
-- Highway travel time: 1 hour (always)
-]
-
----
-
-# Equilibrium Example I
-
-.pull-left[
-.center[
-![](../images/eq1.png)
-]
-]
-
-.pull-right[
-
-- Suppose 2 roads connect Frederick and Washington
-
-- 100 cars commute
-
-- Local road travel time: 30 min + 1 min/car
-
-- Highway travel time: 1 hour (always)
-
-- Assume people .hi[optimize]: choose road to **minimize travel time** between cities
-]
-
----
-
-# Equilibrium Example II
-
-.pull-left[
-.center[
-![](../images/eq2.png)
-]
-]
-
-.pull-right[
-
-- Suppose 2 roads connect Frederick and Washington
-
-- 100 cars commute
-
-- Local road travel time: 30 min + 1 min/car
-
-- Highway travel time: 1 hour (always)
-
-.content-box-green[
-.green[**Scenario I**:] There are **less than 30 cars** on the local road
-- What will people do?
-]
-]
-
----
-
-# Equilibrium Example III
-
-.pull-left[
-.center[
-![](../images/eq3.png)
-]
-]
-
-.pull-right[
-
-- Suppose 2 roads connect Frederick and Washington
-
-- 100 cars commute
-
-- Local road travel time: 30 min + 1 min/car
-
-- Highway travel time: 1 hour (always)
-
-.content-box-green[
-.green[**Scenario II**:] There are **more than 30 cars** on the local road
-- What will people do?
-]
-]
-
----
-
-# Equilibrium Example IV
-
-.pull-left[
-.center[
-![](../images/eq4.png)
-]
-]
-
-.pull-right[
-
-- Suppose 2 roads connect Frederick and Washington
-
-- 100 cars commute
-
-- Local road travel time: 30 min + 1 min/car
-
-- Highway travel time: 1 hour (always)
-
-.content-box-green[
-.green[**Equilibrium**:] How many cars are on each road?
-- Why?
-]
-]
-
----
-
-# Equilibrium Example V
-
-.pull-left[
-.center[
-![](../images/eq5.png)
-]
-]
-
-.pull-right[
+<img src="../images/eq5.png" />]]</p>
+<p>.pull-right[
 .smaller[
-- Suppose the State *doubles the capacity* of the local road
-
-- Local road travel time: .hi-purple[30 min + 0.5 min/car]
-
-- Highway travel time: 1 hour (always)
+- Suppose the State <em>doubles the capacity</em> of the local road</p>
+<ul>
+<li><p>Local road travel time: .hi-purple[30 min + 0.5 min/car]</p></li>
+<li><p>Highway travel time: 1 hour (always)
 ]
-]
-
----
-
-# Equilibrium Example V
-
-.pull-left[
+]</p></li>
+</ul>
+<hr />
+</div>
+<div id="equilibrium-example-v-1" class="section level1">
+<h1>Equilibrium Example V</h1>
+<p>.pull-left[
 .center[
-![](../images/eq5.png)
-]
-]
-
-.pull-right[
+<img src="../images/eq5.png" />]]</p>
+<p>.pull-right[
 .smaller[
-- Suppose the State *doubles the capacity* of the local road
-
-- Local road travel time: .hi-purple[30 min + 0.5 min/car]
-
-- Highway travel time: 1 hour (always)
-
-- Will this reduce travel time? 
-
-- Yes! says the State:
-    - 30 cars use the local road, takes 1 hour
-    - With wider road it takes 45 min!
+- Suppose the State <em>doubles the capacity</em> of the local road</p>
+<ul>
+<li><p>Local road travel time: .hi-purple[30 min + 0.5 min/car]</p></li>
+<li><p>Highway travel time: 1 hour (always)</p></li>
+<li><p>Will this reduce travel time?</p></li>
+<li><p>Yes! says the State:</p>
+<ul>
+<li>30 cars use the local road, takes 1 hour</li>
+<li>With wider road it takes 45 min!
 ]
-]
-
----
-
-# Equilibrium Example V
-
-.pull-left[
+]</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="equilibrium-example-v-2" class="section level1">
+<h1>Equilibrium Example V</h1>
+<p>.pull-left[
 .center[
-![](../images/eq5.png)
+<img src="../images/eq5.png" />]]</p>
+<p>.pull-right[</p>
+<p>.smaller[
+- Suppose the State <em>doubles the capacity</em> of the local road</p>
+<ul>
+<li><p>Local road travel time: .hi-purple[30 min + 0.5 min/car]</p></li>
+<li><p>Highway travel time: 1 hour (always)</p></li>
+<li><p>Will this reduce travel time?</p></li>
+<li><p>Yes! says the State:</p>
+<ul>
+<li>30 cars use the local road, takes 1 hour</li>
+<li>With wider road it takes 45 min!</li>
+</ul></li>
+<li><p>.hi[Is this an equilibrium?]
 ]
-]
-
-.pull-right[
-
-.smaller[
-- Suppose the State *doubles the capacity* of the local road
-
-- Local road travel time: .hi-purple[30 min + 0.5 min/car]
-
-- Highway travel time: 1 hour (always)
-
-- Will this reduce travel time? 
-
-- Yes! says the State:
-    - 30 cars use the local road, takes 1 hour
-    - With wider road it takes 45 min!
-
-- .hi[Is this an equilibrium?]
-]
-]
-
----
-
-# In the Long Run...(&amp; Repeating the Same Mistake)
-
+]</p></li>
+</ul>
+<hr />
+</div>
+<div id="in-the-long-run-repeating-the-same-mistake" class="section level1">
+<h1>In the Long Run…(&amp; Repeating the Same Mistake)</h1>
 .center[
-&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;1970: One more lane will fix it.&lt;br&gt;1980: One more lane will fix it.&lt;br&gt;1990: One more lane will fix it.&lt;br&gt;2000: One more lane will fix it.&lt;br&gt;2010: One more lane will fix it.&lt;br&gt;2020: ?&lt;a href="https://t.co/NjS1IPORG2"&gt;pic.twitter.com/NjS1IPORG2&lt;/a&gt;&lt;br&gt;via &lt;a href="https://twitter.com/avelezig?ref_src=twsrc%5Etfw"&gt;@avelezig&lt;/a&gt;&lt;/p&gt;&amp;mdash; Urban Planning &amp;amp; Mobility 🚲🚶
-♂️🚆 (@urbanthoughts11) &lt;a href="https://twitter.com/urbanthoughts11/status/1191295205187686400?ref_src=twsrc%5Etfw"&gt;November 4, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; 
-]
-
----
-
-# Comparative Statics
-
-- .hi[Comparative statics]: examining changes in equilibria cased by an external change (in incentives, constraints, etc.)
-
-&lt;img src="1.1-slides_files/figure-html/unnamed-chunk-1-1.png" width="864" style="display: block; margin: auto;" /&gt;
-
----
-
-# Optimization and Equilibrium
-
-.pull-left[
-- If people can **learn** and **change** their behavior, they will always **switch** to a higher-valued option
-
-- If there are no alternatives that are better, people are at an .hi[optimum]
-
-- If everyone is at an optimum, the system is in .hi[equilibrium]
-]
-
-.pull-right[
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+1970: One more lane will fix it.<br>1980: One more lane will fix it.<br>1990: One more lane will fix it.<br>2000: One more lane will fix it.<br>2010: One more lane will fix it.<br>2020: ?<a href="https://t.co/NjS1IPORG2">pic.twitter.com/NjS1IPORG2</a><br>via <a href="https://twitter.com/avelezig?ref_src=twsrc%5Etfw"><span class="citation">@avelezig</span></a>
+</p>
+— Urban Planning &amp; Mobility 🚲🚶
+♂️🚆 (<span class="citation">@urbanthoughts11</span>) <a href="https://twitter.com/urbanthoughts11/status/1191295205187686400?ref_src=twsrc%5Etfw">November 4, 2019</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>]</p>
+<hr />
+</div>
+<div id="comparative-statics" class="section level1">
+<h1>Comparative Statics</h1>
+<ul>
+<li>.hi<a href="#comparative-statics">Comparative statics</a>: examining changes in equilibria cased by an external change (in incentives, constraints, etc.)</li>
+</ul>
+<p><img src="static/slides/1.1-slides_files/figure-html/unnamed-chunk-1-1.png" width="1152" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
+<div id="optimization-and-equilibrium" class="section level1">
+<h1>Optimization and Equilibrium</h1>
+<p>.pull-left[
+- If people can <strong>learn</strong> and <strong>change</strong> their behavior, they will always <strong>switch</strong> to a higher-valued option</p>
+<ul>
+<li><p>If there are no alternatives that are better, people are at an .hi[optimum]</p></li>
+<li><p>If everyone is at an optimum, the system is in .hi<a href="#equilibrium-1">equilibrium</a>
+]</p></li>
+</ul>
+<p>.pull-right[
 .center[
-![:scale 70%](../images/incentive2.jpg)
-
-![:scale 70%](../images/equilibriumbalance.png)
+<img src="../images/incentive2.jpg" alt=":scale 70%" /></p>
+<p><img src="../images/equilibriumbalance.png" alt=":scale 70%" />
 ]
-]
-
-
----
-
-# Economics Is Broader Than You Think
-
+]</p>
+<hr />
+</div>
+<div id="economics-is-broader-than-you-think" class="section level1">
+<h1>Economics Is Broader Than You Think</h1>
+<p>.center[
+<img src="../images/cooleconbooks.png" alt=":scale 82%" />]</p>
+<hr />
+<p>class: inverse, center, middle</p>
+</div>
+<div id="real-talk-the-math" class="section level1">
+<h1>Real Talk: The Math</h1>
+<hr />
+</div>
+<div id="real-talk" class="section level1">
+<h1>Real Talk</h1>
+<p>.center[
+<img src="../images/opengatemath1.jpg" alt=":scale 60%" />]</p>
+<hr />
+</div>
+<div id="real-talk-1" class="section level1">
+<h1>Real Talk</h1>
+<p>.center[
+<img src="../images/opengatemath2.jpg" alt=":scale 60%" />]</p>
+<hr />
+</div>
+<div id="real-talk-2" class="section level1">
+<h1>Real Talk</h1>
+<p>.center[
+<img src="../images/opengatemath3.jpg" alt=":scale 60%" />]</p>
+<hr />
+</div>
+<div id="real-talk-3" class="section level1">
+<h1>Real Talk</h1>
+<p>.pull-left[
 .center[
-![:scale 82%](../images/cooleconbooks.png)
-]
-
----
-
-class: inverse, center, middle
-
-# Real Talk: The Math
-
----
-
-# Real Talk
-
+<img src="../images/mathsurvey.png" />]]</p>
+<p>.pull-right[</p>
+<ul>
+<li><p>Complete the .hi-purple[preliminary math survey]</p></li>
+<li><p>Help me help you with the math!</p></li>
+</ul>
+<p>]</p>
+<hr />
+</div>
+<div id="why-we-model-i" class="section level1">
+<h1>Why We Model I</h1>
+<p>.pull-left[</p>
+<ul>
+<li><p>Economists often “speak” in models that explain and predict human behavior</p></li>
+<li><p>The pure language of models is mathematics</p>
+<ul>
+<li>things that are universally true, deducible from axioms, can easily spot errors</li>
+<li>often equations and graphs</li>
+<li>this is what scares students most about economics</li>
+</ul></li>
+</ul>
+<p>]</p>
+<p>.pull-right[
 .center[
-![:scale 60%](../images/opengatemath1.jpg)
-]
-
----
-
-# Real Talk
-
+<img src="../images/maths.jpg" />]]</p>
+<hr />
+</div>
+<div id="why-we-model-ii" class="section level1">
+<h1>Why We Model II</h1>
+<p>.pull-left[</p>
+<ul>
+<li><p>Economists use conceptual models: fictional constructions to logically examine consequences</p></li>
+<li><p>Very different from other sciences</p>
+<ul>
+<li>No social experiments</li>
+<li>Purposive, strategic human beings</li>
+<li>Introspective understanding</li>
+</ul></li>
+</ul>
+<blockquote>
+<p>“All models lie. The art is telling useful lies.” - George Box</p>
+</blockquote>
+<p>]</p>
+<p>.pull-right[
 .center[
-![:scale 60%](../images/opengatemath2.jpg)
-]
-
----
-
-# Real Talk
-
-.center[
-![:scale 60%](../images/opengatemath3.jpg)
-]
-
----
-
-# Real Talk
-
-.pull-left[
-.center[
-![](../images/mathsurvey.png)
-]
-]
-
-.pull-right[
-
-- Complete the .hi-purple[preliminary math survey]
-
-- Help me help you with the math!
-
-]
-
----
-
-# Why We Model I
-
-.pull-left[
-
-- Economists often “speak” in models that explain and predict human behavior
-
-- The pure language of models is mathematics
-    - things that are universally true, deducible from axioms, can easily spot errors
-    - often equations and graphs
-    - this is what scares students most about economics 
-
-]
-
-.pull-right[
-.center[
-![](../images/maths.jpg)
-]
-]
-
----
-
-# Why We Model II
-
-.pull-left[
-
-- Economists use conceptual models: fictional constructions to logically examine consequences
-
-- Very different from other sciences
-    - No social experiments
-    - Purposive, strategic human beings 
-    - Introspective understanding
-
-&gt; “All models lie. The art is telling useful lies.” - George Box
-
-]
-
-.pull-right[
-.center[
-![](../images/imagination.png)
-]
-]
-
----
-
-# The Two Major Models of Economics as a “Science”
-
-.pull-left[
-
-## Optimization
-
-- Agents have .hi[objectives] they value
-
-- Agents face .hi[constraints]
-
-- Make .hi[tradeoffs] to maximize objectives within constraints
-
-.center[
-![](../images/optimize.jpeg)
-]
-]
-
---
-
-.pull-right[
-
-## Equilibrium
-
-- Agents .hi[compete] with others over **scarce** resources
-
-- Agents .hi[adjust] behaviors based on prices
-
-- .hi[Stable outcomes] when adjustments stop
-
-.center[
-![](../images/equilibriumbalance.png)
-]
-
-]
-
----
-
-# Remember: All Models are Wrong!
-
-.pull-left[
+<img src="../images/imagination.png" />]]</p>
+<hr />
+</div>
+<div id="the-two-major-models-of-economics-as-a-science" class="section level1">
+<h1>The Two Major Models of Economics as a “Science”</h1>
+<p>.pull-left[</p>
+<div id="optimization" class="section level2">
+<h2>Optimization</h2>
+<ul>
+<li><p>Agents have .hi[objectives] they value</p></li>
+<li><p>Agents face .hi[constraints]</p></li>
+<li><p>Make .hi[tradeoffs] to maximize objectives within constraints</p></li>
+</ul>
+<p>.center[
+<img src="../images/optimize.jpeg" />]
+]</p>
+<p>–</p>
+<p>.pull-right[</p>
+</div>
+<div id="equilibrium-1" class="section level2">
+<h2>Equilibrium</h2>
+<ul>
+<li><p>Agents .hi[compete] with others over <strong>scarce</strong> resources</p></li>
+<li><p>Agents .hi[adjust] behaviors based on prices</p></li>
+<li><p>.hi[Stable outcomes] when adjustments stop</p></li>
+</ul>
+<p>.center[
+<img src="../images/equilibriumbalance.png" />]</p>
+<p>]</p>
+<hr />
+</div>
+</div>
+<div id="remember-all-models-are-wrong" class="section level1">
+<h1>Remember: All Models are Wrong!</h1>
+<p>.pull-left[
 .content-box-red[
-.red[**Caution**:] Don't conflate models with reality!
-]
-- Models help us *understand* reality.
-
-- A good economist is always aware of:
-    - “*ceterus paribus*”
-    - “...and then what?”
-    - “...compared to what?”
-
-]
-
-.pull-right[
+.red[<strong>Caution</strong>:] Don’t conflate models with reality!]
+- Models help us <em>understand</em> reality.</p>
+<ul>
+<li>A good economist is always aware of:
+<ul>
+<li>“<em>ceterus paribus</em>”</li>
+<li>“…and then what?”</li>
+<li>“…compared to what?”</li>
+</ul></li>
+</ul>
+<p>]</p>
+<p>.pull-right[
 .center[
-![](../images/citymodel.jpg)
-]
-]
-
----
-
-# Economics Uses, but Is Not Limited to, Math
-
-&lt;img src="1.1-slides_files/figure-html/unnamed-chunk-2-1.png" width="864" style="display: block; margin: auto;" /&gt;
-
----
-
-class: inverse, middle, center
-# About This Course
-
----
-
-# Logistics: Hybrid Course
-
-.smaller[
-- .hi[hybrid]: more .hi-purple[synchronous] material than .hi-turquoise[asynchronous] material
-
-- I will always be teaching .hi[remotely]
-  - A classroom is available to you
-  - I may make occasional visits to campus if you *need* something in person (TBD)
-
-- Office hours: Tu/Th 3:30-5:00 PM on Zoom
-  - &lt;i class="fas fa-video"&gt;&lt;/i&gt; Zoom link in Blackboard's `LIVE CLASS SESSIONS` link
-  - &lt;i class="fab fa-slack"&gt;&lt;/i&gt; Slack channels
-
-- Teaching Assistant(s): TBD
-  - grade HWs &amp; hold (likely virtual) office hours
-]
-
----
-
-# Logistics: Hybrid Course
-
-- We will have .hi-purple[synchronous] sessions Mon/Wed 2:00-3:15 PM on **&lt;i class="fas fa-video"&gt;&lt;/i&gt; Zoom**
-
-- Lecture videos will be posted on **Blackboard** via Panopto for students unable to join synchronously
-  - If you were present, you do not need to watch the video (again)!
-  - You are not *required* to attend synchronously, but it will help you
-
-- All graded assignments are .hi-turquoise[asynchronous]
-  - (Probably) submitted on Blackboard by 11:59 PM Sundays
-  - (Probably) timed exams on Blackboard
-
----
-
-# Learning Goals
-
-By the end of this course, you will: 
-
-1. apply the models of microeconomics (constrained optimization and equilibrium) towards explaining real world behavior of individuals, firms, and governments
-
-2. explore the effects of economic and political processes on market performance (competition, market prices, profits and losses, property rights, entrepreneurship, market power, market failures, public policy, government failures)
-
-3. apply the economic way of thinking to real world issues in writing
-
----
-
-
-# Assignments
-
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt;  &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; Assignment &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; Percent &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Opinion-Editorial &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; 20% &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; n &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Homeworks (Average) &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; 20% &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Exams &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; 20% each &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
----
-
-# Your “Textbook”
-
+<img src="../images/citymodel.jpg" />]]</p>
+<hr />
+</div>
+<div id="economics-uses-but-is-not-limited-to-math" class="section level1">
+<h1>Economics Uses, but Is Not Limited to, Math</h1>
+<p><img src="static/slides/1.1-slides_files/figure-html/unnamed-chunk-2-1.png" width="1152" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
+<div id="two-types" class="section level1">
+<h1>Two Types</h1>
+<p>.pull-left[
+.content-box-red[
+.red[<strong>Caution</strong>:] Two types of mistakes:]
+1. Believing the model accurately describes reality (100%)</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Believing reality needs to be <em>corrected</em> because it doesn’t match the model
+]</li>
+</ol>
+<p>.pull-right[
 .center[
-![:scale 40%](../images/microtextbook.jpg)
-]
-
----
-
-# Course Website
-
-.pull-left[
+<img src="../images/citymodel.jpg" />]]</p>
+<hr />
+<p>class: inverse, middle, center
+# About This Course</p>
+<hr />
+</div>
+<div id="logistics-hybrid-course" class="section level1">
+<h1>Logistics: Hybrid Course</h1>
+<p>.smaller[
+- .hi[hybrid]: more .hi-purple[synchronous] material than .hi-turquoise[asynchronous] material</p>
+<ul>
+<li>I will always be teaching .hi[remotely]
+<ul>
+<li>A classroom is available to you</li>
+<li>I may make occasional visits to campus if you <em>need</em> something in person (TBD)</li>
+</ul></li>
+<li>Office hours: Tu/Th 3:30-5:00 PM on Zoom
+<ul>
+<li><i class="fas fa-video"></i> Zoom link in Blackboard’s <code>LIVE CLASS SESSIONS</code> link</li>
+<li><i class="fab fa-slack"></i> Slack channels</li>
+</ul></li>
+<li>Teaching Assistant(s): TBD
+<ul>
+<li>grade HWs &amp; hold (likely virtual) office hours
+]</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="logistics-hybrid-course-1" class="section level1">
+<h1>Logistics: Hybrid Course</h1>
+<ul>
+<li><p>We will have .hi-purple[synchronous] sessions Mon/Wed 2:00-3:15 PM on <strong><i class="fas fa-video"></i> Zoom</strong></p></li>
+<li><p>Lecture videos will be posted on <strong>Blackboard</strong> via Panopto for students unable to join synchronously</p>
+<ul>
+<li>If you were present, you do not need to watch the video (again)!</li>
+<li>You are not <em>required</em> to attend synchronously, but it will help you</li>
+</ul></li>
+<li><p>All graded assignments are .hi-turquoise[asynchronous]</p>
+<ul>
+<li>(Probably) submitted on Blackboard by 11:59 PM Sundays</li>
+<li>(Probably) timed exams on Blackboard</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="learning-goals" class="section level1">
+<h1>Learning Goals</h1>
+<p>By the end of this course, you will:</p>
+<ol style="list-style-type: decimal">
+<li><p>apply the models of microeconomics (constrained optimization and equilibrium) towards explaining real world behavior of individuals, firms, and governments</p></li>
+<li><p>explore the effects of economic and political processes on market performance (competition, market prices, profits and losses, property rights, entrepreneurship, market power, market failures, public policy, government failures)</p></li>
+<li><p>apply the economic way of thinking to real world issues in writing</p></li>
+</ol>
+<hr />
+</div>
+<div id="assignments" class="section level1">
+<h1>Assignments</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Assignment
+</th>
+<th style="text-align:left;">
+Percent
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+Opinion-Editorial
+</td>
+<td style="text-align:left;">
+20%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+n
+</td>
+<td style="text-align:left;">
+Homeworks (Average)
+</td>
+<td style="text-align:left;">
+20%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:left;">
+Exams
+</td>
+<td style="text-align:left;">
+20% each
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="your-textbook" class="section level1">
+<h1>Your “Textbook”</h1>
+<p>.center[
+<img src="../images/microtextbook.jpg" alt=":scale 40%" />]</p>
+<hr />
+</div>
+<div id="course-website" class="section level1">
+<h1>Course Website</h1>
+<p>.pull-left[
 .center[
-![:scale 60%](https://microF20.classes.ryansafner.com/images/micro_hex.png)
-
-]
-]
-
-.pull-right[
+<img src="https://microF20.classes.ryansafner.com/images/micro_hex.png" alt=":scale 60%" />]
+]</p>
+<p>.pull-right[
 .center[
-![](../images/microwebsite.png)
-]
-]
-
+<img src="../images/microwebsite.png" />]]</p>
+<p>.center[
+<a href="https://microF20.classes.ryansafner.com">microF20.classes.ryansafner.com</a>]</p>
+<hr />
+</div>
+<div id="tips-for-success-or-how-to-college" class="section level1">
+<h1>Tips for Success, Or: How to College</h1>
+<p>.pull-left[
+- Take notes. On paper. Really.</p>
+<ul>
+<li><p>Read the readings.</p></li>
+<li><p>Ask questions, come to office hours. Don’t struggle in silence, you are not alone!</p></li>
+<li><p>You are learning how to learn</p></li>
+<li><p>See the <a href="http://microF20.classes.ryansafner.com/reference">reference page</a> for more
+]</p></li>
+</ul>
+<p>.pull-right[
 .center[
-[microF20.classes.ryansafner.com](https://microF20.classes.ryansafner.com)
-]
-
----
-
-# Tips for Success, Or: How to College
-
-.pull-left[
-- Take notes. On paper. Really.
-
-- Read the readings.
-
-- Ask questions, come to office hours. Don’t struggle in silence, you are not alone!
-
-- You are learning how to learn
-
-- See the [reference page](http://microF20.classes.ryansafner.com/reference) for more
-]
-
-.pull-right[
-.center[
-![](../images/learning.png)
-]
-]
-
----
-
-# Roadmap for the Semester
-
-.center[
-![:scale 75%](../images/micro_flowchart_blankbg.png)
-]
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script src="macros.js"></script>
-<script src="https://platform.twitter.com/widgets.js"></script>
-<script>var slideshow = remark.create({
-"highlightStyle": "ocean",
-"highlightLines": true,
-"countIncrementalSlides": false,
-"ratio": "16:9",
-"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div> "
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
+<img src="../images/learning.png" />]]</p>
+<hr />
+</div>
+<div id="roadmap-for-the-semester" class="section level1">
+<h1>Roadmap for the Semester</h1>
+<p>.center[
+<img src="../images/micro_flowchart_blankbg.png" alt=":scale 75%" />]</p>
+</div>
