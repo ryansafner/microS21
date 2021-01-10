@@ -10,6 +10,8 @@ ignoreFiles:
   - _files$
   - _cache$
   - \.csl$
+  - \.knit\.md
+  - \.utf8\.md
 permalinks:
   post: "/:year/:month/:day/:slug/"
 buildFuture: true
