@@ -1,37 +1,34 @@
 lessons:
-  - title: '<span class="fake-header-table">I. Overview</span>'
+  - title: '<span class="fake-header-table">I. Rational Choice Theory</span>'
     header: True
 
   - title: "Preliminary Survey"
     assignment: "00-preliminary-survey"
 
-  - title: "1.1 Law and Economics"
+  - title: "1.1 The Tools of Microeconomics"
     content: "1.1-content"
     slides: "1.1-slides"
 
-  - title: "1.2 Efficiency and Justice For All?"
+  - title: "1.2 Scarcity, Choice, and Cost"
 
-  - title: "1.3 Microeconomic Essentials"
+  - title: "1.3 Budget Constraint"
 
-  - title: "1.4 Sources of Law"
+  - title: "1.4 Preferences and Utility"
 
-  - title: "1.5 American Legal Institutions"
-
+  - title: "1.5 Solving the Consumer's Problem"
+  
   - title: '<i class="fas fa-laptop-code"></i> **Problem Set 1** due Sunday Sept 6'
 
-  - title: '<span class="fake-header-table">II. Property</span>'
-    header: True
+  - title: "1.6 Deriving a Demand Function"
 
-  - title: "2.1 Property Rights"
-
-  - title: "2.2 Bargaining"
-
+  - title: "1.7 Income and Substitution Effects"
+  
   - title: "1.8 Price Elasticity"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 2** due Sunday Sept 13'
-
   - title: '<i class="fas fa-star"></i> **Exam 1** Tuesday Sept 15 - Sunday Sept 20 on Blackboard'
-
+   
+  - title: '<span class="fake-header-table">II. Production Theory</span>'
+    header: True
 
   - title: "2.1 Theory of the Firm"
 
