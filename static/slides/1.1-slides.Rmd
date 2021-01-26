@@ -134,7 +134,7 @@ theme_slides <- theme_light() +
 
 ---
 
-# ...But You Can Learn It
+# Don't Think You Know It Already!
 
 .pull-left[
 
@@ -149,7 +149,7 @@ theme_slides <- theme_light() +
 .pull-right[
 
 .center[
-![:scale 100%](../images/expert.png)
+![:scale 100%](../images/imaneconomistmeme.jpg)
 ]
 ]
 

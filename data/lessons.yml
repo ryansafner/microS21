@@ -9,30 +9,32 @@ lessons:
     content: "1.1-content"
     slides: "1.1-slides"
 
-  - title: "1.2 Scarcity, Choice, and Cost"
+  - title: "1.2 Scarcity, Choice, & Cost"
 
-  - title: "1.3 Preferences"
+  - title: "1.3 Utility Maximization I"
 
-  - title: "1.4 Utility Maximization I"
+  - title: "1.4 Utility Maximization II"
 
-  - title: "1.5 Utility Maximization II"
-  
   - title: '<i class="fas fa-laptop-code"></i> **Problem Set 1** due Sunday Sept 6'
 
-  - title: "1.6 Demand I"
+  - title: "1.5 Demand"
 
-  - title: "1.7 Demand II: Income and Substitution Effects"
+  - title: "1.6 Income and Substitution Effects"
   
-  - title: "1.8 Price Elasticity"
+  - title: "1.7 Price Elasticity"
 
+  - title: "1.8 Intertemporal Consumption"
+  
+  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 1** due Sunday Sept 6'
+  
   - title: '<i class="fas fa-star"></i> **Exam 1** Tuesday Sept 15 - Sunday Sept 20 on Blackboard'
    
   - title: '<span class="fake-header-table">Ib. Rational Choice Theory: Producers</span>'
     header: True
 
-  - title: "2.1 Theory of the Firm"
+  - title: "2.1 Production, Specialization, and Firms"
 
-  - title: "2.2 Short Run and Long Run"
+  - title: "2.2 Short Run and Long Run Production"
 
   - title: "2.3 Cost Minimization"
 
@@ -55,9 +57,9 @@ lessons:
 
   - title: "3.2 Market Competition and Surpluses"
 
-  - title: "3.3 Social Functions of Market Prices"
+  - title: "3.3 Entrepreneurship & the Social Functions of Market Prices"
 
-  - title: "3.4 Market Failures"
+  - title: "3.4 Welfare Economics & Market Failures"
 
   - title: "3.5 Government Failures & Introduction to Political Economy"
 
