@@ -73,8 +73,8 @@ params:
   description: "Microeconomic analysis"
   primaryColor: "#5E81AC"
   secondaryColor: "#D08770"
-  credits: >-
-    Hex icon by Ryan Safner via [hexSticker](https://github.com/GuangchuangYu/hexSticker).<br> Course website based on [Andrew Heiss](https://econw19.classes.andrewheiss.com/). <br>[Nord color scheme](https://github.com/arcticicestudio/nord) from [Arctic Ice Studio](http://arcticicestudio.com/).
+  credits: >- 
+    [Credits](/credits)
   logo:
     url: /images/micro_hex.png
     alt: Microeconomics
