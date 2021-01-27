@@ -14,23 +14,25 @@ editor_options:
 - Section 1: *Monday, February 1, 2021*
 - Section 2: *Tuesday, February 2, 2021*
 
+**Note** if you are viewing this before February 1, some things will change by the time classes begin, so you will want to look again later!
+
 # <i class="fas fa-info-circle fa-lg"></i> Overview
 
 Welcome to ECON 306 - Microeconomic Analysis! Today's lesson will be an introduction to the course and the tools we use in microeconomics.
 
-If you have not done so, please watch my welcome video, read the announcements in Blackboard, take my survey, and join our class slack channel.
+If you have not done so, please watch my **welcome video**, take my **survey**, join our class **Slack channel**, and read the important items, which can be found in the `START HERE` menu item in the course's Blackboard site.^[I would link to them all here, but this website is public on the internet, so I am ensuring only real enrolled students can access these via Blackboard!]
 
-The live class <i class="fas fa-video"></i> Zoom meeting link can be found on Blackboard (see `LIVE ZOOM MEETINGS` on the left navigation menu), starting at 2:00 PM.
+The live class <i class="fas fa-video"></i> Zoom meeting link can be found on Blackboard (see `LIVE ZOOM MEETINGS` on the left navigation menu), and will start at 2:00 PM Monday (for section 1) or Tuesday (for section 2).
 
-If you are unable to join today's live session, or if you want to review, you can find the recording stored on Blackboard via Panopto (see `Class Recordings` on the left navigation menu).
-
-Please note, the lesson numbers (e.g. 1.1) are *my* design, and do not match up with the textbook!
+If you are unable to join this live session, or if you want to review, you can find the recording stored on Blackboard via Panopto (see `Class Recordings` on the left navigation menu).
 
 # <i class="fas fa-book-reader fa-lg"></i> Readings
 
-This week is all introductory, but you may look at Chapter 1 if you wish. Otherwise, please heed this timeless message:
+Today is introductory, but you may look at Chapter 1 if you wish, to remind you about the use of models in economics. Otherwise, please heed this timeless message:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">A message to students from the Doggfather himself, <a href="https://twitter.com/SnoopDogg?ref_src=twsrc%5Etfw">@SnoopDogg</a> <a href="https://t.co/wsSANYv8u6">pic.twitter.com/wsSANYv8u6</a></p>&mdash; Ryan Briggs (@ryancbriggs) <a href="https://twitter.com/ryancbriggs/status/1293543531496308736?ref_src=twsrc%5Etfw">August 12, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Please note going forward, the lesson numbers and topics (e.g. 1.1) are *my* design, and will not match up with the textbook!
 
 # <i class="fas fa-chalkboard-teacher"></i> Slides
 
@@ -43,6 +45,6 @@ NONE
 
 # <i class="fas fa-laptop-code"></i> Assignments
 
-## Preliminary Survey
+## Preliminary Math Survey Due Sunday
 
-Please take the [preliminary survey](/assignment/00-preliminary-survey) on your math background by 11:59 PM Sunday. This will help us all have a productive course together.
+Please take the [preliminary math survey](/assignment/00-preliminary-survey) on your math background by 11:59 PM Sunday. This will help us all have a productive course together.
