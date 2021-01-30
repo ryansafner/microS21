@@ -1,7 +1,7 @@
 ---
 title: "Preliminary Survey on Math Background"
-author: "ECON 306 - Fall 2020"
-date: "Due by 11:59PM Sunday, August 23, 2020"
+author: "ECON 306 — Spring 2021"
+date: "Due by 11:59PM Sunday, February 7, 2021"
 output: pdf_document
 header-includes:
 - \usepackage{amsmath}

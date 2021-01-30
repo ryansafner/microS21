@@ -16,7 +16,7 @@ library(pander)
 
 - **Last Updated**: December 22, 2020
 
-> "The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design." <br> [-— F.A. Hayek (1974 Economics Nobel Laureate)]{style="float:right"} 
+> "The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design."^[Hayek, F.A., 1988, *The Fatal Conceit*, p.76] <br> [— F.A. Hayek (1974 Economics Nobel Laureate)]{style="float:right"}
 
 <span class="newthought">Microeconomic Analysis</span> [^courseinfo] is a collection of analytical tools for modeling and understanding how decisions made by agents (individuals and firms) in a context of market institutions lead to social coordination and the creation of value. This toolkit is the analytical foundation for exploring *all* fields and applications of economics as a social science, has many practical applications in business, finance, politics, and insights into any realm of human endeavors. Economics, after all, is the study of human action. At the intermediate level, these concepts are made more rigorous through the use of mathematical models, but we will first and foremost lay the theoretical foundations with economic intuition. As such, this class assumes you have met the **required prerequisite courses** by taking introductory economics^[ECON 205 and ECON 206] and basic mathematics^[MATH 112].
 
@@ -72,7 +72,7 @@ See my [tips for success in this course](/reference#tips).
 
 This course requires regular online internet access. If you know you will be unable to access the internet regularly, please let me know and we can make arrangements.
 
-You can find all course materials at my **dedicated website** for this course: [microF20.classes.ryansafner.com](https://microF20.classes.ryansafner.com). Links to the website are posted on our Blackboard course page. Please familiarize yourself with the website, see that it contains this [syllabus](https://microF20.classes.ryansafner.com/syllabus/), guides for your [reference](https://microF20.classes.ryansafner.com/reference/), and our [schedule](https://microF20.classes.ryansafner.com/schedule/). On the schedule page, you can find each module with its own class page (**start there!**) along with all related readings, lecture slides, practice problems, and assignments.
+You can find all course materials at my **dedicated website** for this course: [microS21.classes.ryansafner.com](https://microS21.classes.ryansafner.com). Links to the website are posted on our Blackboard course page. Please familiarize yourself with the website, see that it contains this [syllabus](https://microS21.classes.ryansafner.com/syllabus/), guides for your [reference](https://microS21.classes.ryansafner.com/reference/), and our [schedule](https://microS21.classes.ryansafner.com/schedule/). On the schedule page, you can find each module with its own class page (**start there!**) along with all related readings, lecture slides, practice problems, and assignments.
 
 My lecture slides will be shared with you, and serve as your primary resource, but our main "textbook" below is **recommended** as the next best resource and will be available from the campus bookstore. I will discuss more about textbooks and materials in the first module.
 
@@ -84,13 +84,13 @@ You are welcome to purchase the book by other means (e.g. Amazon, half.com, etc)
 
 # Assignments and Grades 
 
-Your final course grade is the weighted average of the following assignments. You can find general descriptions for all the assignments on the [assignments page](http://microF20.classes.ryansafner.com/assignments/) and more specific information and examples on each assignment's page on the [schedule page](http://microF20.classes.ryansafner.com/schedule/). 
+Your final course grade is the weighted average of the following assignments. You can find general descriptions for all the assignments on the [assignments page](http://microS21.classes.ryansafner.com/assignments/) and more specific information and examples on each assignment's page on the [schedule page](http://microS21.classes.ryansafner.com/schedule/). 
 
 ```{r assignments-grades, include=FALSE}
 assignments <- tribble(
   ~Frequency,  ~Assignment, ~Weight,
   "1"     , "Opinion-Editorial", "20%",
-  "7"  , "Homeworks", "20% (using average HW grade)",
+  "5"  , "Homeworks", "20% (using average HW grade)",
   "3"      , "Exams", "20% (each)"
 )
 
@@ -235,7 +235,7 @@ This course is intended to be accessible for all students, including those with 
 
 ## ACBSP Information 
 
-![](https://microf20.classes.ryansafner.com/images/acbsp.png)
+![](https://microS21.classes.ryansafner.com/images/acbsp.png)
 
 Hood College is an accredited member of the Accreditation Council for Business Schools and Programs (ACBSP), an organization devoted to enhancing business education. In receiving and maintaining this accreditation, the faculty has made a commitment to the continuous improvement, innovation, and scholarship of the Department of Economics and Management. For you, this means that your educational experience undergoes ongoing validation to ensure it meets the most rigorous international standards of business education. Only a select group of institutions have received this status and it is an attribute of Hood for which you should take great pride. 
 
@@ -243,56 +243,4 @@ Pragmatically, our accreditation means that we will engage in the ongoing use of
 
 # Tentative Schedule 
 
-Below is a rough sketch of the weekly schedule we will aim to follow this semester. Each module should take approximately one class meeting. 
-
-**You can find a full schedule** with much more details, including the readings, appendices, and other further resources for each class meeting on the [course website's schedule page](http://microF20.classes.ryansafner.com/schedule/).
-
-```{r schedule, include=FALSE}
-schedule <- tribble(
-  ~Week, ~Topics, ~Readings, ~Assignments,
-  "8/16-8/22", "Tools of Microeconomics; Scarcity, Choice and Cost", "None", "Survey",
-  "8/23-8/29", "Budget Constraint; Preferences", "Goolsbee Ch. 4", "HW 1",
-  "8/30-9/5", "Solving the Consumer's Problem; Building a Demand Function", "Goolsbee Ch. 5", "HW 2",
-  "9/6-9/12", "Income & Substitution Effects; Price Elasticity", "Goolsbee Ch. 5", "HW 3, Exam 1",
-  "9/13-9/19", "Theory of the Firm; Short Run & Long Run", "Goolsbee Ch. 6", "None",
-  "9/20-9/26", "Cost Minimization; Costs of Production", "Goolsbee Ch. 7", "HW 4",
-  "9/27-10/3", "Short Run Profit Maximization; Long Run Industry Equilibrium", "Goolsbee Ch. 8", "HW 5, Exam 2",
-  "10/4-10/10", "Supply and Demand Model; Market Competition & Surpluses", "Goolsbee Ch. 2", "None",
-  "10/11-10/17", "Social Functions of Market Prices; Monopoly", "Goolsbee Ch. 9", "HW 6",
-  "10/18-10/24", "Consequences & Sources of Market Power; Pricing with Market Power", "Goolsbee Ch. 9", "HW 7",
-  "10/25-10/31", "Monopolistic Competition; Oligopoly", "Goolsbee Ch. 10", "None",
-  "11/1-11/7", "Game Theory", "Goolsbee Ch. 11", "None",
-  "11/8-11/14", "Factor Markets; Market Failures", "Goolsbee Ch. 13", "None",
-  "11/15-11/21", "Market Failures", "Goolsbee Ch. 14", "None",
-  "11/22-11/28", "Review", "None", "Final Exam"
-)
-```
-
-```{r, echo = F, results="asis"}
-#linebreak("a;b")
-schedule %>%
-#  mutate_all(linebreak) %>%
-  pandoc.table()
-```
-
-<!--
-| Week | Topics | Readings | Assignments |
-|------|--------|----------|-------------|
-| 8/16-8/22 | Tools of Microeconomics; Scarcity, Choice and Cost | None | None |
-| 8/23-8/29 | Budget Constraint; Preferences | Goolsbee Ch. 4 | HW 1 |
-| 8/30-9/5 | Solving the Consumer's Problem; Building a Demand Function | Goolsbee Ch. 5 | HW 2 |
-| 9/6-9/12 | Income & Substitution Effects; Price Elasticity | Goolsbee Ch. 5 | HW 3; **Exam 1** |
-| 9/13-9/19 | Theory of the Firm; Short Run & Long Run | Goolsbee Ch. 6 | None |
-| 9/20-9/26 | Cost Minimization; Costs of Production | Goolsbee Ch. 7 | HW 4 |
-| 9/27-10/3 | Short Run Profit Maximization; Long Run Industry Equilibrium | Goolsbee Ch. 8 | HW 5; **Exam 2** |
-| 10/4-10/10 | Supply and Demand Model; Market Competition & Surpluses | Goolsbee Ch. 2 | None |
-| 10/11-10/17 | Social Functions of Market Prices; Monopoly | Goolsbee Ch. 9 | None |
-| 10/18-10/24 | Consequences & Sources of Market Power; Pricing with Market Power | Goolsbee Ch. 10 | HW 6 |
-| 10/25-10/31 | Monopolistic Competition; Oligopoly | Goolsbee Ch. 11 | None |
-| 11/1-11/7 | Game Theory | Goolsbee Ch. 12 | HW 7 |
-| 11/8-11/14 | Factor Markets; Market Failures | Goolsbee Ch. 13 | None |
-| 11/15-11/21 | Market Failures | Goolsbee Ch. 14 | None |
-| 11/22-11/28 | Review | None | **Final Exam** |
-
--->
-
+**You can find a full schedule** with much more details, including the readings, appendices, and other further resources for each class meeting on the [schedule page](http://microS21.classes.ryansafner.com/schedule/).

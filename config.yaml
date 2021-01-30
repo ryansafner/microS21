@@ -26,8 +26,8 @@ menu:
     - name: Schedule
       url: /schedule/
       weight: 2
-    - name: Reference
-      url: /reference/
+    - name: Resources
+      url: /resources/
       weight: 5
     - name: Slack
       url: "https://hoodcollegeeconomics.slack.com"

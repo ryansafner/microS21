@@ -1,15 +1,15 @@
 ---
-title: Reference
-slug: reference
+title: Resources
+slug: resources
 output:
   blogdown::html_page:
     template: ../pandoc/toc-title_html.template
     toc: true
 ---
 
-Look here over the course of the semester for resources, links, and tips on how to succeed in the course, how to write well, and other things of interest related to microeconomics.
+Look here over the course of the semester for resources, links, and tips on how to succeed in the course, how to write well, and other things of interest related to (micro)economics.
 
-**Last Updated:** Monday, August 24, 2020
+**Last Updated:** January 30, 2021
 
 # Tips for Success {#tips}
 
@@ -68,3 +68,15 @@ Here is the [<i class="fas fa-file-pdf"></i> example PDF](../files/photos_to_pdf
 **3. On Linux**
 
 If you use Linux, I assume you know your way around a computer well enough to make a PDF! 🤖
+
+# Quotes about Economics
+
+> “Whether we like it or not, it is a fact that economics cannot remain an esoteric branch of knowledge accessible only to small groups of scholars and specialists. Economics deals with society's fundamental problems; it concerns everyone and belongs to all. It is the main and proper study of every citizen.”^[Mises, Ludwig von., 1948, *Human Action: A Treatise on Economics*, p.879] <br> [— Ludwig von Mises]{style="float:right"}
+
+> “The task of the economist is not to plan utopias, but to criticize reality” <br> [— Joan Robinson]{style="float:right"}
+
+> “The first lesson of economics is scarcity: There is never enough of anything to satisfy all those who want it. The first lesson of politics is to disregard the first lesson of economics.”^[Sowell, Thomas, 1993, *Is Reality Optional? and Other Essays Quotes*] <br> [— Thomas Sowell]{style="float:right"}
+
+> “The ideas of economists and political philosophers, both when they are right and when they are wrong, are more powerful than is commonly understood. Indeed the world is ruled by little else. Practical men, who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back. I am sure that the power of vested interests is vastly exaggerated compared with the gradual encroachment of ideas.”^[Keynes, John Maynard, 1936, * The General Theory of Employment, Interest, and Money*, p.383] <br> [— John Maynard Keynes]{style="float:right"}
+
+> “There are no solutions, there are only tradeoffs.”^[Sowell, Thomas, 1987, *A Conflict of Visions*] <br> [— Thomas Sowell]{style="float:right"}

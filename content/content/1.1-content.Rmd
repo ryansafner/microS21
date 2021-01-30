@@ -45,6 +45,6 @@ NONE
 
 # <i class="fas fa-laptop-code"></i> Assignments
 
-## Preliminary Math Survey Due Sunday
+## Preliminary Math Survey Due Sunday Feb 7
 
-Please take the [preliminary math survey](/assignment/00-preliminary-survey) on your math background by 11:59 PM Sunday. This will help us all have a productive course together.
+Please take the [preliminary math survey](/assignment/00-preliminary-survey) on your math background by 11:59 PM Sunday February 7. This will help us all have a productive course together.
