@@ -41,7 +41,8 @@ Please note going forward, the lesson numbers and topics (e.g. 1.1) are *my* des
 
 # <i class="fas fa-chalkboard-teacher"></i> Slides
 
-- [<i class="fas fa-chalkboard-teacher"></i> View Lecture Slides](/slides/1.1-slides.html)
+[![](/slides/1.1-slides.png)](/slides/1.1-slides.html)
+
 - [<i class="fas fa-file-pdf"></i> Download as PDF](/slides/1.1-slides.pdf)
 
 # <i class="fas fa-dumbbell"></i> Practice
