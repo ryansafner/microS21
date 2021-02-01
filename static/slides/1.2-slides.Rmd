@@ -1,5 +1,5 @@
 ---
-title: "1.3 — Budget Constraint"
+title: "1.2 — Scarcity, Choice, & Cost"
 subtitle: "ECON 306 • Microeconomic Analysis • Fall 2020"
 author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microF20"><i class="fa fa-github fa-fw"></i>ryansafner/microF20</a><br> <a href="https://microF20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microF20.classes.ryansafner.com</a><br>'
 #date:
@@ -88,6 +88,7 @@ class: inverse
 ]
 
 ---
+
 class: inverse, center, middle
 
 # Rational Choice Theory
@@ -123,6 +124,7 @@ class: inverse, center, middle
 
 - *Everyone* is a consumer
   - "Goods and services" isn't just food, clothing, etc, but *anything* that you value!
+  - Producers demand productive inputs
 
 - Consumers making purchasing decisions will be our paradigmatic *example*
   - But we are really talking about how **individuals** make choices in almost *any* context!
@@ -137,231 +139,15 @@ class: inverse, center, middle
 
 ---
 
-class: inverse, center, middle
-
-# Constrained Optimization
-
----
-
-# Constrained Optimization I
+# Everyone is a Consumer
 
 .pull-left[
 
-- We model most situations as a .hi[constrained optimization problem]:
-
-- People .hi[optimize]: make tradeoffs to achieve their .hi[objective] *as best as they can*
-
-- Subject to .hi[constraints]: limited resources (income, time, attention, etc) 
-
+- Even
 ]
 
 .pull-right[
-.center[
-![:scale 100%](../images/optimize.jpeg)
-]
-]
 
----
-
-# Constrained Optimization II
-
-.pull-left[
-
-- One of the most generally useful mathematical models
-
-- *Endless applications*: how we model nearly every decision-maker
-
-> consumer, business firm, politician, judge, bureaucrat, voter, dictator, pirate, drug cartel, drug addict, parent, child, etc
-
-- .hi-purple[Key economic skill: recognizing how to apply the model to a situation]
-
-]
-
-.pull-right[
-.center[
-![:scale 100%](../images/optimize.jpeg)
-]
-]
-
----
-
-# Constrained Optimization III
-
-.pull-left[
-
-- All constrained optimization models have three moving parts: 
-
-]
-
-.pull-right[
-.center[
-![:scale 100%](../images/optimize.jpeg)
-]
-]
-
----
-
-# Constrained Optimization III
-
-.pull-left[
-
-- All constrained optimization models have three moving parts: 
-
-1. **Choose:** .hi-purple[ < some alternative >]
-
-]
-
-.pull-right[
-.center[
-![:scale 100%](../images/optimize.jpeg)
-]
-]
-
----
-
-# Constrained Optimization III
-
-.pull-left[
-
-- All constrained optimization models have three moving parts: 
-
-1. **Choose:** .hi-purple[ < some alternative >]
-
-2. **In order to maximize:** .hi-green[< some objective >]
-
-]
-
-.pull-right[
-.center[
-![:scale 100%](../images/optimize.jpeg)
-]
-]
-
----
-
-# Constrained Optimization III
-
-.pull-left[
-
-- All constrained optimization models have three moving parts: 
-
-1. **Choose:** .hi-purple[ < some alternative >]
-
-2. **In order to maximize:** .hi-green[< some objective >]
-
-3. **Subject to:** .hi-red[< some constraints >]
-
-]
-
-.pull-right[
-.center[
-![:scale 100%](../images/optimize.jpeg)
-]
-]
-
----
-
-# Constrained Optimization: Example I
-
-.pull-left[
-
-.content-box-green[
-.hi-green[**Example**:] A Hood student picking courses hoping to achieve the highest GPA while getting an Econ major.
-
-1. **Choose:**
-
-2. **In order to maximize:**
-
-3. **Subject to:**
-
-]
-]
-.pull-right[
-.center[
-![](../images/education.png)
-]
-]
-
----
-
-# Constrained Optimization: Example II
-
-.pull-left[
-
-.content-box-green[
-.hi-green[**Example**:] How should FedEx plan its delivery route?
-
-1. **Choose:**
-
-2. **In order to maximize:**
-
-3. **Subject to:**
-
-]
-]
-.pull-right[
-.center[
-![](../images/routeoptimization.png)
-]
-]
-
----
-
-# Constrained Optimization: Example III
-
-.pull-left[
-
-.content-box-green[
-.hi-green[**Example**:] The U.S. government wants to remain economically competitive but reduce emissions by 25%. 
-
-1. **Choose:**
-
-2. **In order to maximize:**
-
-3. **Subject to:**
-
-]
-]
-.pull-right[
-.center[
-![:scale 100%](../images/pollution.png)
-]
-]
-
----
-
-# Constrained Optimization: Example IV
-
-.pull-left[
-
-.content-box-green[
-.hi-green[**Example**:] How do elected officials make decisions in politics? 
-
-1. **Choose:**
-
-2. **In order to maximize:**
-
-3. **Subject to:**
-
-]
-]
-.pull-right[
-.center[
-![](../images/veep.jpeg)
-]
-]
-
----
-
-# The Consumer's Problem
-
-.pull-left[
-
-- The .hi[consumer's constrained optimization problem] is: 
-
-]
-
-.pull-right[
 .center[
 ![:scale 100%](../images/groceryaisle.jpg)
 ]
@@ -369,63 +155,11 @@ class: inverse, center, middle
 
 ---
 
-# The Consumer's Problem
+# 
 
-.pull-left[
+- Perhaps the Most Fundamental Economic Principle is the law of demand
 
-- The .hi[consumer's constrained optimization problem] is: 
-
-1. **Choose:** .hi-purple[ < a consumption bundle >]
-
-]
-
-.pull-right[
-.center[
-![:scale 100%](../images/groceryaisle.jpg)
-]
-]
-
----
-
-# The Consumer's Problem
-
-.pull-left[
-
-- The .hi[consumer's constrained optimization problem] is: 
-
-1. **Choose:** .hi-purple[ < a consumption bundle >]
-
-2. **In order to maximize:** .hi-green[< utility >]
-
-]
-
-.pull-right[
-.center[
-![:scale 100%](../images/groceryaisle.jpg)
-]
-]
-
----
-
-# The Consumer's Problem
-
-.pull-left[
-
-- The .hi[consumer's constrained optimization problem] is: 
-
-1. **Choose:** .hi-purple[ < a consumption bundle >]
-
-2. **In order to maximize:** .hi-green[< utility >]
-
-3. **Subject to:** .hi-red[< income and market prices >]
-
-]
-
-.pull-right[
-.center[
-![:scale 100%](../images/groceryaisle.jpg)
-]
-]
+- We investigate its source
 
 ---
 
@@ -440,7 +174,7 @@ class: inverse, center, middle
 
 - Imagine a (very strange) supermarket sells xylophones $(x)$ and yams $(y)$
 
-- Your choices: amounts of $x, y$ to buy as a .hi-purple[bundle]
+- Your choices: amounts of $(x, y)$ to buy as a .hi-purple[bundle]
 
 ]
 
@@ -452,37 +186,39 @@ class: inverse, center, middle
 
 ---
 
-# Consumption Bundles
+# Consumption Bundles: Graphically
 
 .pull-left[
 
-- Represent bundles as a vector:
+- We can represent bundles graphically
 
-$$a=\begin{pmatrix}
-			x \\
-			y\\
-			\end{pmatrix}$$
-
-.content-box-green[
-.hi-green[**Examples**:]
-
-$$a=\begin{pmatrix}
-			4 \\
-			12\\
-			\end{pmatrix}; \; b=\begin{pmatrix}
-			6 \\
-			12\\
-			\end{pmatrix}; \; c=\begin{pmatrix}
-			21 \\
-			0\\
-			\end{pmatrix}$$
-]
+- We'll stick with 2 goods $(x, y)$ in 2-dimensions
 ]
 
 .pull-right[
-.center[
-![:scale 100%](../images/groceryaisle.jpg)
-]
+```{r, echo=F, message = F, warning = F, fig.retina=3, fig.align="center"}
+library(tidyverse)
+library(ggrepel)
+df <- tribble(
+  ~x, ~y,
+  2, 3
+)
+
+
+ggplot(df, aes(x = x,
+               y = y))+
+  geom_point(size =3)+
+  geom_text(aes(x=2,y=3.5), label="(2,3)", size=7)+
+  geom_segment(x=0, xend=2, y=3, yend=3, linetype="dotted", size =1)+
+  geom_segment(x=2, xend=2, y=0, yend=3, linetype="dotted", size =1)+
+  scale_x_continuous(breaks = seq(0,10,1), 
+                     limits = c(0,10),
+                     expand = c(0,0))+
+  scale_y_continuous(breaks = seq(0,10,1), 
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_slides
+```
 ]
 
 ---
@@ -539,7 +275,7 @@ class: inverse, center, middle
 
 - Denote prices of each good as $\{\color{#e64173}{p_x}, \color{#e64173}{p_y}\}$
 
-- Let $\color{#e64173}{m}$ be the amount of income a consumer has
+- Let $\color{#e64173}{m}$ be the amount of income a person has
 
 ]
 
@@ -561,7 +297,7 @@ class: inverse, center, middle
 
 - Denote prices of each good as $\{\color{#e64173}{p_x}, \color{#e64173}{p_y}\}$
 
-- Let $\color{#e64173}{m}$ be the amount of income a consumer has
+- Let $\color{#e64173}{m}$ be the amount of income a person has
 
 - A bundle $\{x, y\}$ is .hi-purple[affordable] at given prices $\{p_x,p_y\}$ when:
 
@@ -977,6 +713,35 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
+# A Few Notes on Goods
+
+.pull-left[
+
+- Budget constraint: set of bundles where individual spends all her income
+
+- Don't want “unspent” (unused) income
+  - Allocate to goods like cash, savings, etc.
+
+]
+
+---
+
+# A Few Notes on Goods
+
+.pull-left[
+
+- We can get a surprising amount of insight with just two goods
+
+- If you like, make $y$ a composite good of "everything else" (or income) with a price of 1 (a dollar)
+
+]
+
+.pull-right[
+
+]
+
+---
+
 # Interpretting the Slope
 
 .pull-left[
@@ -1012,19 +777,13 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 ---
 
-# Interpretting the Slope
+# Opportunity Cost
 
 .pull-left[
 
-- **Slope**: market-rate of .hi-purple[tradeoff] between $x$ and $y$
+- .hi[Opportunity cost]: value of next best foregone opportunity
 
-- .hi-purple[Relative price] of $x$ or its .hi-purple[opportunity cost]:
-
-> Consuming 1 more unit of $x$ requires giving up $\frac{p_x}{p_y}$ units of $y$
-
-- Foreshadowing: 
-
-> Is **your** valuation of the tradeoff between $x$ and $y$ the same as the market rate? 
+- Even though we have money-prices, when you consume $x$, you're giving up the ability to consume $y$!
 
 ]
 
@@ -1035,12 +794,120 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 ---
 
-class: inverse, center, middle
-# Changes in Parameters
+# The Parable of the Broken Window
+
+.left-column[
+.center[
+![:scale 85%](../images/bastiat.png)
+
+Frederic Bastiat
+
+1801-1850
+]
+]
+
+.right-column[
+
+- *That Which is Seen and That Which is Not Seen*
+
+]
 
 ---
 
-# Changes in Parameters
+# The Parable of the Broken Window
+
+.left-column[
+.center[
+![:scale 85%](../images/bastiat.png)
+
+Frederic Bastiat
+
+1801-1850
+]
+]
+
+.right-column[
+
+- *That Which is Seen and That Which is Not Seen*
+
+- "That which is seen"
+    - The broken window
+    - Resources diverted into glassmaking
+]
+
+---
+
+# The Parable of the Broken Window
+
+.left-column[
+.center[
+![:scale 85%](../images/bastiat.png)
+
+Frederic Bastiat
+
+1801-1850
+]
+]
+
+.right-column[
+
+- *That Which is Seen and That Which is Not Seen*
+
+- "That which is seen"
+    - The broken window
+    - Resources diverted into glassmaking
+
+- "That which is not seen"
+    - Opportunity cost of fixing the window
+    - Resources diverted *away* from other opportunities
+]
+
+---
+
+# Applying the Parable of the Broken Window
+
+.pull-left[
+
+- What does it mean to say that **"spending money 'stimulates' the economy"?**
+
+]
+
+.pull-right[
+
+.center[
+![:scale 100%](../images/disappear.jpg)
+]
+]
+
+---
+
+# Applying the Parable of the Broken Window
+
+.pull-left[
+
+- What does it mean to say that **"spending money 'stimulates' the economy"?** 
+
+- Scarce resources used in one industry can **not** be used in other industries
+
+- .hi-purple[Every (visible) decision to spend on X yields more X, and destroys an (invisible) opportunity to spend on Y]
+
+]
+
+.pull-right[
+
+.center[
+![:scale 100%](../images/disappear.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+# Changes in Market Conditions
+
+---
+
+# Changes in Market Conditions
 
 .pull-left[
 
@@ -1053,7 +920,7 @@ y &= \frac{\color{#e64173}{m}}{\color{#e64173}{p_y}}-\frac{\color{#e64173}{p_x}}
   - $\color{#e64173}{m}$: income
   - $\color{#e64173}{p_x}, \color{#e64173}{p_y}$: market prices
 
-- Economics: .hi-purple[how changes in constraints affect people's choices]
+- Economic analysis: .hi-purple[how changes in constraints affect people's choices]
 
 ]
 
@@ -1070,7 +937,7 @@ y &= \frac{\color{#e64173}{m}}{\color{#e64173}{p_y}}-\frac{\color{#e64173}{p_x}}
 
 .pull-left[
 
-- Changes in .hi-purple[income]: a *parallel* shift in budget constraint
+- Changes in .hi-purple[income] $\implies$ a *parallel* shift in budget constraint
 
 .content-box-green[
 .hi-green[**Example**]: An increase in income
@@ -1241,7 +1108,7 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 .pull-left[
 
-- .hi-purple[Economics is about (changes in) *relative* prices]
+- .hi-purple[Economic analysis is about (changes in) *relative* prices]
 
 - Budget constraint slope is $\left(\frac{p_x}{p_y}\right)$
 
@@ -1264,7 +1131,7 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 - **"Nominal"** prices are often meaningless!
 
-- .hi-green[**Example**]: Imagine yourself in a strange country. All you know is that the price of bread is "6"...
+- .hi-green[**Example**]: Imagine yourself in a strange country. All you know is that the price of bread, in local currency, is "6"...
 ]
 
 .pull-right[
@@ -1285,3 +1152,18 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 2. Return to the original price of lattes ($5) and suppose the price of burritos falls from $10 to $5. Find the equation of the new budget constraint and graph it.
 ]
+
+---
+
+# Demand Does Not Require Individual Rationality
+
+- A lot of hubbabaloo about "rationality"
+
+- Notice that so far, I've made no assumptions about rationality, preferences, utility, etc.
+
+- It's important for you to see that the law of demand does not require rational people!
+
+- It is the institution of markets that "makes" people rational
+  - Forces you to bear a personal cost
+
+- Note this is true even in absence of markets! It's the result of **scarcity**

@@ -32,14 +32,47 @@ knitr::opts_chunk$set(echo=F,
                       fig.retina=3,
                       fig.align = "center")
 library("tidyverse")
-
+library("fontawesome")
 xaringanExtra::use_tile_view()
-
+xaringanExtra::use_tachyons()
 theme_slides <- theme_light() + 
   theme(
     text = element_text(family = "Fira Sans", size = 24)
   )
 ```
+
+# About Me
+
+.left-column[
+.center[
+![](../images/meinfrontofsmith.jpg)
+
+.smallest[
+Edinburgh, 2019
+]
+]
+]
+
+.right-column[
+.smallest[
+
+- Ph.D (Economics) — George Mason University, 2015
+
+- B.A. (Economics) — University of Connecticut, 2011
+
+- Specializations:
+  - Law and Economics
+  - Austrian Economics
+
+- Research interests
+  - modeling innovation & economic growth
+  - political economy & economic history of intellectual property
+
+- Expecting a son in March 👶 (expect cameos!)
+]
+]
+
+---
 
 # *Micro*-economics
 
@@ -57,9 +90,9 @@ theme_slides <- theme_light() +
 
 - Where do aggregates (“GDP”, “unemployment”, & “inflation”) come from? 
 
-- .hi[Micro]: [modelling] .hi-purple[Choices] and .hi-purple[consequences]
+- .hi[Micro]: [modeling] .hi-purple[Choices] and .hi-purple[consequences]
 
-- .hi[Macro]: [modelling] .hi-purple[Systemic interaction] of choosers & .hi-purple[emergent behavior]
+- .hi[Macro]: [modeling] .hi-purple[Systemic interaction] of choosers & .hi-purple[emergent behavior]
 
 ]
 
@@ -78,14 +111,14 @@ theme_slides <- theme_light() +
 
 - .hi-purple[Modelling] markets, individuals (consumers & firms), economies
     - ECON 306: Microeconomic Analysis
-    - ECON 305: Macroeconomic Analysis<sup>1</sup>
+    - ECON 305: Macroeconomic Analysis<sup>.magenta[†]</sup>
 ]
 
 .pull-right[
 .center[
 ![](../images/choices.jpg)
 ]
-.footnote[<sup>1</sup> Required for ECON majors only. Calculus I is required.]
+.footnote[<sup>.magenta[†]</sup> Required for ECON majors only. Calculus I required.]
 
 ]
 
@@ -99,7 +132,7 @@ theme_slides <- theme_light() +
 
 > Cost, efficiency, welfare, competition, marginal, equilibrium, profit, public good, discrimination, elasticity
 
-- Using these words’ “ordinary” meanings will lead to wrong economic conclusions!
+- Using these words’ “ordinary” meanings can lead to *wrong* economic conclusions!
 
 - You will need to .hi-purple[“relearn”] the economic meanings of these words
 ]
@@ -119,7 +152,7 @@ theme_slides <- theme_light() +
 
 - You’ll need to master a new vocabulary:
 
-> externality, marginal rate of substitution, marginal cost, consumer surplus, allocative efficiency
+> marginal rate of substitution, marginal cost, consumer surplus, allocative efficiency, externality
 
 - Avoid excessive jargon, but these concepts are useful to explain reality! 
 
@@ -155,6 +188,25 @@ theme_slides <- theme_light() +
 
 ---
 
+# And Tread Cautiously
+
+.pull-left[
+- But be careful, *a little bit of knowledge* is a dangerous thing!
+
+- An application of the famous [“Dunning-Kreuger effect”](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) in social psychology
+
+]
+
+.pull-right[
+.center[
+![](../images/Mountstupid.png)
+
+.source[Source: [SMBC](https://www.smbc-comics.com/?id=2475)]
+]
+]
+
+---
+
 # Economics $\neq$ Business or $$$
 
 .center[
@@ -181,16 +233,33 @@ theme_slides <- theme_light() +
 
 - If you “don't get it” you can't just try to memorize a bunch of facts
 
-- Not trying to scare you! I'd rather say this now than after Exam 1.
-  - Grades don't reflect your worth as a person!
-  - Comparative advantage: I'm awful at accounting, chemistry, etc. 
-
 ]
 
 .pull-right[
 
 .center[
 ![](../images/badtime.jpg)
+]
+]
+
+---
+
+# Economics Can Be Difficult
+
+.pull-left[
+
+- Not trying to scare you! (I'd rather say this now than after Exam 1.)
+  - .hi-purple[Grades don't reflect your worth as a person!]
+
+- .hi[Comparative advantage]: nobody can be good at everything!
+  - I'm awful at accounting, chemistry, etc. 
+
+]
+
+.pull-right[
+
+.center[
+![](../images/absoluteadvantage.jpg)
 ]
 ]
 
@@ -201,36 +270,36 @@ theme_slides <- theme_light() +
 .pull-left[
 
 - Most of you will not become professional economists — that's OK
-  - Economics is a **liberal art**, useful to you even if it's not your career (unlike...let's just say, certain *other* discipines)
-  
-- Understand “how the world works”
+  - Economics is a .hi-purple[liberal art], useful to you even if it's not your career
 
-- A great **bullshit-detector**, especially about self-interested, squishy, or political statements
-
+- Understand .hi-turquoise[“how the world works”]
 
 ]
 
 .pull-right[
 
 .center[
-![](../images/badtime.jpg)
+![](../images/economics1.jpg)
 ]
 ]
 
 ---
 
-- But be careful, *a little bit of knowledge* is a dangerous thing!
+# The Uses of Economics
 
+.pull-left[
 
-- Mount Stupid
+- A great .hi-purple[bullshit-detector], especially about self-interested, squishy, or political statements
 
-- An application of the famous [“Dunning-Kreuger effect”](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) in social psychology
+- People love to forget that we have to make tradeoffs
+  - “Economics puts parameters on people's utopias”
+
+]
 
 .pull-right[
-.center[
-![](../images/)
 
-.source[Source: [SMBC](https://www.smbc-comics.com/?id=2475)]
+.center[
+![:scale 100%](../images/ronburgundydontbelieve.gif)
 ]
 ]
 
@@ -357,6 +426,16 @@ Some governments pay bounties to reduce pest populations such as rats.
 
 ---
 
+# Incentives: Monkeys Too
+
+.center[
+![:scale 60%](../images/monkeystemple.png)
+]
+
+.source[January 17, 2021, [These Monkeys Understand Economics and Intentionally Steal High-Ticket Items to Barter for Better Food, Study Finds](https://gizmodo.com/these-monkeys-understand-economics-and-intentionally-st-1846078932?utm_medium=sharefromsite&utm_source=_facebook), *Gizmodo*]
+
+---
+
 # Takeaways About Incentives I
 
 .pull-left[
@@ -365,9 +444,9 @@ Some governments pay bounties to reduce pest populations such as rats.
 
 - People have goals they seek to attain
 
-- Removing one alternative $\neq$ people *stop* persuing their goals
+- Making one alternative more costly $\neq$ people *stop* pursuing their goals
 
-- People will seek (less preferred) alternative methods to attain goals
+- People will seek (less preferred) *alternative* methods to attain goals
 
 - .hi-purple[Unintended consequences]!
 
@@ -376,7 +455,7 @@ Some governments pay bounties to reduce pest populations such as rats.
 .pull-right[
 
 .center[
-![](../images/green_vehicles.PNG)
+![:scale 80%](../images/green_vehicles.PNG)
 ]
 ]
 
@@ -459,9 +538,8 @@ class: inverse, center, middle
 
 - Highway travel time: 1 hour (always)
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Scenario I**:] There are **less than 30 cars** on the local road
-- What will people do?
 ]
 ]
 
@@ -485,9 +563,8 @@ class: inverse, center, middle
 
 - Highway travel time: 1 hour (always)
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Scenario II**:] There are **more than 30 cars** on the local road
-- What will people do?
 ]
 ]
 
@@ -511,9 +588,8 @@ class: inverse, center, middle
 
 - Highway travel time: 1 hour (always)
 
-.content-box-green[
-.green[**Equilibrium**:] How many cars are on each road?
-- Why?
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Equilibrium**:] How many cars are on each road? (Why?)
 ]
 ]
 
@@ -529,7 +605,7 @@ class: inverse, center, middle
 
 .pull-right[
 .smaller[
-- Suppose the State *doubles the capacity* of the local road
+- .hi-turquoise[Suppose the State *doubles the capacity* of the local road]
 
 - Local road travel time: .hi-purple[30 min + 0.5 min/car]
 
@@ -549,13 +625,13 @@ class: inverse, center, middle
 
 .pull-right[
 .smaller[
-- Suppose the State *doubles the capacity* of the local road
+- .hi-turquoise[Suppose the State *doubles the capacity* of the local road]
 
 - Local road travel time: .hi-purple[30 min + 0.5 min/car]
 
 - Highway travel time: 1 hour (always)
 
-- Will this reduce travel time? 
+- .hi-green[Will this reduce travel time?]
 
 - Yes! says the State:
     - 30 cars use the local road, takes 1 hour
@@ -576,13 +652,13 @@ class: inverse, center, middle
 .pull-right[
 
 .smaller[
-- Suppose the State *doubles the capacity* of the local road
+- .hi-turquoise[Suppose the State *doubles the capacity* of the local road]
 
 - Local road travel time: .hi-purple[30 min + 0.5 min/car]
 
 - Highway travel time: 1 hour (always)
 
-- Will this reduce travel time? 
+- .hi-green[Will this reduce travel time?]
 
 - Yes! says the State:
     - 30 cars use the local road, takes 1 hour
@@ -636,11 +712,11 @@ ggplot(plot_eqs, aes(x = x,
 # Optimization and Equilibrium
 
 .pull-left[
-- If people can **learn** and **change** their behavior, they will always **switch** to a higher-valued option
+- If people can .hi-purple[learn] and .hi-purple[change] their behavior, they will tend to **switch** to a higher-valued option
 
-- If there are no alternatives that are better, people are at an .hi[optimum]
+- If there are no alternatives that are better, a person is at an .hi[optimum]
 
-- If everyone is at an optimum, the system is in .hi[equilibrium]
+- Everyone is at an optimum $\iff$ the system is in .hi[equilibrium]
 ]
 
 .pull-right[
@@ -794,7 +870,7 @@ class: inverse, center, middle
 # Remember: All Models are Wrong!
 
 .pull-left[
-.content-box-red[
+.bg-washed-red.b--dark-red.ba.bw2.br3.shadow-5.ph4.mt5[
 .red[**Caution**:] Don't conflate models with reality!
 ]
 - Models help us *understand* reality.
@@ -844,11 +920,11 @@ coord_equal()
 
 ---
 
-# Two Types 
+# Again, Beware Mt. Stupid
 
 .pull-left[
-.content-box-red[
-.red[**Caution**:] Two types of mistakes:
+.bg-washed-red.b--dark-red.ba.bw2.br3.shadow-5.ph4.mt5[
+.red[**Caution**:] Two types of (advanced) mistakes:
 ]
 1. Believing the model accurately describes reality (100%)
 
@@ -871,15 +947,14 @@ class: inverse, middle, center
 # Logistics: Hybrid Course
 
 .smaller[
-- .hi[hybrid]: more .hi-purple[synchronous] material than .hi-turquoise[asynchronous] material
+- .hi[Hybrid]: more .hi-purple[synchronous] material than .hi-turquoise[asynchronous] material
 
 - I will always be teaching .hi[remotely]
   - A classroom is available to you
-  - I may make occasional visits to campus if you *need* something in person (TBD)
 
 - Office hours: Tu/Th 3:30-5:00 PM on Zoom
-  - <i class="fas fa-video"></i> Zoom link in Blackboard's `LIVE CLASS SESSIONS` link
-  - <i class="fab fa-slack"></i> Slack channels
+  - `r fa("video", fill ="#5E81AC")` <i class="fas fa-video"></i> Zoom link in Blackboard's `LIVE CLASS SESSIONS` link
+  - `r fa("slack", fill ="#5E81AC")` Slack channels
 
 - Teaching Assistant(s): TBD
   - grade HWs & hold (likely virtual) office hours
@@ -889,15 +964,23 @@ class: inverse, middle, center
 
 # Logistics: Hybrid Course
 
-- We will have .hi-purple[synchronous] sessions Mon/Wed 2:00-3:15 PM on **<i class="fas fa-video"></i> Zoom**
+- We will have .hi-purple[synchronous] sessions on **<i class="fas fa-video"></i> Zoom**
+  - Section 1: Mon/Wed 2:00-3:15 PM
+  - Section 2: Tu/Thu 2:00-3:15 PM
 
 - Lecture videos will be posted on **Blackboard** via Panopto for students unable to join synchronously
   - If you were present, you do not need to watch the video (again)!
   - You are not *required* to attend synchronously, but it will help you
 
 - All graded assignments are .hi-turquoise[asynchronous]
-  - (Probably) submitted on Blackboard by 11:59 PM Sundays
-  - (Probably) timed exams on Blackboard
+  - Submitted on Blackboard by 11:59 PM Sundays
+  - Timed exams on Blackboard
+
+---
+
+# Using Zoom (& Slack, etc): A Polite Request
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My professor teaching to class on zoom: <br><br>🧑🏻‍🏫<br><br>Me, trying to prevent my professor from teaching into the void: <br><br>◼️◼️◼️🙂◼️◼️◼️◼️◼️◼️◼️◼️<br>◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️</p>&mdash; Adrianna (@adri_holmes00) <a href="https://twitter.com/adri_holmes00/status/1314253784638513155?ref_src=twsrc%5Etfw">October 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ---
 
@@ -948,12 +1031,12 @@ knitr::kable(assignments, "html")
 
 .pull-right[
 .center[
-![](../images/microwebsite.png)
+![](../images/micro_website_s21.png)
 ]
 ]
 
 .center[
-[microF20.classes.ryansafner.com](https://microF20.classes.ryansafner.com)
+[microS21.classes.ryansafner.com](https://microS21.classes.ryansafner.com)
 ]
 
 ---
@@ -969,7 +1052,7 @@ knitr::kable(assignments, "html")
 
 - You are learning how to learn
 
-- See the [reference page](http://microF20.classes.ryansafner.com/reference) for more
+- See the [resources page](http://microS21.classes.ryansafner.com/resources) for more
 ]
 
 .pull-right[
