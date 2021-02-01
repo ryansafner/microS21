@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.30)  30 JAN 2021 16:54
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.1.30)  1 FEB 2021 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1109,14 +1109,9 @@ Overfull \hbox (19.32994pt too wide) in paragraph at lines 209--222
 1.classes.ryansafner.com[][].
  []
 
-[3]
-
-Package hyperref Warning: Suppressing link with empty target on input line 377.
-
-
-[4]
+[3] [4]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 441.
+(Font)              scaled to size 10.0pt on input line 449.
 Requested font "[FiraSans-BoldItalic.otf]/OT:script=latn;language=dflt;+pnum;+o
 num;mapping=tex-text;" at 10.0pt
  -> /Users/ryansafner/Library/TinyTeX/texmf-dist/fonts/opentype/public/fira/Fir

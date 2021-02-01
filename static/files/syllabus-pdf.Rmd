@@ -18,7 +18,7 @@ semester: "[springS21.classes.ryansafner.com](http://springS21.classes.ryansafne
 
 email: "safner@hood.edu"
 web: "ryansafner.com"
-officehours: "<i class='fas fa-video'></i> TBD ON ZOOM"
+officehours: "<i class='fas fa-video'></i> TuTh 3:15—5 PM on Zoom"
 office: "Rosenstock 118"
 classroom: "<i class='fas fa-video'></i> ON ZOOM"
 classhours: "MW (S.1), TuTh (S.2): 2:00--3:15PM"
@@ -158,19 +158,25 @@ These grades are firm cutoffs, but I do of course round upwards $(\geq$ 0.5) for
 
 ## Homeworks {-}
 
-There will be roughly a homework assignment for every lesson. These questions will help check your understanding and mastery of the material, and will be a combination of quantitative, graph, and short answer questions of examples. These will also be good indicators of what to expect on the exams. You may collaborate with other students to work on homeworks, but each person must turn in an individual assignment. Homeworks are due one week from the class period where we finish a lesson, and must be turned in at the beginning of class. Homeworks will be graded by the T.A. as follows: 70% of the grade for completion, and 30% for one randomly selected question. This is to reward students for putting in a full faith effort to try to reach an answer, even if not every answer ends up being correct.
+There will be roughly a homework assignment every few lessons. These questions will help check your understanding and mastery of the material, and will be a combination of quantitative, graph, and short answer questions of examples. These will also be good indicators of what to expect on the exams. You may collaborate with other students to work on homeworks (and I encourage that!), but each person must turn in an individual assignment.
 
-Homeworks are generally due by 11:59 PM Sunday by email. Please type your answers to the following questions in a document and email a PDF attachment to me.^[In MS Word, or Pages, or most word processing software, File -> Save As -> PDF, or File -> Export -> PDF.] You may still handwrite answers if you will be able to scan and email them, as a PDF, if they are easily readable, but this is not preferred. It will be much easier for me to grade, annotate, and return to you as a PDF, so please save me some trouble. For the few questions that ask you to draw a graph, try to do so on your computer (use MS Paint, the drawing tools in MS Word or MS Powerpoint, plot points in MS Excel, drawing/notetaking apps, etc.), and save it as an image to include on your homework document. Again, they need not be perfect or to scale, just show that you understand the broad idea. Being able to understand and sketch the graphs is still a very important and useful skill! If all else fails, I will be lenient in grading graph questions if you are unable to technologically include a graph.
+Homeworks are generally due by 11:59 PM EST Sunday by submission to Blackboard Assignments.
+
+Please **type** your answers to the following questions in a document and **save as a PDF**^[In MS Word, or Pages, or most word processing software, File -> Save As -> PDF, or File -> Export -> PDF.] to **upload on Blackboard** under Assignments. You may handwrite answers if you will be able to scan/photograph & convert them **to a single PDF**, if they are easily readable, but this is *not preferred*. See my [guide to making a PDF](https://microS21.classes.ryansafner.com/resources/#how-to-make-a-pdf-for-submitting-assignments) - an essential skill in the modern world. If you are handwriting answers, you may print the `pdf` above and write on it, or just write on a piece of paper (we only need your answers).
+
+For the few questions that ask you to draw a **graph**, *try* to do so *on your computer* (use MS Paint, the drawing tools in MS Word or MS Powerpoint, plot points in MS Excel, drawing/notetaking apps, etc.), and save it as an image to include on your homework document. Again, they need not be perfect or to scale, just show that you understand the broad idea. Being able to understand and sketch the graphs is still a very important and useful skill! If all else fails, I will be lenient in grading graph questions if you are unable to technologically include a graph. 
+
+Your TA, under my supervision, will grade homeworks 70% for completion, and for the remaining 30%, and one question will be graded for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.
 
 ## Exams {-}
 
 There will be three exams (one at the end of each unit) including the final exam. Each exam only covers the material in its associated unit (i.e. no exam is cumulative). These exams provide feedback both to you and to me that ensures everyone is progressing on schedule and apprehending the material. This is critical, as the rest of the course, and indeed, any future economics course you take, will build off of this foundation.
 
-Exams will be released **on Blackboard** as a timed assignment. You will have 2 hours once you open the exam on Blackboard. You will not need the whole time, I have given you some extra to accomodate the difficulties of taking an exam at home. Please pick a time to take it where you know you will have 2 hours. You may close the exam page and come back to it, but the timer will continue to run once the exam is first opened.
+Exams will be released **on Blackboard** as a timed assignment. You will have 2 hours once you open the exam on Blackboard. You will not need the whole time, I have given you some extra to accommodate the difficulties of taking an exam at home. Please pick a time to take it where you know you will have 2 hours. You may close the exam page and come back to it, but the timer will continue to run once the exam is first opened.
 
 ## Opinion-Editorial {-}
 
-Economic fallacies have always been popular, and journalists, politicians, and talking heads consistently engage in faulty economic reasoning in print and on television. Your task, as a student of economics, is to find some issue discussed in the past year, and write a critique of media discussion of that issue. Alternatively, instead of critiquing the reasoning or statements of others, you may write an advocacy piece, where you propose some economic policy and argue to persuade readers to endorse it. You will be graded both on the soundness of your economic reasoning and the quality of your writing. I would be happy to co-author an Op-Ed with anyone who writes an exemplary Op-Ed. Students who successfully publish their work in a media outlet will earn *extra credit* on their Op-Ed grade. I will provide ample resources and examples to help you accomplish this, you can find more on the [assignment page]().
+Economic fallacies have always been popular, and journalists, politicians, and talking heads consistently engage in faulty economic reasoning in print and on television. Your task, as a student of economics, is to find some issue discussed in the past year, and write a critique of media discussion of that issue. Alternatively, instead of critiquing the reasoning or statements of others, you may write an advocacy piece, where you propose some economic policy and argue to persuade readers to endorse it. You will be graded both on the soundness of your economic reasoning and the quality of your writing. I would be happy to co-author an Op-Ed with anyone who writes an exemplary Op-Ed. Students who successfully publish their work in a media outlet will earn *extra credit* on their Op-Ed grade. I will provide ample resources and examples to help you accomplish this, you can find more on the associated [assignment page](assignment/op-ed).
 
 ## No extra credit is available {-}
 
