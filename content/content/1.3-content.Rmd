@@ -406,7 +406,7 @@ Notice rise over run, $\frac{\Delta y}{\Delta x}$, is the slope, which we have d
 
 ## Utility Functions and PMTs
 
-Two utility functions $u(\cdot)$ and $v(\cdot)$ represent the same preferences iff there is a *strictly* increasing function} $f$ such that $v(\cdot)=f\left[u(\cdot)\right]$
+Two utility functions $u(\cdot)$ and $v(\cdot)$ represent the same preferences iff there is a *strictly* increasing function $f$ such that $v(\cdot)=f\left[u(\cdot)\right]$
 
 $$\begin{aligned}
 a&=(1,2)\\
