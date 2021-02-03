@@ -57,11 +57,9 @@ Answers from last class' [practice problems](/practice/1.2-practice) are posted 
 
 [Problem set 1](/assignment/01-problem-set) (on 1.1-1.4) is will be due by 11:59 PM Sunday February 14 by PDF upload to Blackboard Assignments. We will learn and practice the final few concepts this problem set covers next class.
 
-## <i class="fas fa-sigma"></i> Math Appendix
+# <i class="fas fa-sigma"></i> Appendix 1: Material on Preferences
 
-## Material on Preferences
-
-### Strict vs. Weak Preferences
+## Strict vs. Weak Preferences
 
 We have defined preferences as being **strictly** one of the following possibilities:
 
@@ -76,7 +74,7 @@ You can also have **weak** preferences, such as
 
 These are more technically complete, but it is much more simple for us to focus on strong preferences, and we don't lose much by doing so.
 
-### Assumptions of “Well-behaved Preferences”
+## Assumptions of “Well-behaved Preferences”
 
 1. **Reflexivity** : any bundle is at least as preferred as itself
 
@@ -87,7 +85,7 @@ These are more technically complete, but it is much more simple for us to focus 
 
 Are these good assumptions? As you will find typical in economics, *very often yes, sometimes no!* See the growing field of [Behavioral economics](https://en.wikipedia.org/wiki/Behavioral_economics) for interesting anomalies and exceptions to our assumptions.
 
-### Assumptions of “Well-behaved Indifference Curves”
+## Assumptions of “Well-behaved Indifference Curves”
 
 Like preferences, we make 4 major assumptions about indifference curves to describe the normal case. In fact, many of these assumptions are derived from the assumptions we made above about well-behaved preferences
 
@@ -392,7 +390,7 @@ On the left graph, the flatter curve implies the person is willing to give up *o
 
 On the right graph, the steeper curve implies the person is willing to give up *a lot* Downloads to obtain more Tickets (and vice versa). $MRS_{T,D}$ (slope) is large, indicating downloads are less valued relative to tickets. 
 
-# Math Appendix
+# <i class="fas fa-sigma"></i> Math Appendix
 
 ## Derivation of MRS Equation (as ratio of marginal utilities)
 
