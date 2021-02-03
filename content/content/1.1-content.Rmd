@@ -14,8 +14,6 @@ editor_options:
 - Section 1: *Monday, February 1, 2021*
 - Section 2: *Tuesday, February 2, 2021*
 
-**Note** if you are viewing this before February 1, some things will change by the time classes begin, so you will want to look again later!
-
 # <i class="fas fa-info-circle fa-lg"></i> Overview
 
 Welcome to ECON 306 - Microeconomic Analysis! Today's lesson will be an introduction to the course and the tools we use in microeconomics.

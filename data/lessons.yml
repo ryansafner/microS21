@@ -10,10 +10,14 @@ lessons:
     slides: "1.1-slides"
 
   - title: "1.2 Scarcity, Choice, & Cost"
-
-  - title: "1.3 Utility Maximization I"
-
-  - title: "1.4 Utility Maximization II"
+    content: "1.2-content"
+    slides: "1.2-slides"
+    practice: "1.2-practice"
+  
+  - title: "1.3 Preferences"
+    content: "1.3-content"
+    
+  - title: "1.4 Utility Maximization"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem Set 1**'
 

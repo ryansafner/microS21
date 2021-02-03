@@ -28,17 +28,20 @@ output:
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(echo=F,
                       message=F,
-                      warning=F)
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align = "center")
 library("tidyverse")
 library("mosaic")
 library("ggrepel")
-update_geom_defaults("label", list(family = "Fira Sans Condensed"))
-set.seed(256)
-theme_slides <- theme_classic() + 
-  theme(
-    text = element_text(family = "Fira Sans", size = 24)
-  )
+library("fontawesome")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
 
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
 ```
 
 class: inverse
@@ -70,8 +73,6 @@ class: inverse
 ]
 ]
 
---
-
 .pull-right[
 
 ## Equilibrium
@@ -95,18 +96,168 @@ class: inverse, center, middle
 
 ---
 
-# Consumer Behavior
+# The Logic of Choice: Ends and Means
+
+.pull-left[
+- Each of us acts .hi-purple[purposefully]
+
+- We have .hi[ends], goals, desires, objectives, etc
+
+- We use .hi[means] in the world that we believe will achieve our ends
+
+]
+
+.pull-right[
+
+![](../images/goal.png)
+]
+
+---
+
+# The Logic of Choice: Purpose
+
+.pull-left[
+
+- Acting with .hi-purple[purpose] distinguishes humans from everything else in the universe
+
+- Artificial intelligence researchers face .hi-turquoise["the frame problem"]
+    - We thought: computation is hard, perception is easy
+    - We've found: computation is easy, perception is hard!
+
+]
+
+.pull-right[
+
+.center[
+![](../images/ai.png)
+]
+]
+
+---
+
+# Causal Inference I
+
+.pull-left[
+- Machine learning and artificial intelligence are "dumb"<sup>1</sup>
+- With the right models and research designs, we *can* say "X causes Y" and quantify it!
+- Economists are in a unique position to make *causal* claims that mere statistics cannot
+]
+
+.pull-right[
+![](../images/coding.jpeg)
+]
+
+.footnote[<sup>1</sup> For more, see [my blog post](https://ryansafner.com/post/econometrics-data-science-and-causal-inference/), and Pearl & MacKenzie (2018), *The Book of Why*]
+---
+
+# Causal Inference II
+
+.pull-left[
+.center[
+![](../images/econtechcompanies.png)
+[Harvard Business Review](https://hbr.org/2019/02/why-tech-companies-hire-so-many-economists)
+]
+]
+.pull-right[
+
+.smallest[
+"First, the field of economics has spent decades developing a toolkit aimed at investigating empirical relationships, focusing on techniques to help understand which correlations speak to a causal relationship and which do not. This comes up all the time — does Uber Express Pool grow the full Uber user base, or simply draw in users from other Uber products? Should eBay advertise on Google, or does this simply syphon off people who would have come through organic search anyway? Are African-American Airbnb users rejected on the basis of their race? These are just a few of the countless questions that tech companies are grappling with, investing heavily in understanding the extent of a causal relationship."
+]
+]
+
+---
+
+# Goods and Services
+
+.pull-left[
+
+- Actions that satisfy human desires provide a .hi[service]
+
+- An object that can provide services is called an .hi[economic good] or a .hi[resource]
+
+]
+
+.pull-right[
+.center[
+![:scale 50%](../images/veggies.png)
+
+![](../images/service.png)
+]
+
+]
+
+---
+
+# Consumption
+
+.pull-left[
+
+- Goods and services provide ".hi[utility]" (satisfaction of a desire) when we .hi[consume] them 
+
+]
+
+.pull-right[
+.center[
+![](../images/happiness.png)
+]
+]
+
+---
+
+# Bads
+
+.pull-left[
+
+- An .hi[economic bad] is something that hinders our ability to satisfy our desires
+
+]
+
+.pull-right[
+.center[
+
+![](../images/pollution.png)
+
+]
+]
+
+---
+
+# The Law of Demand
+
+.pull-left[
+- Perhaps the Most Fundamental Economic Principle is the .hi[law of demand]: there is an inverse relationship between price and quantity consumed
+  - i.e. demand curves slope downwards
+
+- We investigate its source, and derive more useful properties
+
+]
+
+.pull-right[
+.center[
+![](../images/pricetag.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# A More Rigorous Framwework
+
+---
+
+# Rational Choice Theory
 
 .pull-left[
 
 - How do people decide:
-    - which products to buy
-    - which activities to dedicate their time to
-    - how to save or invest/plan for the future
+  - which products to buy
+  - which activities to dedicate their time to
+  - how to save or invest/plan for the future
+
+- .hi[Rational choice theory]: assume that they .hi[optimize] within constraints
 
 - A model of behavior we can extend to most scenarios
-
-- Answers to these questions are building blocks for .hi[demand curves]
 ]
 
 .pull-right[
@@ -122,11 +273,13 @@ class: inverse, center, middle
 
 .pull-left[
 
-- *Everyone* is a consumer
-  - "Goods and services" isn't just food, clothing, etc, but *anything* that you value!
+- Often called “Consumer Theory” in textbooks, but heed:
+
+- *Everyone* is “a consumer”
+  - "Goods and services" aren't just food, clothing, etc, but *anything* that you value! (free time, friendship, reputation, etc.)
   - Producers demand productive inputs
 
-- Consumers making purchasing decisions will be our paradigmatic *example*
+- Fair enough, consumers making purchasing decisions will be our paradigmatic *example*
   - But we are really talking about how **individuals** make choices in almost *any* context!
 ]
 
@@ -139,42 +292,13 @@ class: inverse, center, middle
 
 ---
 
-# Everyone is a Consumer
-
-.pull-left[
-
-- Even
-]
-
-.pull-right[
-
-.center[
-![:scale 100%](../images/groceryaisle.jpg)
-]
-]
-
----
-
-# 
-
-- Perhaps the Most Fundamental Economic Principle is the law of demand
-
-- We investigate its source
-
----
-
-class: inverse, center, middle
-# Consumer Behavior: Basic Framework
-
----
-
 # Consumption Bundles
 
 .pull-left[
 
 - Imagine a (very strange) supermarket sells xylophones $(x)$ and yams $(y)$
 
-- Your choices: amounts of $(x, y)$ to buy as a .hi-purple[bundle]
+- Your choices: amounts of $\{x, y\}$ to buy as a .hi-purple[bundle]
 
 ]
 
@@ -193,17 +317,20 @@ class: inverse, center, middle
 - We can represent bundles graphically
 
 - We'll stick with 2 goods $(x, y)$ in 2-dimensions
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[Example]:
+- $x$: 2 units
+- $y$: 3 units
+]
 ]
 
 .pull-right[
 ```{r, echo=F, message = F, warning = F, fig.retina=3, fig.align="center"}
-library(tidyverse)
-library(ggrepel)
 df <- tribble(
   ~x, ~y,
   2, 3
 )
-
 
 ggplot(df, aes(x = x,
                y = y))+
@@ -217,44 +344,7 @@ ggplot(df, aes(x = x,
   scale_y_continuous(breaks = seq(0,10,1), 
                      limits = c(0,10),
                      expand=c(0,0))+
-  theme_slides
-```
-]
-
----
-
-# Consumption Bundles: Graphically
-
-.pull-left[
-
-- We can represent bundles graphically
-
-- We'll stick with 2 goods $(x, y)$ in 2-dimensions
-]
-
-.pull-right[
-```{r, echo=F, message = F, warning = F, fig.retina=3, fig.align="center"}
-library(tidyverse)
-library(ggrepel)
-df <- tribble(
-  ~x, ~y,
-  2, 3
-)
-
-
-ggplot(df, aes(x = x,
-               y = y))+
-  geom_point(size =3)+
-  geom_text(aes(x=2,y=3.5), label="(2,3)", size=7)+
-  geom_segment(x=0, xend=2, y=3, yend=3, linetype="dotted", size =1)+
-  geom_segment(x=2, xend=2, y=0, yend=3, linetype="dotted", size =1)+
-  scale_x_continuous(breaks = seq(0,10,1), 
-                     limits = c(0,10),
-                     expand = c(0,0))+
-  scale_y_continuous(breaks = seq(0,10,1), 
-                     limits = c(0,10),
-                     expand=c(0,0))+
-  theme_slides
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
 ```
 ]
 
@@ -350,7 +440,7 @@ $$p_x x+p_y y = m$$
 ]
 ]
 
-.footnote[<sup>.hi[†]</sup> Note the difference (the in/equality), budget *constraint* is the **subset** of the *budget set* that *spends all income*.]
+.footnote[<sup>.hi[†]</sup> Note the difference (the in/equality): budget *constraint* is the **subset** of the *budget set* that *spends all income*.]
 
 ---
 
@@ -445,6 +535,8 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 ```
 ]
 
+---
+
 # The Budget Constraint, Graphically
 
 .pull-left[
@@ -499,7 +591,7 @@ $$y=\frac{m}{p_y}-\frac{p_x}{p_y}x$$
 
 - $y$-intercept: $\frac{m}{p_y}$
 - $x$-intercept: $\frac{m}{p_x}$
-- slope: $\frac{p_x}{p_y}$
+- slope: $-\frac{p_x}{p_y}$
 
 ]
 
@@ -535,8 +627,10 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 # The Budget Constraint: Example
 
-.content-box-green[
-.hi-green[**Example**]: Suppose you have an income of $50 to spend on lattes $(l)$ and burritos $(b)$. The price of lattes is $5 and the price of burritos is $10. Let $l$ be on the horizontal axis and $b$ be on the vertical axis.
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[**Example**]: Suppose you have an income of $50 to spend on lattes $(l)$ and burritos $(b)$. The price of lattes is $5 and the price of burritos is $10. 
+
+Let $l$ be on the horizontal axis and $b$ be on the vertical axis.
 
 1. Write an equation for the budget constraint (in graphable form).
 
@@ -549,7 +643,7 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 .pull-left[
 
-- Points .hi-purple[on] the line spend all income
+- Points .hi-blue[on the line] spend all income
   - A: \\($5(0x)+$10(5y) = $50\\) 
   - B: \\($5(10x)+$10(0y) = $50\\)
   - C: \\($5(2x)+$10(4y) = $50\\) 
@@ -591,6 +685,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   geom_text_repel(data = subset(points, letter %in% c("A", "B", "C", "D")),
                   aes(x=x , y = y, label = letter),
                   color="blue", size=6,
+                  seed = 2,
                   point.padding=0.25)+
   scale_x_continuous(breaks=seq(0,10,1),
                      limits=c(0,10),
@@ -611,7 +706,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-- Points .hi-purple[on] the line spend all income
+- Points .hi-blue[on the line] spend all income
   - A: \\($5(0x)+$10(5y) = $50\\) 
   - B: \\($5(10x)+$10(0y) = $50\\)
   - C: \\($5(2x)+$10(4y) = $50\\) 
@@ -633,12 +728,14 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   geom_text_repel(data = subset(points, letter %in% c("A", "B", "C", "D")),
                   aes(x=x , y = y, label = letter),
                   color="blue", size=6,
+                  seed = 2,
                   point.padding=0.25)+
   geom_point(data = subset(points, letter=="E"),
              aes(x = x, y = y), size=4, color = "green")+
   geom_text_repel(data = subset(points, letter=="E"),
                   aes(x=x , y = y, label = letter),
                   color="green", size=6,
+                  seed = 2,
                   point.padding=0.25)+
   stat_function(fun=BC1, geom="line", size=2, aes(color="BC"))+
   scale_x_continuous(breaks=seq(0,10,1),
@@ -660,7 +757,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-- Points .hi-purple[on] the line spend all income
+- Points .hi-blue[on the line] spend all income
   - A: \\($5(0x)+$10(5y) = $50\\) 
   - B: \\($5(10x)+$10(0y) = $50\\)
   - C: \\($5(2x)+$10(4y) = $50\\) 
@@ -684,12 +781,14 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   geom_text_repel(data = subset(points, letter %in% c("A", "B", "C", "D")),
                   aes(x=x , y = y, label = letter),
                   color="blue", size=6,
+                  seed = 2,
                   point.padding=0.25)+
   geom_point(data = subset(points, letter=="E"),
              aes(x = x, y = y), size=4, color = "green")+
   geom_text_repel(data = subset(points, letter=="E"),
                   aes(x=x , y = y, label = letter),
                   color="green", size=6,
+                  seed = 2,
                   point.padding=0.25)+
   geom_point(data = subset(points, letter=="F"),
              aes(x = x, y = y), size=4, color = "red")+
@@ -713,44 +812,16 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# A Few Notes on Goods
-
-.pull-left[
-
-- Budget constraint: set of bundles where individual spends all her income
-
-- Don't want “unspent” (unused) income
-  - Allocate to goods like cash, savings, etc.
-
-]
-
----
-
-# A Few Notes on Goods
-
-.pull-left[
-
-- We can get a surprising amount of insight with just two goods
-
-- If you like, make $y$ a composite good of "everything else" (or income) with a price of 1 (a dollar)
-
-]
-
-.pull-right[
-
-]
-
----
-
 # Interpretting the Slope
 
 .pull-left[
 
-- **Slope**: market-rate of .hi-purple[tradeoff] between $x$ and $y$
+- **Slope**: .hi-purple[tradeoff] between $x$ and $y$ at market prices
+  - Market .hi-purple[“exchange rate”] between $x$ and $y$
 
-- .hi-purple[Relative price] of $x$ or its .hi-purple[opportunity cost]:
+- .hi-purple[*Relative* price] of $x$, or the .hi-purple[opportunity cost] of $x$:
 
-> Consuming 1 more unit of $x$ requires giving up $\frac{p_x}{p_y}$ units of $y$
+> Consuming 1 more unit of $x$ requires giving up $\left(\frac{p_x}{p_y}\right)$ units of $y$
 
 ]
 
@@ -783,7 +854,8 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 - .hi[Opportunity cost]: value of next best foregone opportunity
 
-- Even though we have money-prices, when you consume $x$, you're giving up the ability to consume $y$!
+- Even though we have prices denoted in dollars, when you consume x, you're really giving up .hi-turquoise[the opportunity to consume y]!
+  - (in fact, we can do this without money, and it would be the same)
 
 ]
 
@@ -920,7 +992,8 @@ y &= \frac{\color{#e64173}{m}}{\color{#e64173}{p_y}}-\frac{\color{#e64173}{p_x}}
   - $\color{#e64173}{m}$: income
   - $\color{#e64173}{p_x}, \color{#e64173}{p_y}$: market prices
 
-- Economic analysis: .hi-purple[how changes in constraints affect people's choices]
+- Economic analysis: .hi-turquoise[how changes in constraints affect people's choices]
+  - “incentives”
 
 ]
 
@@ -937,15 +1010,19 @@ y &= \frac{\color{#e64173}{m}}{\color{#e64173}{p_y}}-\frac{\color{#e64173}{p_x}}
 
 .pull-left[
 
-- Changes in .hi-purple[income] $\implies$ a *parallel* shift in budget constraint
+- Changes in .hi-purple[income] $\implies$ a *parallel* shift
 
-.content-box-green[
-.hi-green[**Example**]: An increase in income
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[**Example**]: Income increases $m_1 \rightarrow m_2$
 
-- Same slope (relative prices don't change!)
+- Slope unchanged (no change in prices!)
 
 - .hi-green[Gain of affordable bundles]
+
 ]
+
+- Exact opposite shift for a .hi-red[decrease in income]
+
 ]
 
 .pull-right[
@@ -992,8 +1069,8 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 # Changes in Income, $m$: Example
 
-.content-box-green[
-**Example**: Continuing the lattes and burritos example, (income is $50, lattes are $5, burritos are $10), suppose your income doubles to $100.
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[Example]: Continuing the lattes and burritos example, (income is $50, lattes are $5, burritos are $10), suppose your income doubles to $100.
 
 1. Find the equation of the new budget constraint (in graphable form).
 
@@ -1006,10 +1083,10 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 .pull-left[
 
-- Changes in .hi-purple[relative prices]: *rotate* the budget constraint
+- Change in .hi-purple[relative prices]: *rotate* the budget constraint
 
-.content-box-green[
-.hi-green[**Example**]: An increase in the price of $x$
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[**Example**]: An **increase** in the price of $x$
 
 - Slope steepens: $-\frac{p_x'}{p_y}$
 
@@ -1059,10 +1136,10 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 - Changes in .hi-purple[relative prices]: *rotate* the budget constraint
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .hi-green[**Example**]: A decrease in the price of $y$
 
-- Slope flattens: $-\frac{p_x}{p_y'}$
+- Slope steepens: $-\frac{p_x}{p_y'}$
 
 - .hi-green[Gain of affordable bundles]
 ]
@@ -1110,9 +1187,11 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 - .hi-purple[Economic analysis is about (changes in) *relative* prices]
 
-- Budget constraint slope is $\left(\frac{p_x}{p_y}\right)$
+- Budget constraint slope (opportunity cost of x) is $-\left(\frac{p_x}{p_y}\right)$
 
-- Only **"real"** changes in *relative* prices (from changes in market valuations) change consumer constraints
+- Only .hi-turqouise["real"] changes in *relative* prices (from changes in market conditions) change consumer constraints (and alter behavior)
+
+- i.e. it's not about “the price of $x$,” its about “the price of x *relative to the price of y*”!
 
 ]
 
@@ -1129,9 +1208,11 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 .pull-left[
 
-- **"Nominal"** prices are often meaningless!
+- .hi-turquoise[“Nominal”] prices are often meaningless!
+  - Need to make *comparisons* between prices of different goods
 
-- .hi-green[**Example**]: Imagine yourself in a strange country. All you know is that the price of bread, in local currency, is "6"...
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[Example]: Imagine yourself in a strange country. All you know is that the price of bread, in local currency, is “6”...
 ]
 
 .pull-right[
@@ -1145,7 +1226,7 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 # Changes in Relative Prices: Example
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 **Example**: Continuing the lattes and burritos example (income is $50, lattes are $5, burritos are $10).
 
 1. Suppose the price of lattes doubles from $5 to $10. Find the equation of the new budget constraint and graph it.
@@ -1155,15 +1236,42 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 
 ---
 
-# Demand Does Not Require Individual Rationality
+# Budget Constraint and the Law of Demand
 
-- A lot of hubbabaloo about "rationality"
+.pull-left[
 
-- Notice that so far, I've made no assumptions about rationality, preferences, utility, etc.
+- Recall the .hi[law of demand]
 
-- It's important for you to see that the law of demand does not require rational people!
+- We can derive it right off the budget constraint!
+  - As $\uparrow p_x$, person can consume less $x$
+  - As $\downarrow p_x$, person can consume more $x$
 
-- It is the institution of markets that "makes" people rational
-  - Forces you to bear a personal cost
+- Notice I have made **no assumptions** about rationality, preferences, utility, etc to get this!
 
-- Note this is true even in absence of markets! It's the result of **scarcity**
+]
+
+.pull-right[
+```{r, ref.label="BC-x-change-plot"}
+```
+
+]
+
+---
+
+# Markets Do Not Require Individual Rationality
+
+.pull-left[
+- A lot of griping about "rationality" and whether people are truly "rational"
+  - [Behavioral economics](https://en.wikipedia.org/wiki/Behavioral_economics), for example
+
+- The law of demand does not require rational people! (utility-maximizers, etc)
+  - or markets, for that matter, it's the direct result of .hi[scarcity]
+
+- This is important: .hi-turquoise[markets don't *require* rational people, they *make* people rational!]
+]
+
+.pull-right[
+.center[
+![](../images/mind.png)
+]
+]
