@@ -5,7 +5,7 @@ pagedown::chrome_print(input = "https://microS21.classes.ryansafner.com/slides/1
 
 # create png of first slide
 pagedown::chrome_print(input = "https://microS21.classes.ryansafner.com/slides/1.2-slides.html",
-                       output = "static/slides/1.1-slides.png",
+                       output = "static/slides/1.2-slides.png",
                        selector = "div.remark-slide",
                        format = "png",
                        timeout = 300)
