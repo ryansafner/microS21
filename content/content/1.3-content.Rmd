@@ -10,6 +10,17 @@ output:
 editor_options: 
   chunk_output_type: console
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align="center")
+library("tidyverse")
+library("ggrepel")
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+```
+
 
 - Section 1: *Monday, February 8, 2021*
 - Section 2: *Tuesday, February 9, 2021*
@@ -21,9 +32,10 @@ From last class, we know what constraints individuals face in the market (repres
 As I mentioned in [last class' page](/content/1.2-content), a lot of the "in the weeds" details about preference assumptions, indifference curves, and utility functions are a waste of your time. If you look at the textbook chapter, I am skipping a lot of "the fat," and relegating it to an appendix at the bottom of this page.^[I used to spend an entire week just teaching about preferences.] Again, I reiterate that if you are interested in more advanced economics training, it is *essential* that you master all of these details. But not for this course.
 
 Today we focus on the essential tools for fitting preferences into our optimization model:
-  - **indifference curves**: each of which is the set of all bundles that one is *indifferent between* (and that give the same amount utility)
-  - **utility functions**: which measure the *ordinal* (but not cardinal!) utility level of any given bundle; for comparisons only!
-  - **marginal rate of substitution**: the slope of the indifference curve, representing an individual's subjective tradeoff between goods; measured by the ratio of marginal utilities: $MRS_{x,y}=-\frac{MU_x}{MU_y}$
+
+- **indifference curves**: each of which is the set of all bundles that one is *indifferent between* (and that give the same amount utility)
+- **utility functions**: which measure the *ordinal* (but not cardinal!) utility level of any given bundle; for comparisons only!
+- **marginal rate of substitution**: the slope of the indifference curve, representing an individual's subjective tradeoff between goods; measured by the ratio of marginal utilities: $MRS_{x,y}=-\frac{MU_x}{MU_y}$
 
 # <i class="fas fa-book-reader fa-lg"></i> Readings
 
@@ -45,7 +57,7 @@ Answers from last class' [practice problems](/practice/1.2-practice) are posted 
 
 [Problem set 1](/assignment/01-problem-set) (on 1.1-1.4) is will be due by 11:59 PM Sunday February 14 by PDF upload to Blackboard Assignments. We will learn and practice the final few concepts this problem set covers next class.
 
-## Math Appendix
+## <i class="fas fa-sigma"></i> Math Appendix
 
 ## Material on Preferences
 
@@ -84,8 +96,6 @@ Like preferences, we make 4 major assumptions about indifference curves to descr
 Every possible bundle (point on graph) is on an indifference curve.
 
 ```{r IC-ass-1, fig.retina=3, fig.align="center", fig.width=6}
-library(tidyverse)
-library(ggrepel)
 
 IC_10=function(x){100/x}
 IC_9=function(x){81/x}

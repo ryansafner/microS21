@@ -21,74 +21,6 @@ editor_options:
 <script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
 <link href="/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
 <script src="/rmarkdown-libs/plotly-main/plotly-latest.min.js"></script>
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    background-color: #ffffff;
-    color: #a0a0a0;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-left: 4px; }
-div.sourceCode
-  { color: #1f1c1b; background-color: #ffffff; }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span { color: #1f1c1b; } /* Normal */
-code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
-code span.an { color: #ca60ca; } /* Annotation */
-code span.at { color: #0057ae; } /* Attribute */
-code span.bn { color: #b08000; } /* BaseN */
-code span.bu { color: #644a9b; font-weight: bold; } /* BuiltIn */
-code span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #924c9d; } /* Char */
-code span.cn { color: #aa5500; } /* Constant */
-code span.co { color: #898887; } /* Comment */
-code span.cv { color: #0095ff; } /* CommentVar */
-code span.do { color: #607880; } /* Documentation */
-code span.dt { color: #0057ae; } /* DataType */
-code span.dv { color: #b08000; } /* DecVal */
-code span.er { color: #bf0303; text-decoration: underline; } /* Error */
-code span.ex { color: #0095ff; font-weight: bold; } /* Extension */
-code span.fl { color: #b08000; } /* Float */
-code span.fu { color: #644a9b; } /* Function */
-code span.im { color: #ff5500; } /* Import */
-code span.in { color: #b08000; } /* Information */
-code span.kw { color: #1f1c1b; font-weight: bold; } /* Keyword */
-code span.op { color: #1f1c1b; } /* Operator */
-code span.ot { color: #006e28; } /* Other */
-code span.pp { color: #006e28; } /* Preprocessor */
-code span.re { color: #0057ae; background-color: #e0e9f8; } /* RegionMarker */
-code span.sc { color: #3daee9; } /* SpecialChar */
-code span.ss { color: #ff5500; } /* SpecialString */
-code span.st { color: #bf0303; } /* String */
-code span.va { color: #0057ae; } /* Variable */
-code span.vs { color: #bf0303; } /* VerbatimString */
-code span.wa { color: #bf0303; } /* Warning */
-</style>
 <!-- /BLOGDOWN-HEAD -->
 
 <h2>Contents</h2>
@@ -101,7 +33,7 @@ code span.wa { color: #bf0303; } /* Warning */
 <li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
 <ul>
 <li><a href="#problem-set-1">Problem Set 1</a></li>
-<li><a href="#math-appendix">Math Appendix</a></li>
+<li><a href="#math-appendix"><i class="fas fa-sigma"></i> Math Appendix</a></li>
 <li><a href="#material-on-preferences">Material on Preferences</a></li>
 <li><a href="#steepness-indifference-curves-for-neutrals">Steepness &amp; Indifference Curves for Neutrals</a></li>
 </ul></li>
@@ -128,10 +60,12 @@ code span.wa { color: #bf0303; } /* Warning */
 <p>As I mentioned in <a href="/content/1.2-content">last class’ page</a>, a lot of the “in the weeds” details about preference assumptions, indifference curves, and utility functions are a waste of your time. If you look at the textbook chapter, I am skipping a lot of “the fat,” and relegating it to an appendix at the bottom of this page.<span><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">I used to spend an entire week just teaching about preferences.<br />
 <br />
 </span></span> Again, I reiterate that if you are interested in more advanced economics training, it is <em>essential</em> that you master all of these details. But not for this course.</p>
-<p>Today we focus on the essential tools for fitting preferences into our optimization model:
-- <strong>indifference curves</strong>: each of which is the set of all bundles that one is <em>indifferent between</em> (and that give the same amount utility)
-- <strong>utility functions</strong>: which measure the <em>ordinal</em> (but not cardinal!) utility level of any given bundle; for comparisons only!
-- <strong>marginal rate of substitution</strong>: the slope of the indifference curve, representing an individual’s subjective tradeoff between goods; measured by the ratio of marginal utilities: <span class="math inline">\(MRS_{x,y}=-\frac{MU_x}{MU_y}\)</span></p>
+<p>Today we focus on the essential tools for fitting preferences into our optimization model:</p>
+<ul>
+<li><strong>indifference curves</strong>: each of which is the set of all bundles that one is <em>indifferent between</em> (and that give the same amount utility)</li>
+<li><strong>utility functions</strong>: which measure the <em>ordinal</em> (but not cardinal!) utility level of any given bundle; for comparisons only!</li>
+<li><strong>marginal rate of substitution</strong>: the slope of the indifference curve, representing an individual’s subjective tradeoff between goods; measured by the ratio of marginal utilities: <span class="math inline">\(MRS_{x,y}=-\frac{MU_x}{MU_y}\)</span></li>
+</ul>
 <h2 id="readings"><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
 <ul>
 <li><i class="fas fa-book"></i> Ch. 4.1-4.2 in <span class="citation">@textbook</span></li>
@@ -147,7 +81,7 @@ code span.wa { color: #bf0303; } /* Warning */
 <h2 id="assignments"><i class="fas fa-laptop-code"></i> Assignments</h2>
 <h3 id="problem-set-1">Problem Set 1</h3>
 <p><a href="/assignment/01-problem-set">Problem set 1</a> (on 1.1-1.4) is will be due by 11:59 PM Sunday February 14 by PDF upload to Blackboard Assignments. We will learn and practice the final few concepts this problem set covers next class.</p>
-<h3 id="math-appendix">Math Appendix</h3>
+<h3 id="math-appendix"><i class="fas fa-sigma"></i> Math Appendix</h3>
 <h3 id="material-on-preferences">Material on Preferences</h3>
 <h4 id="strict-vs.-weak-preferences">Strict vs. Weak Preferences</h4>
 <p>We have defined preferences as being <strong>strictly</strong> one of the following possibilities:</p>
@@ -178,101 +112,12 @@ code span.wa { color: #bf0303; } /* Warning */
 <li><strong>We can always draw indifference curves:</strong> two bundles can always be ranked</li>
 </ol>
 <p>Every possible bundle (point on graph) is on an indifference curve.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
-<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
-<pre><code>## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
-## ✓ tibble  3.0.4     ✓ dplyr   1.0.2
-## ✓ tidyr   1.1.2     ✓ stringr 1.4.0
-## ✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
-<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggrepel)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>IC_10<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">100</span><span class="sc">/</span>x}</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>IC_9<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">81</span><span class="sc">/</span>x}</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>IC_8<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">64</span><span class="sc">/</span>x}</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>IC_7<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">49</span><span class="sc">/</span>x}</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>IC_6<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">36</span><span class="sc">/</span>x}</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>IC_5<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">25</span><span class="sc">/</span>x}</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>IC_4<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">16</span><span class="sc">/</span>x}</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>IC_3<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">9</span><span class="sc">/</span>x}</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>IC_2<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">4</span><span class="sc">/</span>x}</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>IC_1<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">1</span><span class="sc">/</span>x}</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>)), <span class="fu">aes</span>(<span class="at">x=</span>x))<span class="sc">+</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_10, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_9, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_8, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_7, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_6, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_5, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_4, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_3, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_2, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_1, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">1</span>),</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>                     <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>),</span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand=</span><span class="fu">expand_scale</span>(<span class="at">mult=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">0.1</span>)))<span class="sc">+</span></span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">1</span>),</span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>                     <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>),</span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand=</span><span class="fu">expand_scale</span>(<span class="at">mult=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">0.1</span>)))<span class="sc">+</span></span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_viridis_d</span>(<span class="dv">0</span>,<span class="dv">10</span>)<span class="sc">+</span></span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>  <span class="co">#scale_colour_manual(&quot;Curves&quot;, values = line_colors, guide=F)+</span></span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;x&quot;</span>,</span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;y&quot;</span>)<span class="sc">+</span></span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>(<span class="at">base_family =</span> <span class="st">&quot;Fira Sans Condensed&quot;</span>, <span class="at">base_size=</span><span class="dv">20</span>)</span></code></pre></div>
-<pre><code>## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.</code></pre>
 <p><img src="/content/1.3-content_files/figure-html/IC-ass-1-1.png" width="576" style="display: block; margin: auto;" /></p>
 <p>Of course, this means that this entire graph is <em>full</em> of indifference curves - every single possible point is on <em>some</em> indifference curve (and this whole graph would just be a solid block of black). Naturally, it’s pointless to draw all the indifference curves, we just want to show a few to make our analysis meaningful. But the general idea comes from assumption 2 of preferences: <em>any two bundles can be compared</em>, as we can compare two points on this graph and make a judgment.</p>
 <ol start="2" style="list-style-type: decimal">
 <li><strong>Indifference curves are monotonic</strong>, which means practically that “more is preferred to less”</li>
 </ol>
 <p>For any bundle <span class="math inline">\(b\)</span> with more of at least one good than bundle <span class="math inline">\(a \implies a \prec b\)</span>. Movements to the Northeast always preferable, while movements to the Southwest always unpreferable.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>points<span class="ot">&lt;-</span><span class="fu">tribble</span>(</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>letter, <span class="sc">~</span>x, <span class="sc">~</span>y,</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;A&quot;</span>, <span class="dv">2</span>, <span class="dv">2</span>,</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>asfill<span class="ot">&lt;-</span><span class="fu">tibble</span>(<span class="at">fx=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="fl">0.1</span>),</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">fymin=</span><span class="dv">4</span><span class="sc">/</span>fx,</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>             <span class="at">fymax=</span><span class="fu">rep</span>(<span class="dv">10</span>, <span class="fu">length</span>(fx))</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>asfill2<span class="ot">&lt;-</span><span class="fu">tibble</span>(<span class="at">fx=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="fl">0.1</span>),</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>             <span class="at">fymin=</span><span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">length</span>(fx)),</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>             <span class="at">fymax=</span><span class="dv">4</span><span class="sc">/</span>fx</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>IC_as<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">4</span><span class="sc">/</span>x}</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>)), <span class="fu">aes</span>(<span class="at">x=</span>x))<span class="sc">+</span></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_as, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">color=</span><span class="st">&quot;blue&quot;</span>)<span class="sc">+</span></span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="at">data=</span>asfill,<span class="fu">aes</span>(<span class="at">x=</span>fx,<span class="at">ymin=</span>fymin,<span class="at">ymax=</span>fymax),<span class="at">fill=</span><span class="st">&quot;green&quot;</span>, <span class="at">alpha=</span><span class="fl">0.4</span>)<span class="sc">+</span></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="at">data=</span>asfill2,<span class="fu">aes</span>(<span class="at">x=</span>fx,<span class="at">ymin=</span>fymin,<span class="at">ymax=</span>fymax),<span class="at">fill=</span><span class="st">&quot;red&quot;</span>, <span class="at">alpha=</span><span class="fl">0.4</span>)<span class="sc">+</span></span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_rect</span>(<span class="fu">aes</span>(<span class="at">xmin=</span><span class="dv">0</span>,<span class="at">xmax=</span><span class="fl">0.4</span>,<span class="at">ymin=</span><span class="dv">0</span>,<span class="at">ymax=</span><span class="dv">10</span>), <span class="at">fill=</span><span class="st">&quot;red&quot;</span>, <span class="at">alpha=</span><span class="fl">0.2</span>)<span class="sc">+</span></span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> points,</span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>             <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>x, <span class="at">y=</span>y),</span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">3</span>)<span class="sc">+</span></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data =</span> points,</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>             <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>x, <span class="at">y=</span>y,</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>             <span class="at">label =</span> letter),</span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">6</span>)<span class="sc">+</span></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">1</span>),</span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>                     <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>),</span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand=</span><span class="fu">expand_scale</span>(<span class="at">mult=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">0.1</span>)))<span class="sc">+</span></span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">1</span>),</span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>                     <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>),</span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand=</span><span class="fu">expand_scale</span>(<span class="at">mult=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">0.1</span>)))<span class="sc">+</span></span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;x&quot;</span>,</span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;y&quot;</span>)<span class="sc">+</span></span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>(<span class="at">base_family =</span> <span class="st">&quot;Fira Sans Condensed&quot;</span>, <span class="at">base_size=</span><span class="dv">20</span>)</span></code></pre></div>
-<pre><code>## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.</code></pre>
 <p><img src="/content/1.3-content_files/figure-html/IC-ass-2-1.png" width="576" style="display: block; margin: auto;" /></p>
 <p>Here’s a <em>challenge</em>: what would indifference curves look like if one of the axes contained a <em>bad</em>, rather than a good? In this case, we would violate the assumption of monotonicity!</p>
 <ol start="3" style="list-style-type: decimal">
@@ -281,45 +126,6 @@ code span.wa { color: #bf0303; } /* Warning */
 <p>From experience, people generally prefer variety in their consumption. Rather than having one bundle that is “extreme” (a lot of one good and little or none of another), they tend to prefer a bundle with a better “mix” or “balance” of some of both goods.</p>
 <p>Take our example from class, hunting for apartments. Apartment <span class="math inline">\(A\)</span> is very large but near very few friends, whereas apartment <span class="math inline">\(B\)</span> is very small but near many friends. If we could find some apartment, <span class="math inline">\(C\)</span>, that is a weighted average of the two, with a better mix of size and friends, it would be preferred, and thus, on a higher indifference curve than <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span>!</p>
 <p>Mathematically, this feature is because indifference curves are normally convex. A function is <strong>convex</strong> when a line connecting any two points on the function lies <em>above</em> the function itself. Check the math review guide for more information.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>apts4<span class="ot">&lt;-</span><span class="fu">tribble</span>(</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>letter, <span class="sc">~</span>x, <span class="sc">~</span>y,</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;A&quot;</span>, <span class="dv">1</span>, <span class="dv">1200</span>,</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;B&quot;</span>, <span class="dv">6</span>, <span class="dv">200</span>,</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;C&quot;</span>, <span class="dv">3</span>, <span class="dv">800</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>IC<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">1200</span><span class="sc">/</span>x}</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>line_colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;IC&quot;</span> <span class="ot">=</span> <span class="st">&quot;blue&quot;</span>)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>apts<span class="ot">&lt;-</span><span class="fu">tribble</span>(</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>letter, <span class="sc">~</span>x, <span class="sc">~</span>y,</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;A&quot;</span>, <span class="dv">1</span>, <span class="dv">1200</span>,</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;B&quot;</span>, <span class="dv">3</span>, <span class="dv">400</span>,</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;C&quot;</span>, <span class="dv">6</span>, <span class="dv">200</span>,</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>)), <span class="fu">aes</span>(<span class="at">x=</span>x))<span class="sc">+</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">color=</span><span class="st">&quot;blue&quot;</span>)<span class="sc">+</span></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> apts4,</span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>             <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>x, <span class="at">y=</span>y),</span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">3</span>)<span class="sc">+</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data =</span> apts4,</span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>             <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>x, <span class="at">y=</span>y,</span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>             <span class="at">label =</span> letter),</span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">6</span>)<span class="sc">+</span></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="dv">1</span>, <span class="at">xend=</span><span class="dv">6</span>, <span class="at">y=</span><span class="dv">1200</span>, <span class="at">yend=</span><span class="dv">200</span>), <span class="at">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="at">color=</span><span class="st">&quot;red&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">1</span>),</span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>                     <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>),</span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand=</span><span class="fu">expand_scale</span>(<span class="at">mult=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">0.1</span>)))<span class="sc">+</span></span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">2000</span>,<span class="dv">200</span>),</span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>                     <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">2000</span>),</span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand=</span><span class="fu">expand_scale</span>(<span class="at">mult=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">0.1</span>)))<span class="sc">+</span></span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">guide=</span>F)<span class="sc">+</span></span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Friends Nearby&quot;</span>,</span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="fu">expression</span>(ft<span class="sc">^</span><span class="dv">2</span>))<span class="sc">+</span></span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>(<span class="at">base_family =</span> <span class="st">&quot;Fira Sans Condensed&quot;</span>, <span class="at">base_size=</span><span class="dv">20</span>)</span></code></pre></div>
-<pre><code>## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.</code></pre>
 <p><img src="/content/1.3-content_files/figure-html/IC-as-3-1.png" width="576" style="display: block; margin: auto;" /></p>
 <p>Here’s a <em>challenge</em>: what would <em>non-convex</em> (e.g. <em>concave</em>) curves look like, and what preferences would cause that situation?</p>
 <ol start="4" style="list-style-type: decimal">
@@ -330,71 +136,13 @@ code span.wa { color: #bf0303; } /* Warning */
 - On the orange indifference curve <code>\\(B \sim C\\)</code>
 - But clearly <code>\\(C\\)</code> <span class="math inline">\(\succ\)</span> .<code>\\(B\\)</code>
 - Preferences are not transitive!</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>points_as4<span class="ot">&lt;-</span><span class="fu">tribble</span>(</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>letter, <span class="sc">~</span>x, <span class="sc">~</span>y,</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;A&quot;</span>, <span class="fl">2.125</span>, <span class="dv">570</span>,</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;B&quot;</span>, <span class="dv">6</span>, <span class="dv">200</span>,</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;C&quot;</span>, <span class="dv">8</span>, <span class="dv">425</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>IC_as4<span class="ot">=</span><span class="cf">function</span>(x){(<span class="dv">400</span><span class="sc">/</span>x)<span class="sc">+</span><span class="dv">375</span>}</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>)), <span class="fu">aes</span>(<span class="at">x=</span>x))<span class="sc">+</span></span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">color=</span><span class="st">&quot;blue&quot;</span>)<span class="sc">+</span></span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_as4, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">color=</span><span class="st">&quot;orange&quot;</span>)<span class="sc">+</span></span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> points_as4,</span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>             <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>x, <span class="at">y=</span>y),</span>
-<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">3</span>)<span class="sc">+</span></span>
-<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data =</span> points_as4,</span>
-<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>             <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>x, <span class="at">y=</span>y,</span>
-<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>             <span class="at">label =</span> letter),</span>
-<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">6</span>)<span class="sc">+</span></span>
-<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">1</span>),</span>
-<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>                     <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>),</span>
-<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand=</span><span class="fu">expand_scale</span>(<span class="at">mult=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">0.1</span>)))<span class="sc">+</span></span>
-<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">2000</span>,<span class="dv">200</span>),</span>
-<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>                     <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">2000</span>),</span>
-<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand=</span><span class="fu">expand_scale</span>(<span class="at">mult=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">0.1</span>)))<span class="sc">+</span></span>
-<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">guide=</span>F)<span class="sc">+</span></span>
-<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Friends Nearby&quot;</span>,</span>
-<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="fu">expression</span>(ft<span class="sc">^</span><span class="dv">2</span>))<span class="sc">+</span></span>
-<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>(<span class="at">base_family =</span> <span class="st">&quot;Fira Sans Condensed&quot;</span>, <span class="at">base_size=</span><span class="dv">20</span>)</span></code></pre></div>
-<pre><code>## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.</code></pre>
 <p><img src="/content/1.3-content_files/figure-html/IC-as-4-1.png" width="576" style="display: block; margin: auto;" /></p>
 <h3 id="steepness-indifference-curves-for-neutrals">Steepness &amp; Indifference Curves for Neutrals</h3>
 <p>The Steepness of indifference curves tells us how consumers trade off between goods.</p>
-<pre><code>## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.</code></pre>
 <p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Perfectly vertical curves (left) <span class="math inline">\(\implies\)</span> indifference between having more (point B) or fewer (point A) downloads. There is no tradeoff a person would make to acquire more Downloads, they truly <em>do not care</em> about them at all. Thus, on the left graph, Downloads would be a neutral.</p>
 <p>Perfectly horizontal curves (right) <span class="math inline">\(\implies\)</span> indifference between having more (point B) or fewer (point A) Tickets. There is no tradeoff a person would make to acquire more Tickets, they truly do not care about them at all. Thus, on the right graph, Tickets would be a neutral.</p>
 <p>We can look at less extreme cases:</p>
-<pre><code>## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.</code></pre>
-<pre><code>## Warning in is.na(x): is.na() applied to non-(list or vector) of type
-## &#39;expression&#39;
-
-## Warning in is.na(x): is.na() applied to non-(list or vector) of type
-## &#39;expression&#39;
-
-## Warning in is.na(x): is.na() applied to non-(list or vector) of type
-## &#39;expression&#39;
-
-## Warning in is.na(x): is.na() applied to non-(list or vector) of type
-## &#39;expression&#39;</code></pre>
 <p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>On the left graph, the flatter curve implies the person is willing to give up <em>only a few</em> Downloads to obtain more Tickets (and vice versa). <span class="math inline">\(MRS_{T,D}\)</span> (slope) is small, indicating downloads are more highly valued relative to tickets.</p>
 <p>On the right graph, the steeper curve implies the person is willing to give up <em>a lot</em> Downloads to obtain more Tickets (and vice versa). <span class="math inline">\(MRS_{T,D}\)</span> (slope) is large, indicating downloads are less valued relative to tickets.</p>
@@ -449,37 +197,8 @@ c&amp;=(4,3)\\
 <br />
 </span></span> indifference curve for apples <span class="math inline">\((a)\)</span> and bananas <span class="math inline">\((b)\)</span>:
 <span class="math display">\[u(a,b)=ab\]</span></p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;plotly&quot;</span>)</span></code></pre></div>
-<pre><code>## 
-## Attaching package: &#39;plotly&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:ggplot2&#39;:
-## 
-##     last_plot</code></pre>
-<pre><code>## The following object is masked from &#39;package:stats&#39;:
-## 
-##     filter</code></pre>
-<pre><code>## The following object is masked from &#39;package:graphics&#39;:
-## 
-##     layout</code></pre>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>x_vec <span class="ot">=</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>y_vec <span class="ot">=</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>x_matrix <span class="ot">=</span> <span class="fu">matrix</span>(<span class="fu">c</span>(x_vec), <span class="at">nrow =</span> <span class="dv">10</span>, <span class="at">ncol =</span> <span class="dv">1</span>)</span></code></pre></div>
-<pre><code>## Warning in matrix(c(x_vec), nrow = 10, ncol = 1): data length [11] is not a sub-
-## multiple or multiple of the number of rows [10]</code></pre>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>y_matrix <span class="ot">=</span> <span class="fu">matrix</span>(<span class="fu">c</span>(y_vec), <span class="at">nrow =</span> <span class="dv">1</span>, <span class="at">ncol =</span> <span class="dv">10</span>)</span></code></pre></div>
-<pre><code>## Warning in matrix(c(y_vec), nrow = 1, ncol = 10): data length [11] is not a sub-
-## multiple or multiple of the number of columns [10]</code></pre>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>z_matrix <span class="ot">=</span> <span class="fu">matrix</span>(<span class="fu">c</span>(x_matrix <span class="sc">%*%</span> y_matrix),<span class="at">nrow=</span><span class="dv">10</span>,<span class="at">ncol=</span><span class="dv">10</span>)</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> x_vec,</span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> y_vec,</span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">z =</span> z_matrix) <span class="sc">%&gt;%</span></span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_surface</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">scene =</span> <span class="fu">list</span>(<span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title=</span><span class="st">&quot;a&quot;</span>),</span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>                      <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title=</span><span class="st">&quot;b&quot;</span>),</span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>                      <span class="at">zaxis =</span> <span class="fu">list</span>(<span class="at">title=</span><span class="st">&quot;Utility&quot;</span>)))</span></code></pre></div>
 <div id="htmlwidget-1" style="width:672px;height:528px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"7d3f27cbd404":["function () ","plotlyVisDat"]},"cur_data":"7d3f27cbd404","attrs":{"7d3f27cbd404":{"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,2,3,4,5,6,7,8,9],[0,2,4,6,8,10,12,14,16,18],[0,3,6,9,12,15,18,21,24,27],[0,4,8,12,16,20,24,28,32,36],[0,5,10,15,20,25,30,35,40,45],[0,6,12,18,24,30,36,42,48,54],[0,7,14,21,28,35,42,49,56,63],[0,8,16,24,32,40,48,56,64,72],[0,9,18,27,36,45,54,63,72,81]],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"a"},"yaxis":{"title":"b"},"zaxis":{"title":"Utility"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"showSendToCloud":false},"data":[{"colorbar":{"title":"","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":true,"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,2,3,4,5,6,7,8,9],[0,2,4,6,8,10,12,14,16,18],[0,3,6,9,12,15,18,21,24,27],[0,4,8,12,16,20,24,28,32,36],[0,5,10,15,20,25,30,35,40,45],[0,6,12,18,24,30,36,42,48,54],[0,7,14,21,28,35,42,49,56,63],[0,8,16,24,32,40,48,56,64,72],[0,9,18,27,36,45,54,63,72,81]],"type":"surface","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"7fa3701e4e00":["function () ","plotlyVisDat"]},"cur_data":"7fa3701e4e00","attrs":{"7fa3701e4e00":{"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,2,3,4,5,6,7,8,9],[0,2,4,6,8,10,12,14,16,18],[0,3,6,9,12,15,18,21,24,27],[0,4,8,12,16,20,24,28,32,36],[0,5,10,15,20,25,30,35,40,45],[0,6,12,18,24,30,36,42,48,54],[0,7,14,21,28,35,42,49,56,63],[0,8,16,24,32,40,48,56,64,72],[0,9,18,27,36,45,54,63,72,81]],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"a"},"yaxis":{"title":"b"},"zaxis":{"title":"Utility"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"showSendToCloud":false},"data":[{"colorbar":{"title":"","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":true,"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,2,3,4,5,6,7,8,9],[0,2,4,6,8,10,12,14,16,18],[0,3,6,9,12,15,18,21,24,27],[0,4,8,12,16,20,24,28,32,36],[0,5,10,15,20,25,30,35,40,45],[0,6,12,18,24,30,36,42,48,54],[0,7,14,21,28,35,42,49,56,63],[0,8,16,24,32,40,48,56,64,72],[0,9,18,27,36,45,54,63,72,81]],"type":"surface","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <p>Each indifference curve (or contour) is one level of utility (all points on the curve give a specific level of utility). So, set that level of utility equal to some constant, <span class="math inline">\(k\)</span>.</p>
 <p><span class="math display">\[ab=k\]</span></p>
 <p>Then, if we are putting <span class="math inline">\(b\)</span> on the vertical axis, we simply solve this for <span class="math inline">\(b\)</span>:</p>
@@ -489,90 +208,7 @@ b&amp;=\frac{k}{a}\\
 \end{align*}\]</span></p>
 <p>This is the general equation for all indifference curves of this utility function: each utility level (value of <span class="math inline">\(k)\)</span> can be graphed as an indifference curve with that equation. Thus, for example, for a utility level of <span class="math inline">\(10\)</span>, the equation for that indifference curve is
 <span class="math display">\[b=\frac{10}{a}\]</span>.</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;mosaic&quot;</span>)</span></code></pre></div>
-<pre><code>## Loading required package: lattice</code></pre>
-<pre><code>## Loading required package: ggformula</code></pre>
-<pre><code>## Loading required package: ggstance</code></pre>
-<pre><code>## 
-## Attaching package: &#39;ggstance&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:ggplot2&#39;:
-## 
-##     geom_errorbarh, GeomErrorbarh</code></pre>
-<pre><code>## 
-## New to ggformula?  Try the tutorials: 
-##  learnr::run_tutorial(&quot;introduction&quot;, package = &quot;ggformula&quot;)
-##  learnr::run_tutorial(&quot;refining&quot;, package = &quot;ggformula&quot;)</code></pre>
-<pre><code>## Loading required package: mosaicData</code></pre>
-<pre><code>## Loading required package: Matrix</code></pre>
-<pre><code>## 
-## Attaching package: &#39;Matrix&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:tidyr&#39;:
-## 
-##     expand, pack, unpack</code></pre>
-<pre><code>## Registered S3 method overwritten by &#39;mosaic&#39;:
-##   method                           from   
-##   fortify.SpatialPolygonsDataFrame ggplot2</code></pre>
-<pre><code>## 
-## The &#39;mosaic&#39; package masks several functions from core packages in order to add 
-## additional features.  The original behavior of these functions should not be affected by this.
-## 
-## Note: If you use the Matrix package, be sure to load it BEFORE loading mosaic.
-## 
-## Have you tried the ggformula package for your plots?</code></pre>
-<pre><code>## 
-## Attaching package: &#39;mosaic&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:Matrix&#39;:
-## 
-##     mean</code></pre>
-<pre><code>## The following object is masked from &#39;package:plotly&#39;:
-## 
-##     do</code></pre>
-<pre><code>## The following objects are masked from &#39;package:dplyr&#39;:
-## 
-##     count, do, tally</code></pre>
-<pre><code>## The following object is masked from &#39;package:purrr&#39;:
-## 
-##     cross</code></pre>
-<pre><code>## The following object is masked from &#39;package:ggplot2&#39;:
-## 
-##     stat</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     binom.test, cor, cor.test, cov, fivenum, IQR, median, prop.test,
-##     quantile, sd, t.test, var</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     max, mean, min, prod, range, sample, sum</code></pre>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">update_geom_defaults</span>(<span class="st">&quot;label&quot;</span>, <span class="fu">list</span>(<span class="at">family =</span> <span class="st">&quot;Fira Sans Condensed&quot;</span>))</span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>IC_50<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">50</span><span class="sc">/</span>x}</span>
-<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>IC_25<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">25</span><span class="sc">/</span>x}</span>
-<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>IC_10<span class="ot">=</span><span class="cf">function</span>(x){<span class="dv">10</span><span class="sc">/</span>x}</span>
-<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a>colors<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;b=50/a&quot;</span> <span class="ot">=</span> <span class="st">&quot;#20A387FF&quot;</span>, <span class="st">&quot;b=25/a&quot;</span> <span class="ot">=</span> <span class="st">&quot;#39568CFF&quot;</span>, <span class="st">&quot;b=10/a&quot;</span> <span class="ot">=</span> <span class="st">&quot;#481567FF&quot;</span>)</span>
-<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>)), <span class="fu">aes</span>(<span class="at">x=</span>x))<span class="sc">+</span></span>
-<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_50, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="fu">aes</span>(<span class="at">color =</span> <span class="st">&quot;b=50/a&quot;</span>))<span class="sc">+</span></span>
-<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_25, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="fu">aes</span>(<span class="at">color =</span> <span class="st">&quot;b=25/a&quot;</span>))<span class="sc">+</span></span>
-<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun=</span>IC_10, <span class="at">geom=</span><span class="st">&quot;line&quot;</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="fu">aes</span>(<span class="at">color =</span> <span class="st">&quot;b=10/a&quot;</span>))<span class="sc">+</span></span>
-<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="dv">9</span>,<span class="at">y=</span><span class="fu">IC_50</span>(<span class="dv">9</span>)), <span class="at">color =</span> <span class="st">&quot;#20A387FF&quot;</span>, <span class="at">label=</span><span class="st">&quot;u=50&quot;</span>, <span class="at">size =</span> <span class="dv">6</span>)<span class="sc">+</span></span>
-<span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="dv">9</span>,<span class="at">y=</span><span class="fu">IC_25</span>(<span class="dv">9</span>)), <span class="at">color =</span> <span class="st">&quot;#39568CFF&quot;</span>, <span class="at">label=</span><span class="st">&quot;u=25&quot;</span>, <span class="at">size =</span> <span class="dv">6</span>)<span class="sc">+</span></span>
-<span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="dv">9</span>,<span class="at">y=</span><span class="fu">IC_10</span>(<span class="dv">9</span>)), <span class="at">color =</span> <span class="st">&quot;#481567FF&quot;</span>, <span class="at">label=</span><span class="st">&quot;u=10&quot;</span>, <span class="at">size =</span> <span class="dv">6</span>)<span class="sc">+</span></span>
-<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">1</span>),</span>
-<span id="cb47-17"><a href="#cb47-17" aria-hidden="true" tabindex="-1"></a>                     <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>),</span>
-<span id="cb47-18"><a href="#cb47-18" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand=</span><span class="fu">expand_scale</span>(<span class="at">mult=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">0.1</span>)))<span class="sc">+</span></span>
-<span id="cb47-19"><a href="#cb47-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">1</span>),</span>
-<span id="cb47-20"><a href="#cb47-20" aria-hidden="true" tabindex="-1"></a>                     <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>),</span>
-<span id="cb47-21"><a href="#cb47-21" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand=</span><span class="fu">expand_scale</span>(<span class="at">mult=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fl">0.1</span>)))<span class="sc">+</span></span>
-<span id="cb47-22"><a href="#cb47-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="st">&quot;I.C. equations&quot;</span>, <span class="at">values =</span> colors)<span class="sc">+</span></span>
-<span id="cb47-23"><a href="#cb47-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;a&quot;</span>,</span>
-<span id="cb47-24"><a href="#cb47-24" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;b&quot;</span>,</span>
-<span id="cb47-25"><a href="#cb47-25" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">&quot;Indifference curves for u(a,b)=ab&quot;</span>)<span class="sc">+</span></span>
-<span id="cb47-26"><a href="#cb47-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>(<span class="at">base_family =</span> <span class="st">&quot;Fira Sans Condensed&quot;</span>, <span class="at">base_size=</span><span class="dv">20</span>)</span></code></pre></div>
-<pre><code>## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.</code></pre>
-<p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
 <h3 id="utility-functions-for-perfect-substitutes">Utility Functions for Perfect Substitutes</h3>
 <p>Perfect substitutes produce straight lines for indifference curves. A straight line has a constant slope, which is interpretted as the MRS being constant - you should always be willing to substitute between the two goods at the same rate. The utility function looks like:</p>
 <p><span class="math display">\[u(x,y)=w_xx+w_yy\]</span></p>
@@ -583,9 +219,6 @@ b&amp;=\frac{k}{a}\\
 <p><span class="math display">\[u_{L_{1},L_{2}}=1L_{1}+2L_{2}\]</span></p>
 <p>The relative weights here are 1 for 1-Liter bottles and 2 for 2-Liter bottles, because 2-Liter bottles are “worth” twice as much for you (it takes two 1-Liter bottles to match a 2-Liter bottle!).</p>
 <p><span class="math inline">\(MRS_{L_{1},L_{2}}=-\frac{w_x}{w_y} = -\frac{1}{2}\)</span></p>
-<pre><code>## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.</code></pre>
 <p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
 <h3 id="utility-functions-for-perfect-complements">Utility Functions for Perfect Complements</h3>
 <p>Perfect complements produce right angles for indifference curves. This is technically not a mathematical function, since each <span class="math inline">\(X\)</span> value must be mapped to a single <span class="math inline">\(Y\)</span> value (i.e. no vertical lines). Thus, the utility function for perfect complements <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> is quite unique:</p>
@@ -596,9 +229,6 @@ b&amp;=\frac{k}{a}\\
 <p>Consider consuming hot dogs <span class="math inline">\((H)\)</span> and buns <span class="math inline">\((B)\)</span>, that must be consumed together as a package 1:1. The utility function would be:
 <span class="math display">\[u(H,B)=min\{H,B\}\]</span></p>
 <p>Having 2 hot dogs and 3 buns only yields a utility of 2. Having 3 hot dogs and 2 buns also only yields a utility of 2.</p>
-<pre><code>## Warning: `expand_scale()` is deprecated; use `expansion()` instead.
-
-## Warning: `expand_scale()` is deprecated; use `expansion()` instead.</code></pre>
 <p><img src="/content/1.3-content_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
 <h3 id="cobb-douglas-functions">Cobb-Douglas Functions</h3>
 <p>Cobb-Douglas functions (both for utility and production) are one of the most common functional forms in economics. Despite their somewhat frightening presence on the surface, they have very neat mathematical properties, and have been empirically useful as well. A Cobb-Douglas function (for utility) looks like:</p>
