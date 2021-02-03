@@ -23,7 +23,7 @@ As I mentioned in [last class' page](/content/1.2-content), a lot of the "in the
 Today we focus on the essential tools for fitting preferences into our optimization model:
   - **indifference curves**: each of which is the set of all bundles that one is *indifferent between* (and that give the same amount utility)
   - **utility functions**: which measure the *ordinal* (but not cardinal!) utility level of any given bundle; for comparisons only!
-  - **marginal rate of substitution**: the slope of the indifference curve, representing an individual's subjective tradeoff between goods: measured by the ratio of marginal utilities: $MRS_{x,y}=-\frac{MU_x}{MU_y}$
+  - **marginal rate of substitution**: the slope of the indifference curve, representing an individual's subjective tradeoff between goods; measured by the ratio of marginal utilities: $MRS_{x,y}=-\frac{MU_x}{MU_y}$
 
 # <i class="fas fa-book-reader fa-lg"></i> Readings
 
@@ -85,6 +85,7 @@ Every possible bundle (point on graph) is on an indifference curve.
 
 ```{r IC-ass-1, fig.retina=3, fig.align="center", fig.width=6}
 library(tidyverse)
+library(ggrepel)
 
 IC_10=function(x){100/x}
 IC_9=function(x){81/x}

@@ -1214,7 +1214,7 @@ ggplot(data.frame(x=c(0,m/px)), aes(x=x))+
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .hi-green[Example]: Imagine yourself in a strange country. All you know is that the price of bread, in local currency, is “6”...
 ]
-
+]
 .pull-right[
 
 .center[
