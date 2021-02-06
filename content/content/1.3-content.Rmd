@@ -44,7 +44,8 @@ Today we focus on the essential tools for fitting preferences into our optimizat
 
 # <i class="fas fa-chalkboard-teacher"></i> Slides
 
-- [<i class="fas fa-chalkboard-teacher"></i> View Lecture Slides](/slides/1.3-slides.html)
+[![](/slides/1.3-slides.png)](/slides/1.3-slides.html)
+
 - [<i class="fas fa-file-pdf"></i> Download as PDF](/slides/1.3-slides.pdf)
 
 # <i class="fas fa-dumbbell"></i> Practice
@@ -55,7 +56,7 @@ Answers from last class' [practice problems](/practice/1.2-practice) are posted 
 
 ## Problem Set 1
 
-[Problem set 1](/assignment/01-problem-set) (on 1.1-1.4) is will be due by 11:59 PM Sunday February 14 by PDF upload to Blackboard Assignments. We will learn and practice the final few concepts this problem set covers next class.
+[Problem set 1](/assignment/01-problem-set) (on 1.1-1.4) is due by 11:59 PM Sunday February 14 by PDF upload to Blackboard Assignments. We will learn and practice the final few concepts this problem set covers next class.
 
 # <i class="fas fa-sigma"></i> Appendix 1: Material on Preferences
 
