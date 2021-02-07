@@ -1,6 +1,6 @@
 ---
 title: "1.2 — Budget Constraint — Practice Problems - Practice Problems (Solutions)"
-author: "ECON 306 - Spring 2020"
+author: "ECON 306 - Spring 2021"
 date: ""
 output:
   html_document:
