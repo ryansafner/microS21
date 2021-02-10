@@ -20,9 +20,10 @@ lessons:
     
   - title: "1.4 Utility Maximization"
     content: "1.4-content"
+    slides: "1.4-slides"
     practice: "1.4-practice"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 1** due Sun Feb 14'
+  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 1** due *Wed Feb 17*'
     assignment: "01-problem-set"
 
   - title: "1.5 Demand"

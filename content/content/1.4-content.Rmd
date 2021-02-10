@@ -27,18 +27,25 @@ update_geom_defaults("label", list(family = "Fira Sans Condensed"))
 
 # <i class="fas fa-info-circle fa-lg"></i> Overview
 
-Today we put all of our tools together thus far to solve the consumer's constrained optimization problem. To solve the problem the "traditional way" would be to use [Lagrangian multipliers](https://en.wikipedia.org/wiki/Lagrange_multiplier) and calculus and solve for the first order conditions. We instead will find the solution by looking graphically, and use an algebraic rule that should make intuitive sense.
+Today we put all of our tools together thus far to solve the consumer's constrained optimization problem. To solve the problem the "traditional way" would be to use [Lagrangian multipliers](https://en.wikipedia.org/wiki/Lagrange_multiplier) and calculus and solve for the first order conditions.^[Take the full Lagrangian equation and solve for all partial derivatives, set equal to 0.] We instead will find the solution by looking graphically, and use an algebraic rule that should make a lot of intuitive sense. That rule, equivalently expressed in two ways:
 
-Today we focus on the essential tools for fitting preferences into our optimization model:
+$$
+\begin{align*}\frac{MU_x}{MU_y} &= \frac{p_x}{p_y}\\
+\frac{MU_x}{p_x} &= \frac{MU_y}{p_y}\\ 
+\end{align*}
+$$
+The first rule states that the slope of the indifference curve (left) equals the slope of the budget constraint (right). This is stating that the marginal benefit of consuming $x$ (left) equals the marginal cost (right) of consuming $y$, and that the individual is trading off $y$ for $x$ at the same rate as the market is.
 
-- **indifference curves**: each of which is the set of all bundles that one is *indifferent between* (and that give the same amount utility)
-- **utility functions**: which measure the *ordinal* (but not cardinal!) utility level of any given bundle; for comparisons only!
-- **marginal rate of substitution**: the slope of the indifference curve, representing an individual's subjective tradeoff between goods; measured by the ratio of marginal utilities: $MRS_{x,y}=-\frac{MU_x}{MU_y}$
+The second (version of the) rule, solved for $x$ and $y$ terms on either side, shows that the marginal utility per dollar spent is equal across both (all) goods. 
+
+Both forms are often called the **equimarginal rule**, that at the optimum choice, the marginal benefit equals the marginal cost (which is the marginal benefit of the next best foregone opportunity).
+
+We will do some [practice](/practice/1.4-practice) to make sure you can solve this type of model, and then you are fully prepared for [Problem Set 1](/assignment/01-problem-set).
 
 # <i class="fas fa-book-reader fa-lg"></i> Readings
 
-- <i class="fas fa-book"></i> Ch. 4.1-4.2 in @textbook
-- [<i class="fas fa-file-pdf"></i> Math Review Guide](/files/math_review_guide.pdf) 
+- <i class="fas fa-book"></i> Ch. 4.4-4.5 in @textbook
+- [<i class="fas fa-file-pdf"></i> Math Review Guide](/files/math_review_guide.pdf)
 
 # <i class="fas fa-chalkboard-teacher"></i> Slides
 
