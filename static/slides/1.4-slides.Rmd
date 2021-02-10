@@ -44,11 +44,236 @@ update_geom_defaults("text", list(family = "Fira Sans Condensed"))
 set.seed(256)
 ```
 
-# The Consumer's Problem: Review
+
+class: inverse, center, middle
+
+# Constrained Optimization
+
+---
+
+# Constrained Optimization I
 
 .pull-left[
 
-- The .hi[consumer's constrained optimization problem] is: 
+- We model most situations as a .hi[constrained optimization problem]:
+
+- People .hi[optimize]: make tradeoffs to achieve their .hi-purple[objective] *as best as they can*
+
+- Subject to .hi-turquoise[constraints]: limited resources (income, time, attention, etc) 
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Constrained Optimization II
+
+.pull-left[
+
+- One of the most generally useful mathematical models
+
+- *Endless applications*: how we model nearly every decision-maker
+
+> consumer, business firm, politician, judge, bureaucrat, voter, dictator, pirate, drug cartel, drug addict, parent, child, etc
+
+- .hi-purple[Key economic skill: recognizing how to apply the model to a situation]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Remember!
+
+.center[
+![:scale 82%](../images/cooleconbooks.png)
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+1. **Choose:** .hi-purple[ < some alternative >]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+1. **Choose:** .hi-purple[ < some alternative >]
+
+2. **In order to maximize:** .hi-green[< some objective >]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+1. **Choose:** .hi-purple[ < some alternative >]
+
+2. **In order to maximize:** .hi-green[< some objective >]
+
+3. **Subject to:** .hi-red[< some constraints >]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Constrained Optimization: Example I
+
+.pull-left[
+
+.content-box-green[
+.hi-green[**Example**:] A Hood student picking courses hoping to achieve the highest GPA while getting an Econ major.
+
+1. **Choose:**
+
+2. **In order to maximize:**
+
+3. **Subject to:**
+
+]
+]
+.pull-right[
+.center[
+![](../images/education.png)
+]
+]
+
+---
+
+# Constrained Optimization: Example II
+
+.pull-left[
+
+.content-box-green[
+.hi-green[**Example**:] How should FedEx plan its delivery route?
+
+1. **Choose:**
+
+2. **In order to maximize:**
+
+3. **Subject to:**
+
+]
+]
+.pull-right[
+.center[
+![](../images/routeoptimization.png)
+]
+]
+
+---
+
+# Constrained Optimization: Example III
+
+.pull-left[
+
+.content-box-green[
+.hi-green[**Example**:] The U.S. government wants to remain economically competitive but reduce emissions by 25%. 
+
+1. **Choose:**
+
+2. **In order to maximize:**
+
+3. **Subject to:**
+
+]
+]
+.pull-right[
+.center[
+![:scale 100%](../images/pollution.png)
+]
+]
+
+---
+
+# Constrained Optimization: Example IV
+
+.pull-left[
+
+.content-box-green[
+.hi-green[**Example**:] How do elected officials make decisions in politics? 
+
+1. **Choose:**
+
+2. **In order to maximize:**
+
+3. **Subject to:**
+
+]
+]
+.pull-right[
+.center[
+![](../images/veep.jpeg)
+]
+]
+
+---
+
+# The Utility Maximization Problem
+
+.pull-left[
+
+- The individual's .hi[utility maximization problem] we've been modeling, finally, is:
 
 1. **Choose:** .hi-purple[ < a consumption bundle >]
 
@@ -66,18 +291,21 @@ set.seed(256)
 
 ---
 
-# The Consumer's Problem: Tools
+# The Utility Maximization Problem: Tools
 
 .pull-left[
-- We now have the tools to understand consumer choices:
+.smallest[
+- We now have the tools to understand individual choices:
 
-- .hi-red[Budget constraint]: consumer's **constraints** of income and market prices
-  - How the .red[market] trades off between two goods
-- .hi-green[Utility function]: consumer's **preferences** to maximize
-  - How the .green[consumer] trades off between two goods
-    
+- .hi-red[Budget constraint]: individual’s **constraints** of income and market prices
+  - How .red[market] trades off between goods
+  - .red[Marginal cost] (of good $x$, in terms of $y)$
+  
+- .hi-green[Utility function]: individual’s **objective** to maximize, based on their preferences
+  - How .green[individual] trades off between goods
+  - .green[Marginal benefit] (of good $x$, in terms of $y)$
 ]
-
+]
 .pull-right[
 .center[
 ![:scale 80%](../images/beerdecision.PNG)
@@ -86,11 +314,11 @@ set.seed(256)
 
 ---
 
-# The Consumer's Problem: Verbally
+# The Utility Maximization Problem: Verbally
 
 .pull-left[
 
-- The .hi[consumer's constrained optimization problem]: 
+- The .hi[individual's constrained optimization problem]: 
 
 > choose a bundle of goods to maximize utility, subject to income and market prices
 ]
@@ -103,14 +331,14 @@ set.seed(256)
 
 ---
 
-# The Consumer's Problem: Mathematically
+# The Utility Maximization Problem: Mathematically
 
 .pull-left[
 
-$$\max_{x,y} u(x,y)$$
+$$\max_{x,y \geq0} u(x,y)$$
 $$s.t. p_xx+p_yy=m$$
 
-- This requires calculus to solve<sup>.red[1]</sup>. We will look at **graphs** instead!
+- This requires calculus to solve.<sup>.magenta[†]</sup> We will look at **graphs** instead!
 ]
 
 .pull-right[
@@ -119,11 +347,11 @@ $$s.t. p_xx+p_yy=m$$
 ]
 ]
 
-.footnote[<sup>.red[1]</sup> See the mathematical appendix in today's class notes on how to solve it with calculus, and an example.]
+.footnote[<sup>.magenta[†]</sup> See the [mathematical appendix](/content/1.4-content/#solving-the-constrained-optimization-problem-with-calculus) in today's class notes on how to solve it with calculus, and an example.]
 
 ---
 
-# The Consumer's Optimum: Graphically
+# The Individual's Optimum: Graphically
 
 .pull-left[
 
@@ -185,7 +413,7 @@ opt
 
 ---
 
-# The Consumer's Optimum: Graphically
+# The Individual's Optimum: Graphically
 
 .pull-left[
 
@@ -193,7 +421,6 @@ opt
   - Bundle A!
 
 - B or C spend all income, but a better combination exists
-    - Averages $\succ$ extremes!
 
 ]
 
@@ -206,7 +433,7 @@ opt
 
 ---
 
-# The Consumer's Optimum: Graphically
+# The Individual's Optimum: Graphically
 
 .pull-left[
 
@@ -214,7 +441,6 @@ opt
   - Bundle A!
 
 - B or C spend all income, but a better combination exists
-    - Averages $\succ$ extremes!
 
 - D is higher utility, but *not affordable* at current income & prices
 ]
@@ -228,13 +454,14 @@ opt
 
 ---
 
-# The Consumer's Optimum: Why Not B? 
+# The Individual's Optimum: Why Not B? 
 
 .pull-left[
-
+.smallest[
 $$\begin{align*}
-\text{indiff. curve slope} &> \text{budget constr. slope} \\\end{align*}$$
-
+\color{#7CAE96}{\text{indiff. curve slope}} &> \color{#D7250E}{\text{budget constr. slope}} \\
+\end{align*}$$
+]
 ]
 
 .pull-right[
@@ -270,19 +497,22 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# The Consumer's Optimum: Why Not B? 
+# The Individual's Optimum: Why Not B? 
 
 .pull-left[
 
+.smallest[
 $$\begin{align*}
-\text{indiff. curve slope} &> \text{budget constr. slope} \\
-| MRS_{x,y} | &> | \frac{p_x}{p_y} | \\
-| \frac{MU_x}{MU_y} | &> | \frac{p_x}{p_y} | \\
-| -2 | &> | -0.5 | \\\end{align*}$$
+\color{#7CAE96}{\text{indiff. curve slope}} &> \color{#D7250E}{\text{budget constr. slope}} \\
+\color{#7CAE96}{\frac{MU_x}{MU_y}} &> \color{#D7250E}{\frac{p_x}{p_y}} \\
+\color{#7CAE96}{2} &> \color{#D7250E}{0.5} \\\end{align*}$$
 
-- .hi-green[Consumer] would exchange at .hi-green[2Y:1X]
+- .hi-green[Consumer] views MB of $x$ is 2 units of $y$
+  - Consumer’s “exchange rate:” .hi-green[2Y:1X]
 
-- .hi-red[Market] exchange rate is .hi-red[0.5Y:1X]
+- .hi-red[Market]-determined MC of $x$ is 0.5 units of $y$
+  - Market exchange rate is .hi-red[0.5Y:1X]
+]
 ]
 
 .pull-right[
@@ -318,24 +548,25 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# The Consumer's Optimum: Why Not B? 
+# The Individual's Optimum: Why Not B? 
 
 .pull-left[
-
+.smallest[
 $$\begin{align*}
-\text{indiff. curve slope} &> \text{budget constr. slope} \\
-| MRS_{x,y} | &> | \frac{p_x}{p_y} | \\
-| \frac{MU_x}{MU_y} | &> | \frac{p_x}{p_y} | \\
-| -2 | &> | -0.5 | \\\end{align*}$$
+\color{#7CAE96}{\text{indiff. curve slope}} &> \color{D7250E}{\text{budget constr. slope}} \\
+\color{#7CAE96}{\frac{MU_x}{MU_y}} &> \color{#D7250E}{\frac{p_x}{p_y}} \\
+\color{#7CAE96}{2} &> \color{#D7250E}{0.5} \\\end{align*}$$
 
-- .hi-green[Consumer] would exchange at .hi-green[2Y:1X]
+- .hi-green[Consumer] views MB of $x$ is 2 units of $y$
+  - Consumer’s “exchange rate:” .hi-green[2Y:1X]
 
-- .hi-red[Market] exchange rate is .hi-red[0.5Y:1X]
+- .hi-red[Market]-determined MC of $x$ is 0.5 units of $y$
+  - Market exchange rate is .hi-red[0.5Y:1X]
 
-- Can .hi-purple[spend less on y more on x] and get .hi-purple[more utility!]
+- Can .hi-purple[spend less on y, more on x] for .hi-purple[more utility!]
 
 ]
-
+]
 .pull-right[
 
 ```{r, fig.retina=3}
@@ -372,13 +603,15 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# The Consumer's Optimum: Why Not C? 
+# The Individual's Optimum: Why Not C? 
 
 .pull-left[
 
+.smallest[
 $$\begin{align*}
-\text{indiff. curve slope} &< \text{budget constr. slope} \\\end{align*}$$
-
+\color{#7CAE96}{\text{indiff. curve slope}} &< \color{#D7250E}{\text{budget constr. slope}} \\
+ \\\end{align*}$$
+]
 ]
 
 .pull-right[
@@ -414,22 +647,23 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# The Consumer's Optimum: Why Not C? 
+# The Individual's Optimum: Why Not C? 
 
 .pull-left[
 
+.smallest[
 $$\begin{align*}
-\text{indiff. curve slope} &< \text{budget constr. slope} \\
-| MRS_{x,y} | &< | \frac{p_x}{p_y} | \\
-| \frac{MU_x}{MU_y} | &< | \frac{p_x}{p_y} | \\
-| -0.125 | &< | -0.5 | \\\end{align*}$$
+\color{#7CAE96}{\text{indiff. curve slope}} &< \color{#D7250E}{\text{budget constr. slope}} \\
+\color{#7CAE96}{\frac{MU_x}{MU_y}} &< \color{#D7250E}{\frac{p_x}{p_y}} \\
+\color{#7CAE96}{0.125} &< \color{#D7250E}{0.5} \\\end{align*}$$
 
-- .hi-green[Consumer] would exchange at .hi-green[0.125Y:1X]
+- .hi-green[Consumer] views MB of $x$ is 0.125 units of $y$
+  - Consumer’s “exchange rate:” .hi-green[0.125Y:1X]
 
-- .hi-red[Market] exchange rate is .hi-red[0.5Y:1X]
-
+- .hi-red[Market]-determined MC of $x$ is 0.5 units of $y$
+  - Market exchange rate is .hi-red[0.5Y:1X]
 ]
-
+]
 .pull-right[
 
 ```{r, fig.retina=3}
@@ -463,22 +697,25 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# The Consumer's Optimum: Why Not C? 
+# The Individual's Optimum: Why Not C? 
 
 .pull-left[
 
+.smallest[
 $$\begin{align*}
-\text{indiff. curve slope} &< \text{budget constr. slope} \\
-| MRS_{x,y} | &< | \frac{p_x}{p_y} | \\
-| \frac{MU_x}{MU_y} | &< | \frac{p_x}{p_y} | \\
-| -0.125 | &< | -0.5 | \\\end{align*}$$
+\color{#7CAE96}{\text{indiff. curve slope}} &< \color{#D7250E}{\text{budget constr. slope}} \\
+\color{#7CAE96}{\frac{MU_x}{MU_y}} &< \color{#D7250E}{\frac{p_x}{p_y}} \\
+\color{#7CAE96}{0.125} &< \color{#D7250E}{0.5} \\\end{align*}$$
 
-- .hi-green[Consumer] would exchange at .hi-green[0.125Y:1X]
+- .hi-green[Consumer] views MB of $x$ is 0.125 units of $y$
+  - Consumer’s “exchange rate:” .hi-green[0.125Y:1X]
 
-- .hi-red[Market] exchange rate is .hi-red[0.5Y:1X]
+- .hi-red[Market]-determined MC of $x$ is 0.5 units of $y$
+  - Market exchange rate is .hi-red[0.5Y:1X]
 
-- Can .hi-purple[spend less on x, more on y] and get .hi-purple[more utility!]
+- Can .hi-purple[spend less on y, more on x] for .hi-purple[more utility!]
 
+]
 ]
 
 .pull-right[
@@ -517,12 +754,13 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# The Consumer's Optimum: Why A?
+# The Individual's Optimum: Why A?
 
 .pull-left[
-
+.smallest[
 $$\begin{align*}
-\text{indiff. curve slope} &= \text{budget constr. slope} \\\end{align*}$$
+\color{#7CAE96}{\text{indiff. curve slope}} &= \color{#D7250E}{\text{budget constr. slope}} \\\end{align*}$$
+]
 
 ]
 
@@ -560,20 +798,24 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# The Consumer's Optimum: Why A?
+# The Individual's Optimum: Why A?
 
 .pull-left[
 
+.smallest[
 $$\begin{align*}
-\text{indiff. curve slope} &= \text{budget constr. slope} \\
-| MRS_{x,y} | &= | \frac{p_x}{p_y} | \\
-| \frac{MU_x}{MU_y} | &= | \frac{p_x}{p_y} | \\
-| -0.5 | &= | -0.5 | \\\end{align*}$$
+\color{#7CAE96}{\text{indiff. curve slope}} &= \color{#D7250E}{\text{budget constr. slope}} \\
+\color{#7CAE96}{\frac{MU_x}{MU_y}} &= \color{#D7250E}{\frac{p_x}{p_y}} \\
+\color{#7CAE96}{0.5} &= \color{#D7250E}{0.5} \\\end{align*}$$
 
-- .hi-green[Consumer] would exchange at same rate as .hi-red[market]
+- .hi-green[Marginal benefit] = .hi-red[Marginal cost]
+  - .hi-green[Consumer] exchanges at same rate as .hi-red[market]
 
-- .hi-purple[*No other combination* of (x,y) *exists* at current prices & income that could increase utility!]
+- .hi-purple[*No other combination* of (x,y) *exists* that could increase utility!]<sup>.magenta[†]</sup>
 
+]
+
+.footnote[<sup>.magenta[†]</sup> At *current* income and market prices!]
 ]
 
 .pull-right[
@@ -610,7 +852,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# The Consumer's Optimum: Two Equivalent Rules
+# The Individual's Optimum: Two Equivalent Rules
 
 .pull-left[
 
@@ -656,7 +898,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# The Consumer's Optimum: Two Equivalent Rules
+# The Individual's Optimum: Two Equivalent Rules
 
 .pull-left[
 
@@ -708,239 +950,19 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-# Visualizing the Equimarginal Rule
-
-.pull-left[
-
-- Compare $MU_x$ per $1 spent vs. $MU_y$ per $1 spent
-  - Graphs on right are *not* indifference curves!
-
-]
-
-.pull-right[
-```{r}
-MU_x=function(x){50/x}
-MU_y=function(x){50/x}
-p_x=1
-p_y=2
-
-MUxpx=function(x){MU_x(x)/p_x}
-
-points_muxb<-tribble(
-  ~x, ~MUxpx, ~letter,
-  4, MUxpx(4), "B"
-)
-
-
-mx<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
-  stat_function(fun=MUxpx, geom="line", size=2, color = "green")+
-    geom_label(aes(x=3,y=MUxpx(3)), color = "green", label=expression(frac(MU[x],p[x])), size = 3)+
-    scale_x_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  scale_y_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  #scale_colour_manual("Curves", values = line_colors, guide=F)+
-  labs(x = "x",
-       y = expression(frac(MU[x],p[x])))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
-  theme(axis.title.y = element_text(angle = 0, vjust = 0.5))
-
-MUypy=function(y){MU_y(y)/p_y}
-
-points_muyb<-tribble(
-  ~y, ~MUypy, ~letter,
-  12.5, MUypy(12.5), "B"
-)
-
-my<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
-  stat_function(fun=MUypy, geom="line", size=2, color = "green")+
-    geom_label(aes(x=3,y=MUypy(3)), color = "green", label=expression(frac(MU[y],p[y])), size = 3)+
-    scale_x_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  scale_y_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  #scale_colour_manual("Curves", values = line_colors, guide=F)+
-  labs(x = "y",
-       y = expression(frac(MU[y],p[y])))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
-  theme(axis.title.y = element_text(angle = 0, vjust = 0.5))
-
-library(patchwork)
-
-mx+my
-```
-]
-
----
-# Visualizing the Equimarginal Rule
-
-.pull-left[
-
-- Suppose you consume 4 of $x$ and 12.5 of $y$ (points B)
-
-$$\frac{MU_x}{p_x} > \frac{MU_y}{p_y}$$
-
-]
-
-.pull-right[
-```{r}
-mx1<-mx+
-  geom_label(aes(x=3,y=MUxpx(3)), color = "green", label=expression(frac(MU[x],p[x])), size = 3)+
-  geom_point(data = points_muxb,
-             mapping = aes(x=x, y=MUxpx),
-             size = 3)+
-  geom_text_repel(data = points_muxb,
-             mapping = aes(x=x, y=MUxpx, label = letter),
-             size = 6,
-             seed = 2)+
-  geom_segment(aes(x = 0, xend = 4, y = 12.5, yend=12.5), linetype="dotted", size=1)+
-  geom_segment(aes(x = 4, xend = 4, y = 12.5, yend=0), linetype="dotted", size=1)
-
-my1<-my+
-  geom_label(aes(x=3,y=MUypy(3)), color = "green", label=expression(frac(MU[y],p[y])), size = 3)+
-  geom_point(data = points_muyb,
-             mapping = aes(x=y, y=MUypy),
-             size = 3)+
-  geom_text_repel(data = points_muyb,
-             mapping = aes(x=y, y=MUypy, label = letter),
-             size = 6,
-             seed = 2)+
-  geom_segment(aes(x = 0, xend = 12.5, y = 2, yend=2), linetype="dotted", size=1)+
-  geom_segment(aes(x = 12.5, xend = 12.5, y = 2, yend=0), linetype="dotted", size=1)
-
-mx1+my1
-```
-]
-
----
-
-# Visualizing the Equimarginal Rule
-
-.pull-left[
-
-- Suppose you consume 4 of $x$ and 12.5 of $y$ (points B)
-
-$$\frac{MU_x}{p_x} > \frac{MU_y}{p_y}$$
-
-- More "bang for your buck" with $x$ than $y$
-
-- Consume more $x$, less $y$! 
-]
-
-.pull-right[
-```{r}
-mx2<-mx1+
-  annotate("segment", x = 4, xend = 10, y = 4, yend = 4, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))
-
-my2<-my1+
-  annotate("segment", x = 12.5, xend = 5, y = 2, yend = 2, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))
-
-
-mx2+my2
-```
-]
-
----
-
-# Visualizing the Equimarginal Rule
-
-.pull-left[
-
-- At points A, consuming 10 of $x$ and 5 of $y$
-
-$$\frac{MU_x}{p_x} = \frac{MU_y}{p_y}$$
-
-- No change (more $x$, less $x$, more $y$, less $y$) that could increase your utility!
-
-- The optimum! Cost-adjusted marginal utilities are equalized
-
-
-]
-
-.pull-right[
-```{r}
-points_muxa<-tribble(
-  ~x, ~MUxpx, ~letter,
-  10, MUxpx(10), "A"
-)
-
-mx3<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
-  stat_function(fun=MUxpx, geom="line", size=2, color = "green")+
-    geom_label(aes(x=3,y=MUxpx(3)), color = "green", label=expression(frac(MU[x],p[x])), size = 3)+
-  geom_point(data = points_muxa,
-             mapping = aes(x=x, y=MUxpx),
-             size = 3)+
-  geom_text_repel(data = points_muxa,
-             mapping = aes(x=x, y=MUxpx, label = letter),
-             size = 6,
-             seed = 2)+
-  geom_segment(aes(x = 0, xend = 10, y = 5, yend=5), linetype="dotted", size=1)+
-  geom_segment(aes(x = 10, xend = 10, y = 5, yend=0), linetype="dotted", size=1)+
-    scale_x_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  scale_y_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  #scale_colour_manual("Curves", values = line_colors, guide=F)+
-  labs(x = "x",
-       y = expression(frac(MU[x],p[x])))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
-  theme(axis.title.y = element_text(angle = 0, vjust = 0.5))
-
-points_muya<-tribble(
-  ~y, ~MUypy, ~letter,
-  5, MUypy(5), "A"
-)
-
-my3<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
-  stat_function(fun=MUypy, geom="line", size=2, color = "green")+
-    geom_label(aes(x=3,y=MUypy(3)), color = "green", label=expression(frac(MU[y],p[y])), size = 3)+
-  geom_point(data = points_muya,
-             mapping = aes(x=y, y=MUypy),
-             size = 3)+
-  geom_text_repel(data = points_muya,
-             mapping = aes(x=y, y=MUypy, label = letter),
-             size = 6,
-             seed = 2)+
-  geom_segment(aes(x = 0, xend = 5, y = 5, yend=5), linetype="dotted", size=1)+
-  geom_segment(aes(x = 5, xend = 5, y = 5, yend=0), linetype="dotted", size=1)+
-    scale_x_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  scale_y_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  #scale_colour_manual("Curves", values = line_colors, guide=F)+
-  labs(x = "y",
-       y = expression(frac(MU[y],p[y])))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
-  theme(axis.title.y = element_text(angle = 0, vjust = 0.5))
-
-mx3+my3
-```
-]
-
-
----
-
-# The Consumer's Optimum: The Equimarginal Rule I
+# The Individual's Optimum: The Equimarginal Rule
 
 $$\frac{MU_x}{p_x}  =  \frac{MU_y}{p_y} = \cdots = \frac{MU_n}{p_n}$$
 
 - .hi[Equimarginal Rule]: consumption is optimized where the **marginal utility per dollar spent** is **equalized** across all $n$ possible goods/decisions
 
-- You will always choose an option that gives higher marginal utility (e.g. if $MU_x > MU_y)$
-  - But each option has a different cost, so we weight each option by its cost, hence $\frac{MU_x}{p_x}$
+- Always choose an option that gives higher marginal utility (e.g. if $MU_x < MU_y)$, consume more $y$!
+  - But each option has a different price, so weight each option by its price, hence $\frac{MU_x}{p_x}$
     
 
 ---
 
-# The Consumer's Optimum: The Equimarginal Rule II
+# An Optimum, By Definition
 
 .pull-left[
 
@@ -953,128 +975,6 @@ $$\frac{MU_x}{p_x}  =  \frac{MU_y}{p_y} = \cdots = \frac{MU_n}{p_n}$$
 .pull-right[
 .center[
 ![:scale 100%](../images/optimize.jpeg)
-]
-]
-
----
-
-# Markets Equalize Everyone's MRS I
-
-.pull-left[
-
-- .hi-purple[Markets make it so everyone faces the _same_ relative prices]
-    - Budget constraint. slope, $-\frac{p_x}{p_y}$
-    - Note individuals' incomes, $m$, are certainly different!
-
-- A person's optimal choice $\implies$ they make same tradeoff as the market
-    - Their MRS $=$ relative price ratio
-
-- .hi-purple[markets equalize everyone's MRS]
-]
-
-.pull-right[
-
-.center[
-![:scale 70%](../images/equilibriumbalance.png)
-]
-]
-
----
-
-# Markets Equalize Everyone's MRS II
-
-Two people will very different income and preferences face the same market prices, and choose optimal consumption (points A and A') at an exchange rate of $0.5Y:1X$
-
-.pull-left[
-
-```{r, fig.height=5, fig.retina=3}
-ggplot(data.frame(x=c(0,10)), aes(x=x))+
-  stat_function(fun=IC_7, geom="line", size=2, color = "#3CBB75FF")+
-  stat_function(fun=BC, geom="line", size=2, color = "red")+
-    geom_label(aes(x=2,y=BC(2)), color = "red", label="BC", size = 6)+
-    geom_label(aes(x=3.5,y=IC_7(3.5)), color = "#3CBB75FF", label=expression(u==sqrt(50)), size = 4)+
-  geom_point(data = subset(points, letter=="A"),
-             mapping=aes(x=x, y=y),
-             size = 3)+
-  geom_text_repel(data = subset(points, letter=="A"),
-             mapping=aes(x=x, y=y,
-             label = letter),
-             size = 6,
-             seed = 2)+
-  geom_segment(aes(x = 0, xend = 10, y = 5, yend=5), linetype="dotted", size=1)+
-  geom_segment(aes(x = 10, xend = 10, y = 5, yend=0), linetype="dotted", size=1)+
-    scale_x_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  scale_y_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  #scale_colour_manual("Curves", values = line_colors, guide=F)+
-  labs(x = "x",
-       y = "y",
-       caption = expression(paste(u(x,y)== sqrt(xy), ", ", m, " = $20, ", p[x]," = $1, ", p[y]," = $2", sep=" ")))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
-```
-
-]
-
-.pull-right[
-
-```{r, fig.height=5, fig.retina=3}
-
-points_ii<-tribble(
-  ~letter, ~x, ~y,
-  "A'", 2, 4
-)
-IC_ii=function(x)(5-log(x))
-BC_ii=function(x){5-0.5*x}
-
-ggplot(data.frame(x=c(0,10)), aes(x=x))+
-  stat_function(fun=IC_ii, geom="line", size=2, color = "#39568CFF")+
-  stat_function(fun=BC_ii, geom="line", size=2, color = "red")+
-    geom_label(aes(x=6,y=BC_ii(6)), color = "red", label="BC'", size = 6)+
-    geom_label(aes(x=16,y=IC_ii(16)), color = "#39568CFF", label=expression(u==5), size = 4)+
-  geom_point(data = points_ii,
-             mapping=aes(x=x, y=y),
-             size = 3)+
-  geom_text_repel(data = points_ii,
-             mapping=aes(x=x, y=y,
-             label = letter),
-             size = 6,
-             seed = 2)+
-  geom_segment(aes(x = 0, xend = 2, y = 4, yend=4), linetype="dotted", size=1)+
-  geom_segment(aes(x = 2, xend = 2, y = 4, yend=0), linetype="dotted", size=1)+
-    scale_x_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  scale_y_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  #scale_colour_manual("Curves", values = line_colors, guide=F)+
-  labs(x = "x",
-       y = "y",
-       caption = expression(paste(u(x,y)== ln(x)+y, ", ", m, " = $10, ", p[x]," = $1, ", p[y]," = $2", sep=" ")))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
-```
-
-]
----
-
-# Optimization and Equilibrium
-
-.pull-left[
-- If people can *learn* and *change* their behavior, they will always switch to a higher-valued option
-
-- If a person has no *better* choices (under current constraints), they are at an .hi[optimum]
-
-- **If everyone is at an optimum**, the **system** is in .hi[equilibrium]
-]
-
-.pull-right[
-.center[
-![:scale 50%](../images/optimize.jpeg)
-
-![:scale 70%](../images/equilibriumbalance.png)
 ]
 ]
 
