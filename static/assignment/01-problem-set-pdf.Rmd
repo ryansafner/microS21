@@ -83,7 +83,7 @@ Put Coke on the horizontal axis and Pepsi on the vertical axis.
 a. Can Kelly get utility by consuming *only* Coke or *only* Pepsi?
 b. Write an equation for $MRS_{c,p}$.^[Hint: think about the relationship between these goods. It may not be a "typical" equation.]
 c. Are the bundles $(c=2, p=5)$ and $(c=4,p=0)$ on the same indifference curve?
-d. What is $MRS_{c,p}$ when $c=1$ and $y=5$?
+d. What is $MRS_{c,p}$ when $c=1$ and $p=5$?
 e. Given your answers, what is the relationship between Coke and Pepsi for Kelly?
 f. Sketch a few indifference curves.
 
