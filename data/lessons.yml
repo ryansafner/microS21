@@ -27,16 +27,19 @@ lessons:
     assignment: "01-problem-set"
 
   - title: "1.5 Demand"
+    content: "1.5-content"
+    slides: "1.5-slides"
+    practice: "1.5-practice"
 
   - title: "1.6 Income and Substitution Effects"
+    content: "1.6-content"
   
   - title: "1.7 Price Elasticity"
 
-  - title: "1.8 Time & Uncertainty"
+  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 2** due Sun Feb 28'
+    assignment: "02-problem-set"
   
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 2**'
-  
-  - title: '<i class="fas fa-star"></i> **Exam 1**'
+  - title: '<i class="fas fa-star"></i> **Exam 1** week of Mar 1'
    
   - title: '<span class="fake-header-table">II. Rational Choice Theory: Producers</span>'
     header: True
