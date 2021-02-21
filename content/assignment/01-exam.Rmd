@@ -12,7 +12,7 @@ library(pander)
 **Exam 1 will be available on Blackboard Assignments**^[Go to our class Blackboard page, on the blue navigation bar on the left, click Assignments, you will find Exam 1.] **as follows**:
 
 - For Section 1 (M/W): 8:00 AM Monday March 1 — 11:59 PM Sunday March 7
-- For Section 2 (Tu/Th): 8:00 AM Tuesday March 2 — 11:59 PM Monday March 8
+- For Section 2 (Tu/Th): 8:00 AM Wednesday March 3 — 11:59 PM Tuesday March 9
 
 Note for obvious reasons, they are different exams across sections.
 
