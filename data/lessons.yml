@@ -36,11 +36,14 @@ lessons:
     slides: "1.6-slides"
   
   - title: "1.7 Price Elasticity"
-
+    content: "1.7-content"
+    slides: "1.7-slides"
+    
   - title: '<i class="fas fa-laptop-code"></i> **Problem Set 2** due Sun Feb 28'
     assignment: "02-problem-set"
   
   - title: '<i class="fas fa-star"></i> **Exam 1** week of Mar 1'
+    assignment: "01-exam"
    
   - title: '<span class="fake-header-table">II. Rational Choice Theory: Producers</span>'
     header: True

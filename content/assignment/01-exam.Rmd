@@ -1,0 +1,52 @@
+---
+title: "Exam 1 Information"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(pander)
+```
+
+**Exam 1 will be available on Blackboard Assignments**^[Go to our class Blackboard page, on the blue navigation bar on the left, click Assignments, you will find Exam 1.] **as follows**:
+
+- For Section 1 (M/W): 8:00 AM Monday March 1 — 11:59 PM Sunday March 7
+- For Section 2 (Tu/Th): 8:00 AM Tuesday March 2 — 11:59 PM Monday March 8
+
+Note for obvious reasons, they are different exams across sections.
+
+If you have any approved testing accommodations, please let me know ASAP and we will make arrangements. Given the time you have to complete the exam, I will not look favorably on excuses given on Sunday.
+
+While the exam is out, neither the TAs nor I will answer any questions related to 1.1-1.7 content at Office Hours, by email, or Slack. We can, of course, still discuss other things. If you have questions, please discuss them with me before March 1.
+
+# Exam Instructions (<i class="fas fa-exclamation-circle"></i> Important, Please read)
+
+This test will be available on Blackboard as a *timed* assignment. You will have **2 hours once you open the test on Blackboard**. You will *not* need the whole time, I have given you some extra to accommodate the technical difficulties of taking an exam at home. **Please pick a time to take it where you know you will have 2 hours**. You may close the exam page and come back to it, but *the timer will continue to run* once the exam is first opened.
+
+You must show all of your work (for calculation problems), either by typing your steps into the answer form, or you may upload (or as a *last* resort (please!), email me them before your time runs out), handwritten steps to the exam, solving your problems.
+
+This is an **open note, open book** exam, but **do not use the internet beyond our class website, or contact each other**^[Google won't help you here. Everything you need should be in your notes, homeworks, or slides anyway!] I will automatically interpret substantially-similarly-written answers, obviously-googled answers, and messaging between students as cheating or plagiarism, respectively. Either will earn you a 0, and be reported. Answers should be *in your own words*, I will also deduct points for blatant copy-pastes off my slides (those are *my* words, not yours!).
+
+# Concepts Study Guide
+
+- [<i class="fas fa-file-pdf"></i> Download PDF](/examprep/exam_1_study_guide.pdf)
+
+Note that we skipped some excess content about preferences this semester, so some things on the study guide (like assumptions about preferences, assumptions about indifference curves, indifference curves for non-goods -- the graph on page 5, steepness --graph on page 7--but know complements & substitutes!), you can safely ignore.
+
+# "Practice" Exam
+
+- [<i class="fas fa-file-pdf"></i> Download Old Exam 1](/examprep/Exam1.pdf)
+<!-- [<i class="fas fa-file-pdf"></i> Old Exam 1 Answer Key](/examprep/Exam1_Answer_Key.pdf)-->
+
+Above, you have a previous semester's actual exam. Use it to get a sense of what questions are asked, the format, and how many. 
+
+Please note that this semester we skipped some things about preferences, so you would not be responsible for questions asking about them. In this old exam, that means questions 5 and 9. Though you should still be able to deduce the answers!
+
+**Be aware: this is pre-Covid when exams were taken in person on paper. The online nature of this semester will significantly affect the questions asked!** Questions draw from topics in Unit 1, and note that **just because topics or questions were not in the practice exam does NOT mean they may not show up on your exam.**^[I hope that this is obvious. I write this to ensure there is no misunderstanding.] Aside from minor extensions, no mathematical problem on any exam should be something you have not seen in some form before. 
+
+Look at the practice exam *before* our Review day. I will post the answer key during the weekend. I am happy to discuss other individual answers and strategies during Office Hours.
+
+# My Advice
+
+Make sure you do all of the homework problems and learn from the answer keys to the homeworks, as well as the in-class practice problems. All of the math problems are largely in the style of the homework questions. While some of the questions should be novel applications, conceptual questions on homeworks will get you in the right headspace to think about answering a question on an exam.^[The point of exams is to *apply* what you've learned, not to literally regurgitate it! Or, at least, it should be.]
