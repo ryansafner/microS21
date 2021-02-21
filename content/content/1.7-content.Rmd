@@ -46,6 +46,10 @@ To allow you to work on [Exam 1](/assignment/01-exam) (see below), there will be
 
 - [<i class="fas fa-file-pdf"></i> Download as PDF](/slides/1.7-slides.pdf)
 
+# <i class="fas fa-dumbbell"></i> Practice
+
+Today we will be working on [practice problems](/practice/1.7-practice). Answers will be posted later on that page.
+
 # Example Applications of Consumer Theory Models
 
 1. [Uncertainty](/files/CT_Application_1_Uncertainty.pdf): We have examined cases where outcomes are *certain*. What if outcomes are not guaranteed, but are *uncertain* (i.e. probabilistic)? Things like your health, your investments, and the integrity of your property (from theft, natural disasters, war, etc) certainly fall into this category. For this reason, we take out *insurance* on valuable things that have some probability of significantly losing their value. Let’s explore how Consumer Theory can make our actions more intelligible.

@@ -38,6 +38,7 @@ lessons:
   - title: "1.7 Price Elasticity"
     content: "1.7-content"
     slides: "1.7-slides"
+    practice: "1.7-practice"
     
   - title: '<i class="fas fa-laptop-code"></i> **Problem Set 2** due Sun Feb 28'
     assignment: "02-problem-set"

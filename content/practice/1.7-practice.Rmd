@@ -1,0 +1,38 @@
+---
+title: "1.7 — Price Elasticity — Practice Problems"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(pander)
+```
+
+- [<i class="fas fa-file-pdf"></i> `Download as PDF`](/practice/1.7-practice.pdf)
+<!-- [<i class="fas fa-file-pdf"></i> `Answer Key`](https://www.youtube.com/watch/dQw4w9WgXcQ)-->
+
+The demand for monthly cell phone plans is given by:
+
+$$q_D =  50-0.5p$$
+
+## Question 1 
+Write the *inverse* demand function.
+
+## Question 2 
+Calculate the price elasticity of demand when the price is $10. Is this relatively elastic or inelastic?
+
+## Question 3
+Calculate the price elasticity of demand when the price is $70. Is this relatively elastic or inelastic?
+
+## Question 4
+At what price is demand unit elastic $(\epsilon=-1)$?
+
+## Question 5
+Calculate the total revenue at $10.
+
+## Question 6
+Calculate the total revenue at $70.
+
+## Question 7
+Calculate the total revenue at the price you found for question 4.
