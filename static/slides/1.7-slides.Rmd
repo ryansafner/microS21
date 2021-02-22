@@ -44,6 +44,15 @@ update_geom_defaults("text", list(family = "Fira Sans Condensed"))
 set.seed(256)
 ```
 
+class: inverse
+
+# Outline
+
+### [Price Elasticity of Demand](#3)
+### [Price Elasticity of Demand and Revenues](#16)
+### [Summing Up Unit 1](#32)
+
+---
 
 ```{r, fig.retina=3}
 demand=function(x){10-x}
