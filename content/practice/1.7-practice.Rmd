@@ -9,8 +9,8 @@ library(tidyverse)
 library(pander)
 ```
 
-- [<i class="fas fa-file-pdf"></i> `Download as PDF`](/practice/1.7-practice.pdf)
-<!-- [<i class="fas fa-file-pdf"></i> `Answer Key`](https://www.youtube.com/watch/dQw4w9WgXcQ)-->
+- [<i class="fas fa-file-pdf"></i> Download as PDF](/practice/1.7-practice.pdf)
+- [<i class="fas fa-file-pdf"></i> Answer Key](/practice/1.7-practice-answers.html)
 
 The demand for monthly cell phone plans is given by:
 
