@@ -89,7 +89,7 @@ If you use Linux, I assume you know your way around a computer well enough to ma
 | Graphing Indifference Curves | Math | [1.3 class](/class/1.3-content/#graphing-indifference-curves) | 
 | Utility Functions for Perfect Substitutes | Math | [1.3 class](/content/1.3-content/#utility-functions-for-perfect-substitutes) | 
 | Utility Functions for Perfect Complements | Math | [1.3 class](/content/1.3-content/#utility-functions-for-perfect-complements) | 
-| Cobb-Douglas Functions | Math | [1.3 class](/class/1.4-class/#cobb-douglas-functions) | | Solving the Constrained Optimization Problem with Calculus | Math | [1.4 class](/content/1.4-content/#solving-the-constrained-optimization-problem-with-calculus) | 
+| Cobb-Douglas Functions | Math | [1.3 class](/content/1.3-content/#cobb-douglas-functions) | | Solving the Constrained Optimization Problem with Calculus | Math | [1.4 class](/content/1.4-content/#solving-the-constrained-optimization-problem-with-calculus) | 
 | Example Demand Functions | Math | [1.6 class](/content/1.6-content/#math-appendix) | 
 | Example Applications of Consumer Theory Models | Applications | [1.7 class](/class/1.7-content/#example-applications-of-consumer-theory-models) | 
 | Derivation of MRTS Equation (as ratio of marginal products) | Proof | [2.2 class](/content/2.2-content/#derivation-of-mrts-equation-as-ratio-of-marginal-products) | 
