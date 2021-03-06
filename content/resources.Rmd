@@ -69,6 +69,14 @@ Here is the [<i class="fas fa-file-pdf"></i> example PDF](../files/photos_to_pdf
 
 If you use Linux, I assume you know your way around a computer well enough to make a PDF! 🤖
 
+# List of Interactive Visualizations
+
+| Visualization         | Content | Class (See Description for Refernece) |
+|------------------|------|------:|
+| [Visualizing the Consumer's Problem](https://ryansafner.shinyapps.io/Consumer/) | Consumer Theory | [1.6 class](/content/1.6-content/#interactive-examples) |
+| [Visualizing Changes in the Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/) | Consumer Theory | [1.6 class](/content/1.6-content/#interactive-examples) |
+| [Visualizing Demand Shifters](https://ryansafner.shinyapps.io/Demand/) | Consumer Theory | [1.6 class](/content/1.6-content/#interactive-examples) |
+
 # List of Online Class Appendices
 
 | Appendix         | Type | Class |
@@ -81,7 +89,15 @@ If you use Linux, I assume you know your way around a computer well enough to ma
 | Graphing Indifference Curves | Math | [1.3 class](/class/1.3-content/#graphing-indifference-curves) | 
 | Utility Functions for Perfect Substitutes | Math | [1.3 class](/content/1.3-content/#utility-functions-for-perfect-substitutes) | 
 | Utility Functions for Perfect Complements | Math | [1.3 class](/content/1.3-content/#utility-functions-for-perfect-complements) | 
-| Cobb-Douglas Functions | Math | [1.3 class](/class/1.4-class/#cobb-douglas-functions) | 
+| Cobb-Douglas Functions | Math | [1.3 class](/class/1.4-class/#cobb-douglas-functions) | | Solving the Constrained Optimization Problem with Calculus | Math | [1.4 class](/content/1.4-content/#solving-the-constrained-optimization-problem-with-calculus) | 
+| Example Demand Functions | Math | [1.6 class](/content/1.6-content/#math-appendix) | 
+| Example Applications of Consumer Theory Models | Applications | [1.7 class](/class/1.7-content/#example-applications-of-consumer-theory-models) | 
+| Derivation of MRTS Equation (as ratio of marginal products) | Proof | [2.2 class](/content/2.2-content/#derivation-of-mrts-equation-as-ratio-of-marginal-products) | 
+| Solving the Firm’s Problem in One Step | Math | [2.2 class](/content/2.2-content/#solving-the-firms-problem-in-one-step) | 
+| The Geometry of Short-Run Production | Math/Economics | [2.2 class](/content/2.2-content/#the-geometry-of-short-run-production) | 
+| The Relationship Between Marginal and Average | Math/Economics | [2.2 class](/content/2.2-content/#the-relationship-between-marginal-and-average) | 
+| A Change in Relative Factor Prices | Applications | [2.3 class](/content/2.3-content/#a-change-in-relative-factor-prices) | 
+| Improvements in Technology | Applications | [2.3 class](/content/2.3-content/#improvements-in-technology) | 
 
 # Quotes about Economics
 
