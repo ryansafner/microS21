@@ -23,13 +23,15 @@ update_geom_defaults("label", list(family = "Fira Sans Condensed"))
 
 
 - Section 1: *Wednesday, March 3, 2021*
-- Section 2: *Tuesday, March 9, 2021*^[Section 2, because of no class on Thursday Feb 18, is a class behind.]
+- Section 2: *Thursday, March 11, 2021*^[Section 2, because of no class on Thursday Feb 18 and Tuesday Mar 9, is 2 classes behind Section 1.]
 
 # <i class="fas fa-info-circle fa-lg"></i> Overview
 
 Today we start looking on the supply side of the market for the next few weeks. You will ultimately see, we will use the same tools (and get basically the same results!) for studying producers (constrained optimization models) as we did for consumers. Sometimes, these models finally "click" for students the second time around, and production is often more intuitive than utility and consumption.
 
 Today we set up the problem, and discuss what it is that firms do. If you want to learn a lot more about the economics of organization and theory of the firm, see my [Industrial Organization class](https://ios20.classes.ryansafner.com).
+
+In the beginning, I introduce the canonical model of comparative advantage as a way to explore a lot of insights about production, the division of labor, specialization and trade, and the theory of the firm. Do not get too distracted in the graphs or mechanics of this model (though it should echo things that we have seen before), it is only a useful segue for what we will cover in the next 2-3 weeks. If you want to know more, I do a deep dive with these models to explain [international trade in ECON 324](https://tradef20.classes.ryansafner.com).
 
 # <i class="fas fa-book-reader fa-lg"></i> Readings
 

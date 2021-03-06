@@ -54,11 +54,17 @@ lessons:
     slides: "2.1-slides"
     
   - title: "2.2 Short Run and Long Run Production"
+    content: "2.2-content"
+    slides: "2.2-slides"
 
   - title: "2.3 Cost Minimization"
+    content: "2.3-content"
+    slides: "2.3-slides"
+    practice: "2.3-practice"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 3**'
-
+  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 3** due Sun Mar 14/21'
+    assignment: "03-problem-set"
+    
   - title: "2.4 Costs of Production"
 
   - title: "2.5 Short Run Profit Maximization"
