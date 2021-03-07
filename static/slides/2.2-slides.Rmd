@@ -44,6 +44,18 @@ update_geom_defaults("text", list(family = "Fira Sans Condensed"))
 set.seed(256)
 ```
 
+class: inverse, center, middle
+
+# Outline
+
+### [Production in the Short Run](#5)
+### [The Firm's Problem: Long Run](#16)
+### [Isoquants and MRTS](#23)
+### [Isocost Lines](#36)
+
+
+---
+
 # The “Runs” of Production 
 
 .pull-left[
@@ -66,11 +78,12 @@ $$q=f(\bar{k},l)$$
 
 ---
 
-# The "Runs" of Production 
+
+# The “Runs” of Production 
 
 .pull-left[
 
-- "Time"-frame usefully divided between short vs. long run analysis
+- “Time”-frame usefully divided between short vs. long run analysis
 
 - .hi[Long run]: all factors of production are .hi-purple[variable] (can be changed)
 $$q=f(k,l)$$
@@ -95,7 +108,7 @@ class: inverse, center, middle
 # Production in the Short Run: Example
 
 .pull-left[
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .smaller[
 .green[**Example**:] Consider a firm with the production function
 $$q=k^{0.5}l^{0.5}$$
@@ -407,7 +420,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 # Production Functions and Marginal Product
 
-- A quick trick to roughly estimate $MP_l$
+- A quick trick to roughly<sup>.magenta[†]</sup> estimate $MP_l$
 
 $$MP_l \approx \frac{q_2-q_1}{l_2-l_1}$$
 
@@ -418,8 +431,7 @@ $$MP_l \approx \frac{q_2-q_1}{l_2-l_1}$$
 | $2$ | $2.83$ | $2.83-2.00=0.83$ |
 | $3$ | $3.46$ | $3.46-2.83=0.63$ |
 
-.smallest[
-- Note these are *approximate*. Technically, $MP_l$ is defined via calculus as an *infinitesimal* change in $l$, whereas these are discrete changes.]
+.footnote[<sup>.magenta[†]</sup> Note these are *approximate*. Technically, $MP_l$ is defined via calculus as an *infinitesimal* change in $l$, whereas these are discrete changes.]
 
 ---
 
@@ -480,7 +492,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 # Production in the Short Run: Example II
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**:] Suppose a firm has the following production function:
 $$q=2k+l^2$$
 
@@ -537,7 +549,7 @@ $$q=f(k,l)$$
 
 3. **Subject to:** .hi-red[< technology >]
 
-- It's actually much easier to break this into *2 stages*, though it's possible to do it all at once. See today's [class notes](/class/2.1-class) page for an example.
+- It's actually much easier to break this into **2 stages**. See today’s [class notes](/content/2.1-content) page for an example using only one stage.
 ]
 ]
 
@@ -554,7 +566,7 @@ $$q=f(k,l)$$
 
 .pull-left[
 .smallest[
-- 1<sup>st</sup> Stage: .hi[firm's profit maximization problem]: 
+1<sup>st</sup> Stage: .hi[firm's profit maximization problem]: 
 
 1. **Choose:** .hi-blue[ < output >]
 
@@ -576,7 +588,7 @@ $$q=f(k,l)$$
 
 .pull-left[
 .smallest[
-- 1<sup>st</sup> Stage: .hi[firm's profit maximization problem]: 
+1<sup>st</sup> Stage: .hi[firm's profit maximization problem]: 
 
 1. **Choose:** .hi-blue[ < output >]
 
@@ -584,7 +596,7 @@ $$q=f(k,l)$$
 
 - We'll cover this later...first we'll explore: 
 
-- 2<sup>nd</sup> Stage: .hi[firm's cost minimization problem]: 
+2<sup>nd</sup> Stage: .hi[firm's cost minimization problem]: 
 
 1. **Choose:** .hi-blue[ < inputs >]
 
@@ -967,7 +979,7 @@ p
 
 .pull-left[
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Consider Bank Tellers `\\((l)\\)` and ATMs `\\((k)\\)` 
 ]
 - One ATM can do the work of 2 bank tellers
@@ -1003,7 +1015,7 @@ ggplot(data.frame(x=c(0,5)), aes(x=x))+
 
 .pull-left[
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Consider busses `\\((k)\\)` and bus drivers `\\((l)\\)`
 ]
 - Must combine together in fixed proportions (1:1)
@@ -1080,7 +1092,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 # Practice
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Suppose a firm has the following production function:
 $$q=2lk$$
 
@@ -1262,7 +1274,7 @@ ggplot(data.frame(x=c(0,C/w)), aes(x=x))+
 
 # The Isocost Line: Example
 
-.content-box-green[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Suppose your firm has a purchasing budget of $50. Market wages are $5/worker-hour and the mark rental rate of capital is $10/machine-hour. Let $l$ be on the horizontal axis and $k$ be on the vertical axis.
 
 1. Write an equation for the isocost line (in graphable form).
@@ -1275,14 +1287,13 @@ ggplot(data.frame(x=c(0,C/w)), aes(x=x))+
 # Interpreting Isocost Line
 
 .pull-left[
-
+.quitesmall[
 - Points .blue[on] the line are same total cost
   - A: \\($5(0l)+$10(5k) = $50\\) 
   - B: \\($5(10l)+$10(0k) = $50\\)
   - C: \\($5(2l)+$10(4k) = $50\\) 
   - D: \\($5(6l)+$10(2k) = $50\\)
-
-
+]
 ]
 
 .pull-right[
@@ -1337,7 +1348,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Interpreting Isocost Line
 
 .pull-left[
-
+.quitesmall[
 - Points .blue[on] the line are same total cost
   - A: \\($5(0l)+$10(5k) = $50\\) 
   - B: \\($5(10l)+$10(0k) = $50\\)
@@ -1347,7 +1358,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 - Points .green[beneath] the line are .green[cheaper] (but may produce less)
   - E: \\($5(3l)+$10(2k) = $35\\) 
 
-
+]
 ]
 
 .pull-right[
@@ -1386,7 +1397,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Interpreting the Isocost Line
 
 .pull-left[
-
+.quitesmall[
 - Points .blue[on] the line are same total cost
   - A: \\($5(0l)+$10(5k) = $50\\) 
   - B: \\($5(10l)+$10(0k) = $50\\)
@@ -1398,7 +1409,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 - Points .red[above] the line are .red[more expensive] (and may produce more)
   - F: \\($5(6l)+$10(4k) = $70\\) 
-
+]
 ]
 
 .pull-right[
@@ -1444,11 +1455,12 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-- **Slope**: market-rate of .hi-purple[tradeoff] between $l$ and $k$
+- **Slope**: .hi-purple[tradeoff] between $l$ and $k$ at market prices
+  - Market .hi-purple[“exchange rate”] between $l$ and $k$
 
-- .hi-purple[Relative price] of $l$ or .hi-purple[opportunity cost] of $l$:
+- .hi-purple[*Relative* price] of $l$ or the .hi-purple[opportunity cost] of $l$:
 
-> Using 1 more unit of $l$ requires giving up $\frac{w}{r}$ units of $k$
+> Hiring 1 more unit of $l$ requires giving up $\left(\frac{w}{r}\right)$ units of $k$
 
 ]
 
