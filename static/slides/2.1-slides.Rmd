@@ -425,7 +425,7 @@ geom_point(data = export_b,
 - Based on his preferences, his productive & consumption .hi[optimum] is point A (highest .green[Indifference curve] tangent to .blue[PPF])
 
 - At this point:
-$$\underbrace{\color{blue}{MRTS}}_{\text{PPF slope}}=\underbrace{\color{green}{MRS}}_{\text{I.C. slope}}=\underbrace{\color{purple}{\frac{p_b}{p_c}}}_{\text{price line}}$$
+$$\underbrace{\color{blue}{MRT}}_{\text{PPF slope}}=\underbrace{\color{green}{MRS}}_{\text{I.C. slope}}=\underbrace{\color{purple}{\frac{p_b}{p_c}}}_{\text{price line}}$$
 
 ]
 
@@ -841,7 +841,7 @@ Adam Smith
 5. .hi[Competitive firms produce where MC = MB]
   - Point B:
   
-$$\underbrace{\color{blue}{MRTS}}_{\text{PPF slope}}=\underbrace{\color{green}{MRS}}_{\text{I.C. slope}}=\underbrace{\color{purple}{\frac{p_b}{p_c}}}_{\text{price line}}$$
+$$\underbrace{\color{blue}{MRT}}_{\text{PPF slope}}=\underbrace{\color{green}{MRS}}_{\text{I.C. slope}}=\underbrace{\color{purple}{\frac{p_b}{p_c}}}_{\text{price line}}$$
 
 ]
 ]
