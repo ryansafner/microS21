@@ -188,8 +188,7 @@ pf+ # 1 to 2
 $$MP_l = \frac{\Delta q}{\Delta l}$$
 
 - $MP_l$ is slope of $TP$ at each value of $l$! 
-
-- Note: via calculus: $\frac{\partial q}{\partial l}$
+  - Note: via calculus: $\frac{\partial q}{\partial l}$
 ]
 
 .pull-right[
@@ -242,10 +241,9 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 $$MP_k = \frac{\Delta q}{\Delta k}$$
 
 - $MP_k$ is slope of $TP$ at each value of $k$! 
+  - Note: via calculus: $\frac{\partial q}{\partial k}$
 
-- Note: via calculus: $\frac{\partial q}{\partial k}$
-
-- Note we often don't consider capital in the short run!
+- Note we don't consider capital in the short run!
 
 ]
 
@@ -431,7 +429,7 @@ $$MP_l \approx \frac{q_2-q_1}{l_2-l_1}$$
 | $2$ | $2.83$ | $2.83-2.00=0.83$ |
 | $3$ | $3.46$ | $3.46-2.83=0.63$ |
 
-.footnote[<sup>.magenta[†]</sup> Note these are *approximate*. Technically, `\\(MP_l\\)` is defined via calculus as an *infinitesimal* change in $l$, whereas these are discrete changes.]
+.footnote[<sup>.magenta[†]</sup> Note these are *approximate*. Technically, `\\(MP_l\\)` is defined via calculus as an *infinitesimal* change in `\\(l\\)`, whereas these are discrete changes.]
 
 ---
 
@@ -979,7 +977,7 @@ p
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Example**]: Consider Bank Tellers `\\((l)\\)` and ATMs `\\((k)\\)` 
 ]
-- One ATM can do the work of 2 bank tellers
+- Suppose 1 ATM can do the work of 2 bank tellers
 
 - .hi[Perfect substitutes]: inputs that can be substituted at same fixed rate and yield same output
 
@@ -990,8 +988,8 @@ p
 .pull-right[
 ```{r, echo=F, fig.retina=3, fig.align="center"}
 ggplot(data.frame(x=c(0,5)), aes(x=x))+
-  geom_segment(aes(x=0, xend=2, y=1, yend=0), size=1, color="#453781FF")+
-  geom_segment(aes(x=0, xend=4, y=2, yend=0), size=1, color="#20A387FF")+
+  geom_segment(aes(x=0, xend=2, y=1, yend=0), size=2, color="#453781FF")+
+  geom_segment(aes(x=0, xend=4, y=2, yend=0), size=2, color="#20A387FF")+
   geom_label(aes(x=1, y=0.5), size=6, color="#453781FF", label="q=1")+
   geom_label(aes(x=1, y=1.5), size=6, color="#20A387FF", label="q=2")+
   scale_x_continuous(breaks=seq(0,5,1),
@@ -1013,23 +1011,23 @@ ggplot(data.frame(x=c(0,5)), aes(x=x))+
 .pull-left[
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-.green[**Example**]: Consider busses `\\((k)\\)` and bus drivers `\\((l)\\)`
+.green[**Example**]: Consider buses `\\((k)\\)` and bus drivers `\\((l)\\)`
 ]
 - Must combine together in fixed proportions (1:1)
 
 - .hi[Perfect complements]: inputs must be used together in same fixed proportion to produce output
 
-- MRS: ?
+- $MRTS_{l,k}$: ?
 
 ]
 
 .pull-right[
 ```{r, echo=F, fig.retina=3, fig.align="center"}
 ggplot(data.frame(x=c(0,5)), aes(x=x))+
-  geom_segment(aes(x=1, xend=1, y=5, yend=1), size=1, color="#453781FF")+
-  geom_segment(aes(x=1, xend=5, y=1, yend=1), size=1, color="#453781FF")+
-  geom_segment(aes(x=2, xend=2, y=5, yend=2), size=1, color="#20A387FF")+
-  geom_segment(aes(x=2, xend=5, y=2, yend=2), size=1, color="#20A387FF")+
+  geom_segment(aes(x=1, xend=1, y=5, yend=1), size=2, color="#453781FF")+
+  geom_segment(aes(x=1, xend=5, y=1, yend=1), size=2, color="#453781FF")+
+  geom_segment(aes(x=2, xend=2, y=5, yend=2), size=2, color="#20A387FF")+
+  geom_segment(aes(x=2, xend=5, y=2, yend=2), size=2, color="#20A387FF")+
   geom_label(aes(x=4, y=1), size=6, color="#453781FF", label="q=1")+
   geom_label(aes(x=4, y=2), size=6, color="#20A387FF", label="q=2")+
   scale_x_continuous(breaks=seq(0,5,1),
@@ -1124,7 +1122,7 @@ class: inverse, center, middle
 .smallest[
 - If your firm can choose among *many* input combinations to produce $q$, which combinations are optimal?
 
-- Those combination that are **cheapest**
+- Those combination that are .hi-purple[cheapest]
 
 - Denote prices of each input as:
     - $w$: price of labor (wage)
