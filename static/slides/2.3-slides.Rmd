@@ -49,7 +49,7 @@ set.seed(256)
 
 .pull-left[
 .smallest[
-- 1<sup>st</sup> Stage: .hi[firm's profit maximization problem]: 
+1<sup>st</sup> Stage: .hi[firm's profit maximization problem]: 
 
 1. **Choose:** .hi-blue[ < output >]
 
@@ -57,7 +57,7 @@ set.seed(256)
 
 - We'll cover this later...first we'll explore: 
 
-- 2<sup>nd</sup> Stage: .hi[firm's cost minimization problem]: 
+2<sup>nd</sup> Stage: .hi[firm's cost minimization problem]: 
 
 1. **Choose:** .hi-blue[ < inputs >]
 
@@ -67,13 +67,12 @@ set.seed(256)
 
 - Minimizing costs $\iff$ maximizing profits
 ]
-
 ]
 
 .pull-right[
 
 .center[
-![](https://www.dropbox.com/s/zwows56ydpqj9u6/management.jpg?raw=1)
+![](../images/management.jpg)
 ]
 ]
 
@@ -101,7 +100,7 @@ class: inverse, center, middle
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/nw0v6bsho0ab4zq/choices.jpg?raw=1)
+![](../images/management.jpg)
 ]
 ]
 
@@ -122,7 +121,7 @@ class: inverse, center, middle
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/nw0v6bsho0ab4zq/choices.jpg?raw=1)
+![](../images/management.jpg)
 ]
 ]
 
@@ -139,7 +138,7 @@ class: inverse, center, middle
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/nw0v6bsho0ab4zq/choices.jpg?raw=1)
+![](../images/management.jpg)
 ]
 ]
 
@@ -158,7 +157,7 @@ $$s.t. q^*=f(l,k)$$
 
 .pull-right[
 .center[
-![](https://www.dropbox.com/s/nw0v6bsho0ab4zq/choices.jpg?raw=1)
+![](../images/management.jpg)
 ]
 ]
 
@@ -299,10 +298,10 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # The Firm's Least-Cost Input Combination: Why A?
 
 .pull-left[
-
+.smallest[
 $$\begin{align*}
 \color{green}{\text{Isoquant curve slope}} &= \color{red}{\text{Isocost line slope}} \\ \end{align*}$$
-
+]
 ]
 
 .pull-right[
@@ -342,16 +341,38 @@ min_c
 # The Firm's Least-Cost Input Combination: Why A?
 
 .pull-left[
-
+.smallest[
 $$\begin{align*}
 \color{green}{\text{Isoquant curve slope}} &= \color{red}{\text{Isocost line slope}} \\
-\color{green}{| MRTS_{l,k} |} &= \color{red}{| \frac{w}{r} |} \\
-\color{green}{| \frac{MP_l}{MP_k} |} &= \color{red}{| \frac{w}{r} |} \\
-\color{green}{| -0.5 |} &= \color{red}{| -0.5 |} \\\end{align*}$$
+\color{green}{MRTS_{l,k}} &= \color{red}{\frac{w}{r}} \\
+\color{green}{\frac{MP_l}{MP_k}} &= \color{red}{\frac{w}{r}} \\
+\color{green}{0.5} &= \color{red}{0.5 } \\\end{align*}$$
 
-- .hi-green[Firm] would exchange at same rate as .hi-red[market]
+- .hi-green[Marginal benefit] = .hi-red[Marginal cost]
+  - .hi-green[Firm] would exchange at same rate as .hi-red[market]
 
-- **No other combination** of $(l,k)$ **exists** at current prices & output that could lower cost to produce $q^*$!
+- .hi-purple[No other combination** of (l,k) exists at current prices & output that could produce `\\(q^*\\)` at lower cost!]
+]
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+min_c
+```
+]
+
+---
+
+# Two Equivalent Rules
+
+.pull-left[
+
+## Rule 1
+
+$$\frac{MP_l}{MP_k}  =  \frac{w}{r}$$
+
+- Easier for calculation (slopes)
 
 ]
 
@@ -372,28 +393,7 @@ min_c
 
 $$\frac{MP_l}{MP_k}  =  \frac{w}{r}$$
 
-- Easier for solving math problems
-
-]
-
-.pull-right[
-
-```{r, fig.retina=3}
-min_c
-```
-]
-
----
-
-# Two Equivalent Rules
-
-.pull-left[
-
-## Rule 1
-
-$$\frac{MP_l}{MP_k}  =  \frac{w}{r}$$
-
-- Easier for solving math problems
+- Easier for calculation (slopes)
 
 ## Rule 2
 
@@ -424,20 +424,6 @@ $$\frac{MP_l}{w}  =  \frac{MP_k}{r} = \cdots = \frac{MP_n}{p_n}$$
 ---
 
 # The Equimarginal Rule Again II
-
-$$\frac{MP_l}{w}  =  \frac{MP_k}{r} = \cdots = \frac{MP_n}{p_n}$$
-
-- Why is this the optimum? 
-
-- .hi-green[Example:] suppose firm could get a higher marginal product per $1 spent on $l$ than for $k$ (i.e. "more bang for your buck"!)
-  - Not minimizing costs!
-  - Should use more $l$ and less $k$!
-      - This will raise $MP_k$ and lower $MP_l$!
-  - Continue until cost-adjusted marginal products are equalized
-
----
-
-# The Equimarginal Rule Again III
 
 .pull-left[
 
