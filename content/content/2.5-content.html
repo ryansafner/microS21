@@ -1,0 +1,87 @@
+---
+title: "2.5 — Short Run Profit Maximization — Class Content"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- BLOGDOWN-HEAD -->
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<!-- /BLOGDOWN-HEAD -->
+
+<h2>Contents</h2>
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#practice"><i class="fas fa-dumbbell"></i> Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a></li>
+<li><a href="#appendix"><i class="far fa-sigma"></i> Appendix</a>
+<ul>
+<li><a href="#common-cost-assumptions">Common Cost Assumptions</a></li>
+</ul></li>
+</ul>
+</div>
+
+<ul>
+<li>Section 1: <em>Wednesday, March 17, 2021</em></li>
+<li>Section 2: <em>Thursday, March 26, 2021</em><span><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">Section 2, because of no class on Thursday Feb 18 and Tuesday Mar 9, is 2 classes behind Section 1.<br />
+<br />
+</span></span></li>
+</ul>
+<h2 id="overview"><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we briefly discuss revenues before we put them together next class to solve the firm’s <em>profit maximization problem</em>. We focus on the <em>short run</em>, where the firm incurs fixed costs and must stay in the market regardless. We derive the firm’s (inverse) <em>supply curve</em>.</p>
+<p>Next class will be about the long run, and finish up unit 2.</p>
+<!--I have your Exam 1 graded and will discuss them at the end of class today. See [assignments](#assignments) below for more information.-->
+<h2 id="readings"><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fa-book"></i> Ch. 8.1-8.3 in Goolsbee, Levitt, and Syverson, 2019</li>
+</ul>
+<h2 id="slides"><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p><a href="/slides/2.5-slides.html"><img src="/slides/2.5-slides.png" /></a></p>
+<ul>
+<li><a href="/slides/2.5-slides.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a></li>
+</ul>
+<h2 id="practice"><i class="fas fa-dumbbell"></i> Practice</h2>
+<p>Today we will be working on <a href="/practice/2.5-practice">practice problems</a>. Answers will be posted later on that page.</p>
+<h2 id="assignments"><i class="fas fa-laptop-code"></i> Assignments</h2>
+<h2 id="appendix"><i class="far fa-sigma"></i> Appendix</h2>
+<h3 id="common-cost-assumptions">Common Cost Assumptions</h3>
+<p>Economists often make simple assumptions about costs to illustrate key concepts without marring the analysis with unnecessary complexity. This also makes graphs quite easy to point to and calculate key ares, such as profits or deadweight losses.</p>
+<p>One common set of cost assumptions is the following:</p>
+<ol style="list-style-type: decimal">
+<li>A firm has no fixed costs</li>
+<li>A firm has constant marginal costs, <span class="math inline">\(MC(q)=c\)</span> where <span class="math inline">\(c\geq0\)</span></li>
+</ol>
+<p>If this is the case, then we can show that average costs will be <em>equal</em> to marginal costs, i.e. <span class="math inline">\(MC=AC=AVC=c\)</span>.</p>
+<p>Since marginal cost is the first derivative of the total cost function, integrating a marginal cost function <span class="math inline">\(MC=c\)</span> leaves with with a total cost function of <span class="math inline">\(C(q)=cq\)</span>.<span><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">Since we assumed there are no fixed costs, then there is no arbitrary constant from integration.<br />
+<br />
+</span></span> If this is the case, then we can find the average cost:</p>
+<p><span class="math display">\[\begin{align*}
+C(q)&amp;=cq\\
+AC(q)=\frac{C(q)}{q}&amp;=\frac{cq}{q}\\
+AC(q)&amp;=c\\
+\end{align*}\]</span></p>
+<p><img src="/content/2.5-content_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Another common set of cost assumptions is the following:</p>
+<ol style="list-style-type: decimal">
+<li>A firm has fixed costs, <span class="math inline">\(f\)</span></li>
+<li>A firm has constant marginal costs, <span class="math inline">\(MC(q)=c\)</span> where <span class="math inline">\(c\geq0\)</span></li>
+</ol>
+<p>If this is the case, then we can show that average costs are strictly decreasing over all output <span class="math inline">\(q\geq0\)</span>.</p>
+<p>Again, we can integrate marginal cost to the total cost function (but here we need the arbitrary constant from integration, which we shall label <span class="math inline">\(f\)</span>, for fixed costs): <span class="math inline">\(C(q)=cq+f\)</span>. We can then find the average cost:</p>
+<p><span class="math display">\[\begin{align*}
+C(q)&amp;=cq+f\\
+AC(q)=\frac{C(q)}{q}&amp;=\frac{cq+f}{q}\\
+AC(q)&amp;=c+\frac{f}{q}\\
+\end{align*}\]</span></p>
+<p>Since <span class="math inline">\(f&gt;0\)</span>, as <span class="math inline">\(q \rightarrow \infty\)</span>, <span class="math inline">\(AC(q) \rightarrow c\)</span>, that is, average cost is getting asymptotically close to marginal cost, <span class="math inline">\(c\)</span>, but will never intersect it. Note, I also included AFC, which again is always decreasing, and asymptotically approaching 0.</p>
+<p>The importance of this type of cost structure is that it creates <strong>economies of scale</strong>, and represents a lot of industries that tend towards <strong>natural monopoly</strong>.</p>
+<p><img src="/content/2.5-content_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>

@@ -45,8 +45,6 @@ Produces:
 
 We finally wrap up with a discussion of *returns to scale*.
 
-Note to section 1 (Tu/Th) students: this was formerly lumped in with Class 11, but I've since broke it into its own class to better keep track of our schedule.
-
 # <i class="fas fa-book-reader fa-lg"></i> Readings
 
 - <i class="fas fa-book"></i> Ch. 6.4-6.7 in Goolsbee, Levitt, and Syverson, 2019

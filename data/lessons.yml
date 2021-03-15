@@ -66,9 +66,13 @@ lessons:
     assignment: "03-problem-set"
     
   - title: "2.4 Costs of Production"
+    content: "2.4-content"
+    slides: "2.4-slides"
 
   - title: "2.5 Short Run Profit Maximization"
-
+    content: "2.5-content"
+    practice: "2.5-practice"
+    
   - title: "2.6 Long Run Industry Equilibrium"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem Set 4**'
