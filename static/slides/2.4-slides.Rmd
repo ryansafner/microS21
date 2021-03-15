@@ -236,7 +236,7 @@ class: inverse, center, middle
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .green[**Examples**]:
 .smallest[
-- If you choose to start a business, you may give up your salary at your current job
+- If you start a business, you may give up your salary at your current job
 - If you invest in a factory, you give up other investment opportunities
 - If you use an office building you own, you cannot rent it to other people
 - If you hire a skilled worker, you must pay them a high enough salary to deter them from working for other firms
@@ -675,7 +675,8 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 .smallest[
 - Relationship between a marginal and an average value:
 
-- .red[marginal] $>$ .orange[average], .orange[average] $\uparrow$
+- .red[marginal] $<$ .orange[average], .orange[average] $\downarrow$
+
 ]
 ]
 
@@ -714,9 +715,9 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 .smallest[
 - Relationship between a marginal and an average value:
 
-- .red[marginal] $>$ .orange[average], .orange[average] $\uparrow$
-
 - .red[marginal] $<$ .orange[average], .orange[average] $\downarrow$
+
+- .red[marginal] $>$ .orange[average], .orange[average] $\uparrow$
 ]
 ]
 
@@ -751,9 +752,9 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 .smallest[
 - Relationship between a marginal and an average value:
 
-- .red[marginal] $>$ .orange[average], .orange[average] $\uparrow$
-
 - .red[marginal] $<$ .orange[average], .orange[average] $\downarrow$
+
+- .red[marginal] $>$ .orange[average], .orange[average] $\uparrow$
 
 - When .red[marginal] $=$ .orange[average], .orange[average] is **maximized/minimized**
 - .hi-purple[When `\\(MC=AC\\)`, `\\(AC\\)` is at a *minimum*]
