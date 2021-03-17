@@ -114,7 +114,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   stat_function(fun=cc_mc, geom="line", size=2, color="red")+
   geom_label(aes(x=2,y=cc_mc(2)), color = "red", label="MC(q)=AVC(q)=c", size = 4)+
   stat_function(fun=cc_ac, geom="line", size=2, color="orange")+
-  geom_label(aes(x=8,y=cc_ac(8)), color = "orange", label="AC(q)=cq+f/q", size = 4)+
+  geom_label(aes(x=8,y=cc_ac(8)), color = "orange", label="AC(q)=q+f/q", size = 4)+
   stat_function(fun=cc_f, geom="line", size=2, color="purple")+
   geom_label(aes(x=9,y=cc_f(9)), color = "purple", label="AFC(q)=f/q", size = 4)+
   scale_x_continuous(breaks=NULL,
