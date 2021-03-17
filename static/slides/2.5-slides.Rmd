@@ -464,7 +464,7 @@ total_plot+
 - Graph: find $q^*$ to max $\pi \implies q^*$ where max distance between $R(q)$ and $C(q)$
 
 - Slopes must be equal:
-$$MR(q)=MC(q)$$
+$$\color{blue}{MR(q)}=\color{red}{MC(q)}$$
 
 
 ]
@@ -493,7 +493,7 @@ total_plot+
 - Graph: find $q^*$ to max $\pi \implies q^*$ where max distance between $R(q)$ and $C(q)$
 
 - Slopes must be equal:
-$$MR(q)=MC(q)$$
+$$\color{blue}{MR(q)}=\color{red}{MC(q)}$$
 
 .smallest[
 - At $q^*=5$:
@@ -527,7 +527,7 @@ total_plot+
 
 .pull-left[
 
-- At low output $q<q^*$, can increase $\pi$ by producing *more*: $MR(q)>MC(q)$
+- At low output $q<q^*$, can increase $\pi$ by producing *more*: $\color{blue}{MR(q)}>\color{red}{MC(q)}$
 
 ]
 
@@ -566,7 +566,7 @@ marginal_plot+
 
 .pull-left[
 
-- At high output $q>q^*$, can increase $\pi$ by producing *less*: $MR(q)<MC(q)$
+- At high output $q>q^*$, can increase $\pi$ by producing *less*: $\color{blue}{MR(q)}<\color{red}{MC(q)}$
 
 ]
 
@@ -585,7 +585,7 @@ marginal_plot+
 
 .pull-left[
 
-- $\pi$ is *maximized* where $MR(q)=MC(q)$
+- $\pi$ is *maximized* where $\color{blue}{MR(q)}=\color{red}{MC(q)}$
 
 ]
 
