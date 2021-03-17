@@ -1303,6 +1303,7 @@ price4<-function(x){2}
 
 supply_plot+
   stat_function(fun=price4, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=5.5,y=price4(5.5)), color = "blue", label=expression(MR(q)), size = 3)+
   geom_hline(yintercept=4, size=1, linetype="dashed")+
   geom_label(x=6,y=4, label="Min AVC(q)", size =5, color="brown")+
   stat_function(fun=marginal, xlim=c(2,10), geom="line", size=3.5, color = "red")+
@@ -1364,7 +1365,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-right[
 .center[
-Firm's red[short run (inverse) supply]:
+Firm's .red[short run (inverse) supply]:
 ]
 $$\begin{cases}
 p=MC(q) & \text{if } p \geq AVC \\

@@ -26,7 +26,7 @@ update_geom_defaults("label", list(family = "Fira Sans Condensed"))
 
 # <i class="fas fa-info-circle fa-lg"></i> Overview
 
-Today we briefly discuss revenues before we put them together next class to solve the firm's *profit maximization problem*. We focus on the *short run*, where the firm incurs fixed costs and must stay in the market regardless. We derive the firm's (inverse) *supply curve*.
+Today we briefly discuss revenues before we put them together to solve the firm's *profit maximization problem*. We focus on the *short run*, where the firm incurs fixed costs and must stay in the market regardless. We derive the firm's (inverse) *supply curve*.
 
 Next class will be about the long run, and finish up unit 2.
 
