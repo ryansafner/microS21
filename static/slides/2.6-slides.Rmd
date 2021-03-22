@@ -1131,7 +1131,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Recall: Accounting vs. Economic Point of View
 
 .pull-left[
-.smaller[
+.smallest[
 - Recall .hi-purple[“economic point of view”]:
 
 - Producing *your* product pulls scarce resources *out of other productive uses* in the economy
