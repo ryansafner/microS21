@@ -75,10 +75,12 @@ lessons:
     slides: "2.5-slides"
     
   - title: "2.6 Long Run Industry Equilibrium"
+    content: "2.6-content"
+    slides: "2.6-slides"
+    
+  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 4** due Sun Mar 28/Sun May 4'
 
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 4**'
-
-  - title: '<i class="fas fa-star"></i> **Exam 2**'
+  - title: '<i class="fas fa-star"></i> **Exam 2** week of May 5'
 
   - title: '<span class="fake-header-table">III. Market Equilibrium</span>'
     header: True
