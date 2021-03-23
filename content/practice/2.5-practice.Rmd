@@ -10,7 +10,7 @@ library(pander)
 ```
 
 - [<i class="fas fa-file-pdf"></i> Download as PDF](/practice/2.5-practice.pdf)
-<!-- [<i class="far fa-life-ring"></i> Answer Key](https://www.youtube.com/watch/dQw4w9WgXcQ)-->
+- [<i class="far fa-life-ring"></i> Answer Key](/practice/2.5-practice-answers.html)
 
 A firm has short-run costs given by:
 $$\begin{align*}

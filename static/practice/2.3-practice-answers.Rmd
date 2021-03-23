@@ -46,7 +46,7 @@ To find the exact quantities of $l$ and $k$, use the production function:
 
 $$\begin{align*}
 q&=4lk & & \text{The production function}\\
-144&4l(\frac{1}{4}l) & & \text{Plugging in what we are given and what we found}\\
+144&=4l(\frac{1}{4}l) & & \text{Plugging in what we are given and what we found}\\
 144&=l^2 & & \text{Multiplying}\\
 12&=l & & \text{Square rooting both sides}\\
 \end{align*}$$
