@@ -11,7 +11,7 @@ library(pander)
 ```
 
 - Section 1 (M/W): *Due by 11:59 PM Sunday, Mar 28, 2021*
-- Section 2 (Tu/Th): *Due by 11:59 PM Sunday, May 4, 2021*
+- Section 2 (Tu/Th): *Due by 11:59 PM Sunday, Apr 4, 2021*
 
 by PDF upload in Blackboard Assignments
 

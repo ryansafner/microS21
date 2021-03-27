@@ -78,10 +78,10 @@ lessons:
     content: "2.6-content"
     slides: "2.6-slides"
     
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 4** due Sun Mar 28/Sun May 4'
+  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 4** due Sun Mar 28/Sun April 4'
     assignment: "04-problem-set"
     
-  - title: '<i class="fas fa-star"></i> **Exam 2** week of May 5'
+  - title: '<i class="fas fa-star"></i> **Exam 2** week of April 5'
 
   - title: '<span class="fake-header-table">III. Market Equilibrium</span>'
     header: True
