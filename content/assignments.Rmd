@@ -27,7 +27,7 @@ Your TA, under my supervision, will grade homeworks 70% for completion, and for 
 | [Problem Set 1](/assignment/01-problem-set) | Wed Feb 17|
 | [Problem Set 2](/assignment/02-problem-set) | Sun Feb 28 |
 | [Problem Set 3](/assignment/03-problem-set) | Sun Mar 14/21 |
-| [Problem Set 4](/assignment/04-problem-set) | TBD |
+| [Problem Set 4](/assignment/04-problem-set) | Sun Mar 28/April 4 |
 | [Problem Set 5](/assignment/05-problem-set) | TBD |
 | [Problem Set 6](/assignment/06-problem-set) | TBD |
 
@@ -38,7 +38,7 @@ There will be three exams (one at the end of each unit) including the final exam
 | Assignment         | Deadline (S1 MW/S2 TuTh) |
 |--------------------|---------:|
 | [Exam 1](/assignment/01-exam) | Mar 1—Mar 7/Mar 3—Mar 10 |
-| [Exam 2](/assignment/02-exam) | TBD |
+| [Exam 2](/assignment/02-exam) | Apr 5-Apr 11|
 | [Final Exam](/assignment/03-exam) | TBD |
 
 ### Opinion-Editorial

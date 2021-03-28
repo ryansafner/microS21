@@ -82,6 +82,7 @@ lessons:
     assignment: "04-problem-set"
     
   - title: '<i class="fas fa-star"></i> **Exam 2** week of April 5'
+    assignment: "02-exam"
 
   - title: '<span class="fake-header-table">III. Market Equilibrium</span>'
     header: True
@@ -91,6 +92,9 @@ lessons:
     slides: "3.1-slides"
 
   - title: "3.2 Market Competition and Surpluses"
+    content: "3.2-content"
+    slides: "3.2-slides"
+    practice: "3.2-practice"
 
   - title: "3.3 Entrepreneurship & the Social Functions of Market Prices"
 
@@ -119,6 +123,7 @@ lessons:
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem Set 6**'
 
-  - title: '<i class="fas fa-laptop-code"></i> **Op-Ed** Due Sun May 9'
+  - title: '<i class="fas fa-laptop-code"></i> **Op-Ed** Due Fri May 14'
+    assignment: "op-ed"
 
   - title: '<i class="fas fa-star"></i> **Final Exam**'

@@ -48,9 +48,9 @@ I have your Exam 1 graded and will discuss them at the end of class today. See [
 
 # <i class="fas fa-laptop-code"></i> Assignments
 
-## Problem Set 4 Due Sun Mar 28/May 4
+## Problem Set 4 Due Sun Mar 28/April 4
 
-[Problem set 4](/assignment/04-problem-set) (on 2.4-2.6) is due by 11:59 PM Sunday March 28 (Section 1 M/W) and Sunday May 4 (Section 2 Tu/Th) by PDF upload to Blackboard Assignments.
+[Problem set 4](/assignment/04-problem-set) (on 2.4-2.6) is due by 11:59 PM Sunday March 28 (Section 1 M/W) and Sunday April 4 (Section 2 Tu/Th) by PDF upload to Blackboard Assignments.
 
 ## Exam 2
 
@@ -62,9 +62,9 @@ We will proceed with 3.1 and 3.2 for the next two classes (Wed Mar 24 and Mon Ma
 
 - For Section 2 (Tu/Th)
 
-We will catch up and finish 2.6 on Tues Mar 30, and have a review session on Thur May 1.
+We will catch up and finish 2.6 on Tues Mar 30, and have a review session on Thur April 1.
 
-**Both sections will have Exam 2 the week of May 5**.
+**Both sections will have Exam 2 the week of April 5**.
 
 # <i class="far fa-sigma"></i> Appendix
 
