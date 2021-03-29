@@ -930,7 +930,7 @@ cs+geom_polygon(data=cs_1, aes(x=x,y=y), fill="blue", alpha=0.5)+
 
 $$\begin{align*}
 	q_D&=10-p\\
-	q_S&=2p-4\\	
+	q_S&=2p-8\\	
 	\end{align*}$$
 ]
 
