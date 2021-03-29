@@ -37,6 +37,7 @@ library("ggrepel")
 library("fontawesome")
 xaringanExtra::use_tile_view()
 xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
 
 update_geom_defaults("label", list(family = "Fira Sans Condensed"))
 update_geom_defaults("text", list(family = "Fira Sans Condensed"))
@@ -58,7 +59,7 @@ class: center, middle, inverse
   - Demand: $q_D = f(p)$
   - Supply: $q_S = f(p)$
 
-- We know at equilibrium: $q_D=q_P$
+- We know at equilibrium: $q_D=q_S$
 
 ---
 
@@ -135,9 +136,9 @@ class: inverse, center, middle
 
 .pull-left[
 
-- Markets allocate resources based on individuals' .hi[reservation prices]:
-  - **maximum willingness to pay** (as a buyer)
-  - **minimum willingness to accept** (as a seller)
+- Markets allocate resources based on individuals’ .hi[reservation prices]:
+  - .blue[Buyers’ **max. willingness to pay**]
+  - .red[Sellers’ **min. willingness to accept**]
 
 - .hi-purple[Goods flow to those who value them the highest and away from those who value them the lowest]
 ]

@@ -9,6 +9,9 @@
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
     <script src="https://use.fontawesome.com/5235085b15.js"></script>
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -39,7 +42,7 @@ class: center, middle, inverse
   - Demand: `\(q_D = f(p)\)`
   - Supply: `\(q_S = f(p)\)`
 
-- We know at equilibrium: `\(q_D=q_P\)`
+- We know at equilibrium: `\(q_D=q_S\)`
 
 ---
 
@@ -93,9 +96,9 @@ class: inverse, center, middle
 
 .pull-left[
 
-- Markets allocate resources based on individuals' .hi[reservation prices]:
-  - **maximum willingness to pay** (as a buyer)
-  - **minimum willingness to accept** (as a seller)
+- Markets allocate resources based on individuals’ .hi[reservation prices]:
+  - .blue[Buyers’ **max. willingness to pay**]
+  - .red[Sellers’ **min. willingness to accept**]
 
 - .hi-purple[Goods flow to those who value them the highest and away from those who value them the lowest]
 ]
