@@ -32,7 +32,7 @@ This is an **open note, open book** exam, but **do not use the internet beyond o
 # "Practice" Exam
 
 - [<i class="fas fa-file-pdf"></i> Download Old Exam 2](/examprep/Exam2.pdf)
-<!-- [<i class="far fa-life-ring"></i> Old Exam 2 Answer Key](/examprep/Exam2_Answer_key.pdf)-->
+- [<i class="far fa-life-ring"></i> Old Exam 2 Answer Key](/examprep/Exam2_Answer_key.pdf)
 
 Above, you have a previous semester's exam 2. Use it to get a sense of what questions are asked, the format, and how many. Questions draw from topics in Unit 2, and note that **just because topics or questions were not in the practice exam does NOT mean they may not show up on your exam.**^[I hope that this is obvious. I write this to ensure there is no misunderstanding.] Aside from minor extensions, no mathematical problem on any exam should be something you have not seen in some form before. 
 
