@@ -1,5 +1,5 @@
 ---
-title: "3.3 — Market Competition and Surpluses — Class Content"
+title: "3.3 — Entrepreneurship, Profit, and Prices — Class Content"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl
