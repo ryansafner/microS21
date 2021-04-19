@@ -1,5 +1,5 @@
 ---
-title: "3.5 — Government Failures & Introduction to Political Economy — Class Content"
+title: "3.5 — Introduction to Political Economy — Class Content"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl
@@ -32,25 +32,20 @@ We explore some examples of how governments contribute to disequilibrium and har
 
 We extend this to a broader discussion of the role of social, political, and economic institutions in determining outcomes. In order to fairly assess outcomes, we must examine the institutions and incentives that people face, leading to various consequences (rather than necessarily blaming the people or some behavioral motivation). We also need to avoid commiting the [“nirvana fallacy”](https://en.wikipedia.org/wiki/Nirvana_fallacy) of comparing an imperfect system we see in reality with a hypothetical perfect system we can envision. This becomes an empirical question of comparing *which systems fail the least* (or are most *robust*) in practice.
 
-Lastly, depending on time, we may briefly explore the field of economics known as [“public choice”](https://en.wikipedia.org/wiki/Public_choice) — applying economic tools to understand politics by modelling it as equilibria determined by the interactions between various optimizing agents. 
+Lastly, depending on time, we may briefly explore the field of economics known as [“public choice”](https://en.wikipedia.org/wiki/Public_choice) — applying economic tools to understand politics by modeling it as equilibria determined by the interactions between various optimizing agents. For a full course on this, see my [ECON 470 — Public Economics](https://publics20.classes.ryansafner.com)
 
 # <i class="fas fa-book-reader fa-lg"></i> Readings
 
 - [<i class="fas fa-file-pdf"></i> Buchanan, 1984, "Politics Without Romance"](/readings/Buchanan-1984.pdf)
 - [<i class="fas fa-file-pdf"></i> Baumol, 1990, "Entrepreneurship: Productive, Unproductive, and Destructive"](/readings/Baumol-1990.pdf)
-- [<i class="fas fa-file.pdf"></i> Mitchell, 2013, "The Pathology of Privilege: The Economic Consequences of Government Favoritism"](/readings/Mitchell-2013.pdf)
+- [<i class="fas fa-podcast"></i> *Econtalk* podcast: John Cochrane on the Pandemic](https://www.econtalk.org/john-cochrane-on-the-pandemic/)
+- [<i class="fas fa-podcast"></i> *Econtalk* podcast: Tyler Cowen on the Pandemic, Revisited](https://www.econtalk.org/tyler-cowen-on-the-pandemic-revisited/)
 
-Buchanan was the 1986 winner of the Nobel Prize in Economics for his pioneering work in public choice theory. This work by him is a good summary of the economic analysis of politics using basic principles we use to study markets: equilibrium resulting from exchanges and interactions between optimizing individuals pursuing their own interests.
+We did not get to cover public choice theory, but Buchanan was the 1986 winner of the Nobel Prize in Economics for his pioneering work in public choice theory. This work by him is a good summary of the economic analysis of politics using basic principles we use to study markets: equilibrium resulting from exchanges and interactions between optimizing individuals pursuing their own interests.
 
 The second paper by William Baumol (who, if he lived longer, might have won the Nobel prize — he definitely earned one) is one of my favorite papers that I love to teach in classes that cover political economy. Everyone tries to better themselves, and entrepreneurship is a fundamental force in human society, the differences in outcome come from the *institutions* that channel entrepreneurship into productive, unproductive, or destructive outcomes.
 
-## Helpful:
-
-- [<i class="fab fa-wikipedia-w"></i> Public Choice](https://en.wikipedia.org/wiki/Public_choice)
-- [<i class="fab fa-wikipedia-w"></i> Government failure](https://en.wikipedia.org/wiki/Government_failure)
-- [<i class="fab fa-wikipedia-w"></i> Rational ignorance](https://en.wikipedia.org/wiki/Rational_ignorance)
-- [<i class="fab fa-wikipedia-w"></i> Rent seeking](https://en.wikipedia.org/wiki/Rent_seeking)
-- [<i class="fab fa-wikipedia-w"></i> Regulatory capture](https://en.wikipedia.org/wiki/Regulatory_capture)
+The last two podcasts are helpful for discussing the failures, largely of government policy, regarding the COVID-19 pandemic.
 
 # <i class="fas fa-chalkboard-teacher"></i> Slides
 

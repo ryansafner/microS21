@@ -108,12 +108,16 @@ lessons:
     content: "3.5-content"
     slides: "3.5-slides"
     
-  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 5**'
+  - title: '<i class="fas fa-laptop-code"></i> **Problem Set 5** due Sun Apr 25'
+    assignment: "05-problem-set"
 
   - title: '<span class="fake-header-table">IV. Imperfect Competition</span>'
     header: True
 
   - title: "4.1 Modeling Firms with Market Power"
+    content: "4.1-content"
+    slides: "4.1-slides"
+    practice: "4.1-practice"
 
   - title: "4.2 Consequences and Sources of Market Power"
 

@@ -1,0 +1,137 @@
+---
+title: "4.1 — Modeling Firms With Market Power — Class Content"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- BLOGDOWN-HEAD -->
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<!-- /BLOGDOWN-HEAD -->
+
+<h2>Contents</h2>
+<div id="TOC">
+<ul>
+<li><a href="#overview"><i class="fas fa-info-circle fa-lg"></i> Overview</a></li>
+<li><a href="#readings"><i class="fas fa-book-reader fa-lg"></i> Readings</a></li>
+<li><a href="#slides"><i class="fas fa-chalkboard-teacher"></i> Slides</a></li>
+<li><a href="#practice"><i class="fas fa-dumbbell"></i> Practice</a></li>
+<li><a href="#assignments"><i class="fas fa-laptop-code"></i> Assignments</a>
+<ul>
+<li><a href="#problem-set-5-due-sun-apr-25">Problem Set 5 Due Sun Apr 25</a></li>
+</ul></li>
+<li><a href="#appendix"><i class="far fa-sigma"></i> Appendix</a>
+<ul>
+<li><a href="#monopolists-only-produce-where-demand-is-elastic-proof">Monopolists Only Produce Where Demand is Elastic: Proof</a></li>
+<li><a href="#derivation-of-the-lerner-index">Derivation of the Lerner Index</a></li>
+<li><a href="#differences-between-firms-with-market-power-and-competitive-firms">Differences Between Firms With Market Power and Competitive Firms</a></li>
+<li><a href="#a-change-in-price-elasticity-of-market-demand">A Change in Price Elasticity of Market Demand</a></li>
+</ul></li>
+</ul>
+</div>
+
+<ul>
+<li>Section 1: <em>Wednesday, April 14, 2021</em></li>
+<li>Section 2: <em>Thursday, April 22, 2021</em><span><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">Section 2, because of no class on Thursday Feb 18 and Tuesday Mar 9, is 2 classes behind Section 1.<br />
+<br />
+</span></span></li>
+</ul>
+<h2 id="overview"><i class="fas fa-info-circle fa-lg"></i> Overview</h2>
+<p>Today we begin our look at “imperfect competition,” where firms have market power, meaning they can charge <span class="math inline">\(p&gt;MC\)</span> and search for the profit-maximizing quantity <em>and</em> price. Today is merely about how do change the model to understand how a firm with market power behaves. To assist us, we begin with an extreme case of a single seller, i.e. a <strong>monopoly.</strong> For now we only <em>assume</em> that there is a single firm, and see how it behaves differently than if it were in a competitive market. Next class we will begin to explore what could <em>cause</em> a market to have only a single seller, and what are some of the social consequences of market power.</p>
+<h2 id="readings"><i class="fas fa-book-reader fa-lg"></i> Readings</h2>
+<ul>
+<li><i class="fas fas fa-book"></i> Ch. 9-2-9.5 in <span class="citation">@textbook</span></li>
+</ul>
+<h2 id="slides"><i class="fas fa-chalkboard-teacher"></i> Slides</h2>
+<p><a href="/slides/4.1-slides.html"><img src="/slides/4.1-slides.png" /></a></p>
+<ul>
+<li><a href="/slides/4.1-slides.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a></li>
+</ul>
+<h2 id="practice"><i class="fas fa-dumbbell"></i> Practice</h2>
+<p>Today we will be working on <a href="/practice/4.1-practice">practice problems</a>. Answers will be posted later on that page.</p>
+<h2 id="assignments"><i class="fas fa-laptop-code"></i> Assignments</h2>
+<h3 id="problem-set-5-due-sun-apr-25">Problem Set 5 Due Sun Apr 25</h3>
+<p><a href="/assignment/05-problem-set">Problem set 5</a> (on 3.1-3.5) is due by 11:59 PM Sunday April 28 (both sections) by PDF upload to Blackboard Assignments. <strong>This will be your final graded problem set this semester.</strong></p>
+<h2 id="appendix"><i class="far fa-sigma"></i> Appendix</h2>
+<h3 id="monopolists-only-produce-where-demand-is-elastic-proof">Monopolists Only Produce Where Demand is Elastic: Proof</h3>
+<p>Let’s first show the relationship between <span class="math inline">\(MR(q)\)</span> and price elasticity of demand, <span class="math inline">\(\epsilon_D\)</span>.</p>
+<p><span class="math display">\[\begin{align*}
+MR(q) &amp;= p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q &amp;&amp; \text{Definition of } MR(q)\\
+\frac{MR(q)}{p} &amp;= \frac{p}{p}+\bigg(\frac{\Delta p}{\Delta q}\bigg) \frac{q}{p} &amp;&amp; \text{Dividing both sides by } p\\
+\frac{MR(q)}{p} &amp;= 1+\underbrace{\bigg(\frac{\Delta p}{\Delta q}\times \frac{q}{p} \bigg)}_{\frac{1}{\epsilon}}  &amp;&amp; \text{Simplifying}\\
+\frac{MR(q)}{p} &amp;= 1+\frac{1}{\epsilon_D} &amp;&amp; \text{Recognize price elasticity } \epsilon_D=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
+MR(q) &amp;= p\bigg(1+\frac{1}{\epsilon_D}\bigg) &amp;&amp; \text{Multiplying both sides by }p\\
+\end{align*}\]</span></p>
+<p>Remember, we’ve simplified <span class="math inline">\(\epsilon_D = \frac{1}{slope} \times \frac{p}{q}\)</span>, where <span class="math inline">\(\frac{1}{slope} = \frac{\Delta q}{\Delta p}\)</span> because on a demand curve, <span class="math inline">\(slope = \frac{\Delta p}{\Delta q}\)</span>.</p>
+<p>Now that we have this alternate expression for <span class="math inline">\(MR(q)\)</span>, lets assume <span class="math inline">\(MC(q) \geq 0\)</span> and set them equal to one another to maximize profits:</p>
+<p><span class="math display">\[\begin{align*}
+MR(q) &amp;= MC(q)\\
+p(1+\frac{1}{\epsilon_D}) &amp; = MC(q)\\
+p(1-\frac{1}{|\epsilon_D|}) &amp; = MC(q)\\
+\end{align*}\]</span></p>
+<p>I rearrange the last line only to remind us that <span class="math inline">\(\epsilon_D\)</span> is always negative!</p>
+<p>Now note the following:</p>
+<ul>
+<li>If <span class="math inline">\(|\epsilon_D| &lt; 1\)</span>, then <span class="math inline">\(MR(q)\)</span> is <em>negative</em>. Since <span class="math inline">\(MC(q)\)</span> is assumed to be positive, it cannot equal a negative <span class="math inline">\(MR(q)\)</span>, hence this is not profit-maximizing.</li>
+<li>If <span class="math inline">\(|\epsilon_D| = 1\)</span>, then <span class="math inline">\(MR(q)\)</span> is 0. Only if <span class="math inline">\(MC(q)\)</span> is also 0 is this profit-maximizing.</li>
+<li>If <span class="math inline">\(|\epsilon_D| &gt; 1\)</span>, then <span class="math inline">\(MR(q)\)</span> is <em>positive</em>. It can equal a positive <span class="math inline">\(MC(q)\)</span> to be profit-maximizing.</li>
+</ul>
+<p>Hence, a monopolist will <em>never</em> produce in the inelastic region of the demand curve (where <span class="math inline">\(MR(q)&lt;0)\)</span>, and will <em>only</em> produce at the unit elastic part of the demand curve (where <span class="math inline">\(MR(q)=0)\)</span> if <span class="math inline">\(MC(q)=0\)</span>. Thus, it generally produces in the elastic region where <span class="math inline">\(MR(q)&gt;0\)</span>.</p>
+<p>See the graphs on <a href="/slides/4.1-slides.html#31">slide 31</a>.</p>
+<h3 id="derivation-of-the-lerner-index">Derivation of the Lerner Index</h3>
+<p>Marginal revenue is strongly related to the <strong>price elasticity of demand</strong>, which is <span class="math inline">\(E_{D}=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\)</span><span><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">I sometimes simplify it as <span class="math inline">\(E_{D}=\frac{1}{slope} \times \frac{p}{q}\)</span>, where “slope” is the slope of the inverse demand curve (graph), since the slope is <span class="math inline">\(\frac{\Delta p}{\Delta q} = \frac{rise}{run}\)</span>.<br />
+<br />
+</span></span></p>
+<p>We derived marginal revenue (in the slides) as:
+<span class="math display">\[MR(q)=p+\frac{\Delta p}{\Delta q}q\]</span></p>
+<p>Firms will always maximize profits where:</p>
+<p><span class="math display">\[\begin{align*}
+MR(q)&amp;=MC(q) &amp;&amp; \text{Profit-max output}\\
+p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q&amp;=MC(q) &amp;&amp; \text{Definition of } MR(q)\\
+p+\bigg(\frac{\Delta p}{\Delta q}\bigg) q \times \frac{p}{p}&amp;=MC(q) &amp;&amp; \text{Multiplying the left by } \frac{p}{p} \text{ (i.e. 1)}\\
+p+\underbrace{\bigg(\frac{\Delta p}{\Delta q}\times \frac{q}{p} \bigg)}_{\frac{1}{\epsilon}} \times p &amp;=MC(q) &amp;&amp; \text{Rearranging the left}\\
+p+\frac{1}{\epsilon} \times p &amp;=MC(q) &amp;&amp; \text{Recognize price elasticity } \epsilon=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
+p &amp;=MC(q) - \frac{1}{\epsilon} p &amp;&amp; \text{Subtract  }\frac{1}{\epsilon}p \text{ from both sides}\\
+p-MC(q) &amp;= -\frac{1}{\epsilon} p &amp;&amp; \text{Subtract  }MC(q) \text{ from both sides}\\
+\frac{p-MC(q)}{p} &amp;= -\frac{1}{\epsilon} &amp;&amp; \text{Divide both sides by  }p\\
+        \end{align*}\]</span></p>
+<p>The left side gives us the fraction of price that is markup <span class="math inline">\(\left(\frac{p-MC(q)}{p}\right)\)</span>, and the right side shows this is inversely related to price elasticity of demand.</p>
+<h3 id="differences-between-firms-with-market-power-and-competitive-firms">Differences Between Firms With Market Power and Competitive Firms</h3>
+<p>Firms respond to changes in the marketplace differently depending on whether they have market power or not (are price-takers in perfect competition). Let’s examine three cases to see how each type of firm optimally responds to changes in key parameters: a change in costs, a shift in demand, and a change in price elasticity of demand.</p>
+<p>First, compare the two types of firms — a price-taker in perfect competition on the left, and a firm with market power on the right.</p>
+<p><img src="/content/4.1-content_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Again, notice the competitive firm has a perfectly elastic demand at the market-determined price<span><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">This is not shown, but imagine a full market supply and demand graph that intersect at the market clearing equilibrium price, which this representative firm takes as given.<br />
+<br />
+</span></span> and sets <span class="math inline">\(p=MC\)</span> (since it sets <span class="math inline">\(MR=MC\)</span> and <span class="math inline">\(MR=p)\)</span> to produce the optimal profit-maximizing quantity.</p>
+<p>And also notice the firm with market power faces the full downward-sloping market demand curve for its product, and this implies a separate marginal revenue curve (with twice the slope of the demand curve). This firm first sets <span class="math inline">\(MR=MC\)</span> to determine the optimal profit-maximizing quantity, and then raises price up to the maximum consumers are willing to pay (their Demand at that quantity).</p>
+<h4 id="a-change-in-marginal-cost">A Change in Marginal Cost</h4>
+<p>Suppose both types of firms see an increase in their costs. Perhaps this is the result of a specific excise (per-unit) tax placed on the firm’s sales, raising the marginal cost by a fixed amount.</p>
+<p><img src="/content/4.1-content_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Notice that both firms see their marginal costs shift upwards by the same amount.</p>
+<p>Because there is no slope to the competitive firm’s demand curve, the price remains unchanged, but the optimal quantity decreases.</p>
+<p>Since there <em>is</em> a slope to the firm with market power, the price will change in addition to the quantity. Always setting (the new) <span class="math inline">\(MC=MR\)</span>, the firm produces less output, and raises the price to the demand curve. At the smaller quantity, the willingness to pay is much higher.</p>
+<p>Alternatively, we could imagine a <em>fall</em> in costs, by considering a change from <span class="math inline">\(MC_2\)</span> to <span class="math inline">\(MC\)</span> for each firm (and see how the opposite happens).</p>
+<p>Thus, a key difference here is that <strong>a change in costs will only change quantity produced for the competitive firm, but will change both quantity and price for a firm with market power.</strong></p>
+<p>We are also ignoring average costs (not shown), which would affect profit. But this highlights that <strong>only changes in <em>marginal cost</em> affect the quantity of output produced</strong>.</p>
+<h4 id="change-in-demand">Change in Demand</h4>
+<p>Suppose instead there is a change in market demand for the product.</p>
+<p><img src="/content/4.1-content_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>The competitive firm faces a higher demand at a (now higher) market-determined price<span><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">Again, not not shown, but imagine the full market demand curve shifts to the right on the market supply and demand graph, intersecting at a higher market clearing equilibrium price, which this representative firm takes as given.<br />
+<br />
+</span></span> and sets <span class="math inline">\(p=MC\)</span> (since it sets <span class="math inline">\(MR=MC\)</span> and <span class="math inline">\(MR=p)\)</span> to produce the optimal profit-maximizing quantity. Since the market price is higher, the firm produces a higher output at the higher price.</p>
+<p>The firm with market power also sees an equivalent shift of market demand, and note that this also shifts the marginal revenue curve (always starting at the same point as market demand, with twice the slope). With an upward-sloping marginal cost curve and a downward-sloping marginal revenue curve, <span class="math inline">\(MR=MC\)</span> will occur at a larger quantity than before (but notice a smaller increase than the competitive firm, where the demand &amp; marginal revenue curves are horizontal), and again at a higher price.</p>
+<p>Thus, both firms will see an increase in price and quantity from an increase in demand, but the firm with market power does not increase output as much as the competitive firm. Remember, a firm with market power generally wants to restrict output to raise its price compared to what a competitive market would do.</p>
+<p>We can see the same thing in reverse for a decrease in market demand (move from <span class="math inline">\(Demand_2\)</span> to <span class="math inline">\(Demand)\)</span>.</p>
+<h3 id="a-change-in-price-elasticity-of-market-demand">A Change in Price Elasticity of Market Demand</h3>
+<p>Finally, suppose the demand changes elasticity, but does not change the market price.<span><label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle"/><span class="sidenote">This latter assumption is important in antitrust and economic regulation, for trying to decipher the difference between a competitive market and a cartel based on their prices.<br />
+<br />
+</span></span> Things like new competitors entering and creating more substitutes, would make demand more elastic. Both the less elastic (original) demand curve and the new, more elastic <span class="math inline">\(Demand_E\)</span> curve pass through the same optimal point.</p>
+<p><img src="/content/4.1-content_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>The left graph is now the market for the <em>entire industry</em> that is competitive, rather than for a representative firm in that market. Note the demands change elasticity, but do not affect the market-clearing equilibrium price or quantity. Hence, nothing will change in terms of price or output for the firms in this industry.</p>
+<p>The right graph shows the change for a firm with market power. The more elastic demand curve <span class="math inline">\(Demand_E\)</span> <em>rotates</em> through the original optimum price and quantity <span class="math inline">\((q_1,q_1)\)</span>. Since there is a new (flatter) demand curve, there is also a new (flatter) marginal revenue curve <span class="math inline">\(MR_E\)</span>. The firm sets this new <span class="math inline">\(MR_E=MC\)</span> to find that it should increase its quantity to <span class="math inline">\(q_2\)</span> and lower its price to <span class="math inline">\(p_2\)</span>. Thus, as demand becomes more elastic, the firm produces more and lowers the price. The opposite would happen if demand became <em>less</em> elastic.</p>
