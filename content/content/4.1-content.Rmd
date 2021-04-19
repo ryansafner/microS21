@@ -46,7 +46,7 @@ Today we will be working on [practice problems](/practice/4.1-practice). Answers
 
 ## Problem Set 5 Due Sun Apr 25
 
-[Problem set 5](/assignment/05-problem-set) (on 3.1-3.5) is due by 11:59 PM Sunday April 28 (both sections) by PDF upload to Blackboard Assignments. **This will be your final graded problem set this semester.**
+[Problem set 5](/assignment/05-problem-set) (on 3.1-3.5) is due by 11:59 PM Sunday April 25 (both sections) by PDF upload to Blackboard Assignments. **This will be your final graded problem set this semester.**
 
 # <i class="far fa-sigma"></i> Appendix
 
