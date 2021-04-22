@@ -1281,7 +1281,7 @@ A.C. Pigou
 - Policy solutions to externalities should .hi-purple[focus on the missing price]
   - Narrowly tailor policy to create or modify price
 
-- "Pigouvian" tax or subsidy
+- “Pigouvian” tax or subsidy
 ]
 
 ---
@@ -1417,40 +1417,6 @@ Signed by 27 Economics Nobel Laureates, 4 former Federal Reserve chairs, among m
 
 ---
 
-# Externalities as a Property Rights Problem
-
-.left-column[
-.center[
-![:scale 70%](../images/coase.png)
-
-.smaller[
-Ronald H. Coase
-
-(1910-2013)
-
-Economics Nobel 1991]
-
-]
-]
-
-.right-column[
-.smaller[
-- Harm is often .hi[bilateral], not unilateral
-
-- Takes two parties to have a dispute: A $\iff$ B
-
-- Origin of the problem is: .hi-purple[property rights are not clear (undefined or unenforced)]!
-
-- Who has right/responsibility over activity creating the external harm?
-
-- .hi[Coase Theorem]: if transactions costs are low, clearly defined property rights allow parties to bargain to the efficient social outcome *regardless* of who has the property right
-]
-]
-
-.source[Coase, Ronald H, 1960, "The Problem of Social Cost," *Journal of Law and Economics* 3:1-44]
-
----
-
 # Externalities Adjudicated at Law
 
 .pull-left[
@@ -1476,15 +1442,7 @@ Economics Nobel 1991]
 
 ---
 
-# Goal
-
-.center[
-![:scale 70%](../images/internalizeexternalitiesmeme.jpg)
-]
-
----
-
-# Takeaways from Coase I
+# Externalities as a Property Rights Problem
 
 .left-column[
 .center[
@@ -1501,13 +1459,18 @@ Economics Nobel 1991]
 ]
 
 .right-column[
+.smallest[
 - .hi[Externalities] outside the market system of prices are a problem
 
 - Externalities can be framed as a problem of .hi-purple[property rights]
 
 - Exchange is really about property rights over goods and services, (not just the goods themselves)
 
-- Property rights can internalize externalities
+- Origin of the problem is: .hi-purple[property rights are not clear (undefined or unenforced)]!
+  - Who has right/responsibility over activity creating the external harm?
+
+- .hi[Coase Theorem]: if transactions costs are low, clearly defined property rights allow parties to bargain to the efficient social outcome *regardless* of who has the property right
+]
 ]
 
 ---
@@ -1594,6 +1557,14 @@ Economics Nobel 1991]
 *"Good fences make good neighbors"*
 ![](../images/goodfences.jpg)
 ]
+]
+
+---
+
+# Goal
+
+.center[
+![:scale 70%](../images/internalizeexternalitiesmeme.jpg)
 ]
 
 ---

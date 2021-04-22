@@ -1,5 +1,5 @@
 ---
-title: "3.5 — Intro to Political Economy"
+title: "3.5 — Political Economy"
 subtitle: "ECON 306 • Microeconomic Analysis • Spring 2021"
 author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microS21"><i class="fa fa-github fa-fw"></i>ryansafner/microS21</a><br> <a href="https://microS21.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microS21.classes.ryansafner.com</a><br>'
 #date:
@@ -1465,23 +1465,3 @@ North, Douglass C, (1990), *Institutions, Institutional Change, and Economic Per
 > “Don't worry about it! The main thing is that we immediately fulfilled the plan for nails!”
 
 ]
-
----
-
-# Incentives are Structured by Institutions
-
-.left-column[
-
-.center[
-![:scale 100%](../images/krokodil.jpg)
-
-]
-]
-
-.right-column[
-
-> “Dear customer, in the leather goods department of our store, a shipment of 500 imported womens' purses has been recieved. Four hundred and fifty of them have been bought by employees of the store. Fourty-nine are under the counter and have been ordered in advance for friends. One purse is in the display window. We invite you to visit the leather department to buy this purse!” (p.38).
-
-]
-
-.source[White, Lawrence H, 2012, *The Clash of Economic Ideas*, pp.38-9]
