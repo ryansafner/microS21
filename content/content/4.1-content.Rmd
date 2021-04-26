@@ -22,7 +22,7 @@ update_geom_defaults("label", list(family = "Fira Sans Condensed"))
 ```
 
 - Section 1: *Monday, April 19, 2021*
-- Section 2: *Thursday, April 27, 2021*^[Section 2, because of no class on Thursday Feb 18 and Tuesday Mar 9, is 2 classes behind Section 1.]
+- Section 2: *Tuesday, April 27, 2021*^[Section 2, because of no class on Thursday Feb 18 and Tuesday Mar 9, and no class on Wednesday April 21, is 1 class behind Section 1.]
 
 # <i class="fas fa-info-circle fa-lg"></i> Overview
 
