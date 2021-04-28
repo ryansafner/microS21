@@ -1,0 +1,207 @@
+---
+title: "4.3 — Pricing Strategies — Class Content"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align="center")
+library("tidyverse")
+library("ggrepel")
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+```
+
+- Section 1: *Wednesday, April 28, 2021*
+- Section 2: *Tuesday, May 4, 2021*^[Section 2, because of no class on Thursday Feb 18 and Tuesday Mar 9, and no class on Wednesday April 21, is 1 class behind Section 1.]
+
+# <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we look at how firms price their products when they have market power (that is to say, how most firms in reality price their products). 
+
+# <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fas fa-book"></i> Ch. 10 in @textbook
+
+# <i class="fas fa-chalkboard-teacher"></i> Slides
+
+[![](/slides/4.3-slides.png)](/slides/4.3-slides.html)
+
+- [<i class="fas fa-file-pdf"></i> Download as PDF](/slides/4.3-slides.pdf)
+
+# <i class="fas fa-dumbbell"></i> Practice
+
+Today we will be working on [practice problems](/practice/4.3-practice). Answers will be posted later on that page.
+
+# <i class="far fa-sigma"></i> Appendix
+
+## “I Know It When I See It” — How to Identify Market Power?
+
+It is tempting to explain many differences in prices for apparently the same product as a matter of price discrimination — firms are charging different customers different prices for the same good. However, it might be upon closer inspection that the prices are different because *they are not the same good*, or more importantly, that different varieties of the good *cost different amounts* to produce. Perhaps one color is more expensive to produce?
+
+Consider two products below. Product 1 has lower marginal costs to produce $(MC_1)$ than Product 2 $(MC_2)$. Naturally, with market power, the firm will charge different prices for them $p_1$ and $p_2$, after always setting $MR=MC$ and raising the price up to the (identical) demand for each product. 
+
+```{r}
+library(patchwork)
+demand_1=function(x){10-x}
+mr_1=function(x){10-2*x}
+
+demand_2=function(x){16-x}
+mr_2=function(x){16-2*x}
+
+mc_m=function(x){x+1}
+mc_c=function(x){2*x+1}
+
+demand_cr=function(x){7.75-0.5*x}
+
+mc_m2=function(x){x+1+2}
+mc_c=function(x){2*x+1}
+
+product1<-ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue")+
+  stat_function(fun=mr_1, geom="line", size=2, color="purple")+
+  stat_function(fun=mc_m, geom="line", size=2, color="red")+
+
+  geom_label(x=8,y=demand_1(8), color="blue", label="Demand")+
+  geom_label(x=4,y=mr_1(4), color="purple", label=expression(MR))+
+  geom_label(x=8,y=mc_m(8), color="red", label=expression(MC[1]))+
+  geom_segment(x=3,xend=3, y=0, yend=7, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3, y=7, yend=7, size=1, linetype="dotted")+
+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Variant 1")+
+  scale_x_continuous(breaks = c(0,3),
+                     labels = c(0,expression(q[1])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,7),
+                     labels = c(0,expression(p[1])),
+                     limits = c(0,14),
+                     expand=c(0,0))
+
+product2<-ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue")+
+  stat_function(fun=mr_1, geom="line", size=2, color="purple")+
+  #stat_function(fun=mc_c, geom="line", size=2, color="red")+
+
+  
+  geom_label(x=8,y=demand_1(8), color="blue", label="Demand")+
+  geom_label(x=4,y=mr_1(4), color="purple", label=expression(MR))+
+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Variant 2")+
+  stat_function(fun=mc_m2, geom="line", size=2, color="darkred")+
+  geom_label(x=8,y=mc_m2(8), color="darkred", label=expression(MC[2]))+
+  geom_segment(x=2.325, xend=2.325, y=0, yend=7.625, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=2.325, y=7.625, yend=7.625, size=1, linetype="dotted")+
+    scale_x_continuous(breaks = c(0,2.325),
+                     labels = c(0,expression(q[2])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,7.625),
+                     labels = c(0,expression(p[2])),
+                     limits = c(0,14),
+                     expand=c(0,0))
+product1 | product2
+```
+
+The only way to tell the difference between price discrimination and price differences due to costs in competitive markets (without actually being able to observe the firm’s marginal cost) is to find something that changes the price elasticity of demand without changing the cost. Price discrimination implies that a firm with market power sets its price based on the elasticity of demand and the marginal cost of producing. Price in a competitive market depends only on marginal cost. (This is related to the distinction we discussed in Chapter 9 about how firms with market power react differently than competitive firms to rota- tions in demand.)
+
+
+```{r}
+demand_1=function(x){10-x}
+mr_1=function(x){10-2*x}
+
+demand_2=function(x){16-x}
+mr_2=function(x){16-2*x}
+
+mc_m=function(x){x+1}
+mc_c=function(x){2*x+1}
+
+demand_cr=function(x){7.75-0.5*x}
+
+pc_e<-ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue", alpha =0.5)+
+    geom_label(x=9,y=demand_1(9), color="blue", label="Demand")+
+    stat_function(fun=mc_m, geom="line", size=2, color="red")+
+    geom_label(x=9,y=mc_m(9), color="red", label="Supply")+
+    stat_function(fun=demand_cr, geom="line", size=2, color="blue")+
+    geom_label(x=9,y=demand_cr(9), color="blue", label=expression(Demand[E]))+
+
+  geom_segment(x=4.5,xend=4.5, y=0, yend=5.5, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=4.5, y=5.5, yend=5.5, size=1, linetype="dotted")+
+  scale_x_continuous(breaks = c(0,4.5),
+                     labels = c(0,expression(q[c])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,5.5),
+                     labels = c(0,expression(p[c])),
+                     limits = c(0,14),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Competitive Market")
+
+demand_r=function(x){8.5-0.5*x}
+mr_r=function(x){8.5-1*x}
+
+mp_e<-ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue",alpha=0.3)+
+  stat_function(fun=mr_1, geom="line", size=2, color="purple",alpha=0.3)+
+  stat_function(fun=mc_m, geom="line", size=2, color="red")+
+
+  stat_function(fun=demand_r, geom="line", size=2, color="blue")+
+  stat_function(fun=mr_r, geom="line", size=2, color="purple")+
+
+  
+  geom_label(x=8,y=demand_1(8), color="blue", label=expression(Demand[1]), alpha=0.3)+
+  geom_label(x=4,y=mr_1(4), color="purple", label=expression(MR[1]), alpha=0.3)+
+  geom_label(x=8,y=mc_m(8), color="red", label=expression(MC))+
+
+  geom_label(x=8.5,y=demand_r(8.5), color="blue", label=expression(Demand[E]))+
+  geom_label(x=4.25,y=mr_r(4.25), color="purple", label=expression(MR[E]))+
+
+  
+  geom_segment(x=3,xend=3, y=0, yend=7, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3, y=7, yend=7, size=1, linetype="dotted")+
+
+  geom_segment(x=3.75,xend=3.75, y=0, yend=6.5, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3.75, y=6.5, yend=6.5, size=1, linetype="dotted")+
+
+  annotate("segment", x = 3, xend = 3.75, y = 3, yend = 3, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.2,"cm"), ends="last", type="closed"))+
+  annotate("segment", x = 0.5, xend = 0.5, y = 7, yend = 6.5, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.2,"cm"), ends="last", type="closed"))+
+
+  scale_x_continuous(breaks = c(0,3,3.75),
+                     labels = c(0,expression(q[1]), expression(q[2])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,6.5,7),
+                     labels = c(0,expression(p[2]), expression(p[1])),
+                     limits = c(0,14),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)+
+  labs(x = "Quantity",
+       y = "Price")
+
+pc_e | mp_e
+```
+
+The only true test between price discrimination (the *same* good being sold at different prices) and mere price differences (due to *cost* differences) in competitive markets, without being able to directly observe a firm's marginal costs (something that is hard to do) is to consider changes in price elasticity of demand that does not change costs. This is similar to the third case described in the [appendix in class 4.1](/class/4.1-class/#Differences-Between-Firms-With-Market-Power-and-Competitive Firms), where a competitive market and a firm with market power see a change in price elasticity of demand: the competitive market sees no change in price or quantity, but the firm with market power that is price discriminating will lower its price as demand becomes more elastic. 
+
+## Advanced Pricing Strategies
+
+See chapter 10.6 on advanced pricing strategies such as block-pricing and two-part tariffs.
