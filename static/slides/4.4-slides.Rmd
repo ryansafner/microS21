@@ -832,12 +832,12 @@ class: inverse, center, middle
 
 # Marginal Revenue Product (of Labor)
 
-- Hiring more labor increases output (i.e. labor's .hi-purple[`\\(MP_L\\)`])
-  - Recall: $MP_L=\frac{\Delta q}{\Delta L}$, where $q$ is units of output
+- Hiring more labor increases new output (i.e. labor's .hi-purple[`\\(MP_L\\)`])
+  - [Recall](/content/2.2-content/): $MP_L=\frac{\Delta q}{\Delta L}$, where $q$ is units of output
 
 --
 
-- Additional output generates (i.e. labor's .hi-purple[`\\(MR(q)\\)`])
+- Additional output generates new revenues (i.e. labor's .hi-purple[`\\(MR(q)\\)`])
   - Recall: $MR(q)=\frac{\Delta R(q)}{\Delta q}$, where $R(q)$ is total revenue
 --
 
@@ -1112,7 +1112,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 - Firm hires $L^*$ optimal amount of labor where $w=MRP_L$ 
 
-- i.e. marginal cost of labor $=$ marginal benefit of labor
+- i.e. .red[marginal cost] of labor $=$ .blue[marginal benefit] of labor
 
 ]
 
@@ -1134,7 +1134,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   #geom_polygon(data=CS, aes(x=x,y=y, fill="Consumer"), alpha=0.5)+ #CS
 
   # labels 
-  geom_segment(aes(x=4,y=0),xend=4,yend=2,linetype=3)+
+  geom_segment(aes(x=4,y=0),xend=4,yend=2,linetype=3, size = 1)+
   geom_point(aes(x=4,y=2), color="black", size =3 )+ 
   #geom_text(aes(x=q_PC,y=w,label="N.E.",family = "Yanone Kaffeesatz Regular"),hjust=-0.1, vjust=-0.25, color="black")+
   annotate(geom = "label", x = 2, y = Demand(2), label = expression("Demand"==MRP[L]),
@@ -1447,7 +1447,7 @@ class: inverse, center, middle
 
 ---
 
-# Monosony
+# Monopsony
 
 .pull-left[
 
@@ -1465,7 +1465,7 @@ class: inverse, center, middle
 
 ---
 
-# Monosony and Market Supply of Labor
+# Monopsony and Market Supply of Labor
 
 .pull-left[
 ```{r, fig.retina=3}
@@ -1500,7 +1500,7 @@ graph
 
 ---
 
-# Monosony and Market Supply of Labor
+# Monopsony and Market Supply of Labor
 
 .pull-left[
 ```{r, fig.retina=3}
@@ -1535,7 +1535,7 @@ graph
 
 ---
 
-# Monosony and Market Supply of Labor
+# Monopsony and Market Supply of Labor
 
 .pull-left[
 ```{r, fig.retina=3}
@@ -1554,7 +1554,7 @@ graph+
 
 ---
 
-# Monosony and Market Supply of Labor
+# Monopsony and Market Supply of Labor
 
 .pull-left[
 ```{r, fig.retina=3}
@@ -1827,14 +1827,14 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .center[
 .smallest[
-The more (less) elastic labor supply, the less (more) monopsony power
+.hi-purple[he more (less) elastic labor supply, the less (more) monopsony power (and DWL)]
 ]
 ]
 .pull-left[
 
 .center[
 .smallest[
-Less Elastic Labor Supply Curve
+*Less* Elastic Labor Supply Curve
 ]
 ]
 ```{r, fig.align="center", fig.height=5.5}
@@ -1885,7 +1885,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .center[
 .smallest[
-More Elastic Labor Supply Curve
+*More* Elastic Labor Supply Curve
 ]
 ]
 
