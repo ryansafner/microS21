@@ -128,9 +128,12 @@ lessons:
     slides: "4.3-slides"
     practice: "4.3-practice"
     
-  - title: "4.4 Factor Markets"
-  
-  - title: "4.5 Capital Markets and Intertemporal Choice"
+  - title: "4.4 Factor Markets I: Labor Markets"
+    content: "4.3-content"
+    slides: "4.3-slides"
+    practice: "4.3-practice"
+
+  - title: "4.5 Factor Markets II: Capital Markets"
 
   - title: "4.6 Monopolistic Competition and Oligopoly"
 

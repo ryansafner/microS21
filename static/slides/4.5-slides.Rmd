@@ -1,0 +1,221 @@
+---
+title: "4.5 — Capital"
+subtitle: "ECON 306 · Microeconomic Analysis · Fall 2020"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microF20"><i class="fa fa-github fa-fw"></i>ryansafner/microF20</a><br> <a href="https://microF20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microF20.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    #seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      message = F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("ggrepel")
+
+theme_slides <- theme_light() + 
+  theme(
+    text = element_text(family = "Fira Sans", size = 24)
+  )
+
+```
+
+class: inverse
+
+# Outline
+
+### [Labor Market for Competitive Firm](#12)
+
+### [Labor Market for a Monopoly](#30)
+
+### [Monopsony Power](#34)
+
+### [Monopoly Power in Labor Markets: Unions](#54)
+
+---
+
+# What is Capital?
+
+- Hard to define
+
+- But involves element of time
+
+- Diversion of present consumption towards future consumption
+
+- Original idea came from farmers
+  - during harvest: could consume all grain, or save some for next year
+
+- Firms (and their investors) have a choice:
+  - can take what they make and consume it now, or invest it and have more in future
+
+- We're not going to think about capital as *physical* capital, but as *financial* capital
+  - what links all types of capital (machines, buildings, etc) is their *financial* aspect
+  - more you put into capital formation, less consumption today, but more in future
+
+- Firms get money for investment today by going to capital markets
+  - pool of money that firms can draw on to make their investments
+  - where does the money come from? household saving decisions!
+
+- demand for capital: comes from firms interest in investment to have more i future
+- supply of capital: comes from people's decisions to save
+
+money to buy stuff for investment is borrowed from people
+
+
+supply of capital of how many machines a company will buy comes from your decisions about how much to save
+
+- equilibrium graph
+
+- demand for capital, like labor, comes from marginal product of capital 
+  $MP_k * p = MRP_k$
+
+- supply comes from individual savings decisions
+
+- interest rate i represents the rate at which firms pay households to get their money (in theory)
+
+
+
+three mechanisms of how individuals lend to firms
+
+1. corporate debt, IOU (I promise to repay 1+i dollars at end of bond)
+2. equity (can buy their stock)
+3. put in bank, bank loans to companies
+
+- how do banks make money?
+  - pay interest of 1%, lend at 3% to firms, make 2% profit
+  
+- used to be interesting (10%, 5%, now it's like 1% or 0.05%)
+
+- loan money to firm, get back more in future, and they'll produce more w/capital goods
+
+
+
+# supply decisions
+
+intertemporal choice
+
+- time preference between consumption today and consumption tomorrow
+
+- how much to save?
+
+ (assume all saving earns interest for next period)
+ 
+- savings is a bad just like labor's a bad
+  - so, we deon't model the bad, we model the complementary good:
+  
+my choice becomes how much do I consume today vs. tomorrow (tradeoff)
+
+$c
+
+the price of consuming today, instead of consuming tomorrow, is $1+i$
+  - opportunity cost of present consumption
+  - slope is opportunity cost of today's consumption, in terms of next year's consumption
+  
+$u(c_1,c_2)$
+  
+- what if interest rate goes up?
+
+- Subst. effect: price of consumption today is going up, so I'll buy less consumptiuon today
+
+- Income effect: but by saving (less consumption today), I'll be richer, and spend more on everything, including consumption today!
+
+$s=Y-c_1$
+
+SE: price of $c_1$ went up, so I will do less c1 but more s (save more)
+
+
+does income effect dominate?
+
+plausible:
+  - people have savings targets: I am saving "X" for a rainy day, or I want "X" in the bank by the time I retire
+  - if i goes up, need to save less to reach tht target!
+
+
+
+---
+
+how capital markets impact individual savings decisions
+
+present value: value of every period's payments in terms of today (discounting back to today)
+  - discounted because future dollars are worth less 
+
+- key insight: $1 tomorrow is worht less than $1 today
+
+time value of money
+
+cant just add up dollars over time
+
+
+money received in the future forgoes the opportunity of investing it today
+
+
+If I wanted to have $100 next year, how much would I need to put in the bank today?
+
+$$PV(1+r)=FV$$
+
+i.e. $$PV = \frac{FV}{(1+r)^t}$$
+
+what about a *stream* of payments? Logic is same: want to discount *each* individual payment back to present value
+
+Suppose you want me to lend you $300, and you will pay me back $100 over each of the next three years. Suppose the interest rate is 10%, will I take that deal?
+
+$$PV = \frac{100}{(1.10)^1}+\frac{100}{(1.10)^2}+\frac{100}{(1.10)^3}=248.70$$ No!
+
+I am better off just putting the $300 in the bank and earning interest for 3 years
+
+
+For a constant payment f over t periods:
+
+$$PV = f \left[\frac{1}{(1+i)^1}+\frac{1}{(1+i)^2} + \cdots + \frac{1}{(1+i)^t}\right]$$
+
+simple assumption, if payment is in perpetuity:
+
+$$PV \approx \frac{f}{i}$$
+
+
+$$FV = PV(1+i)^t$$
+
+compounding
+
+earn interest on your interest!
+
+
+Bobby Banilla
+
+
+
+under inflation
+
+we dont care about dollars, only about real goods & services we can buy with our dollars
+
+CPI, basket of goods weighted by consumer spending (i.e. housing gets more weight than bananas)
+
+1982-1984 normalized to 1
+
+inflation is % Change in CPI
+
+we care about real interest rate r
+
+r = i - pi^e (pi is inflation rate, i is nominal interest rate)
+
