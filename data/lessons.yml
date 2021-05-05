@@ -128,16 +128,14 @@ lessons:
     slides: "4.3-slides"
     practice: "4.3-practice"
     
-  - title: "4.4 Factor Markets I: Labor Markets"
+  - title: "4.4 Factor Markets: Labor Markets"
     content: "4.4-content"
     slides: "4.4-slides"
     practice: "4.4-practice"
 
-  - title: "4.5 Factor Markets II: Capital Markets"
+  - title: "4.5 Monopolistic Competition and Oligopoly"
 
-  - title: "4.6 Monopolistic Competition and Oligopoly"
-
-  - title: "4.7 Contestable Markets and Wrap Up"
+  - title: "4.6 Contestable Markets and Wrap Up"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem Set 6**'
 
