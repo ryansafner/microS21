@@ -10,7 +10,7 @@ library(pander)
 ```
 
 - [<i class="fas fa-file-pdf"></i> Download as PDF](/practice/4.4-practice.pdf)
-- [<i class="far fa-life-ring"></i> Answer Key](https://www.youtube.com/watch/dQw4w9WgXcQ)
+- [<i class="far fa-life-ring"></i> Answer Key](/practice/4.4-practice-answers.html)
 
 Carl’s Coal Mining operates in a remote area. Because of its location, it has monopsony power in the local labor market for miners. Its marginal revenue product of labor is
 $$MRP_L = 400-5L$$

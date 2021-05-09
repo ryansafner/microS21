@@ -10,7 +10,7 @@ library(pander)
 ```
 
 - [<i class="fas fa-file-pdf"></i> Download as PDF](/practice/4.3-practice.pdf)
-- [<i class="far fa-life-ring"></i> Answer Key](https://www.youtube.com/watch/dQw4w9WgXcQ)
+- [<i class="far fa-life-ring"></i> Answer Key](/practice/4.3-practice-answers.html)
 
 Promoters of a major college basketball tournament estimate that the demand for tickets for *adults* and by *students* are given by:
 
