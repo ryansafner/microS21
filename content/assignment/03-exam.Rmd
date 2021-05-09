@@ -1,0 +1,35 @@
+---
+title: "Final Exam Information"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(pander)
+```
+
+**The Final Exam will be available 12:00 PM Sunday, May 17 through 11:59 PM Friday, May 20_ on Blackboard**^[Go to our class Blackboard page, on the blue navigation bar on the left, click *Assignments*, you will find the Final Exam.]
+
+# Exam Instructions (IMPORTANT, PLEASE READ)
+
+This test will be available on Blackboard as a *timed* assignment. You will have **3.5 hours once you open the test on Blackboard**. You will *not* need the whole time, I have given you some extra to accommodate the difficulties of taking an exam at home. **Please pick a time to take it where you know you will have at least 2 hours**. You may close the exam page and come back to it, but *the timer will continue to run* once the exam is first opened.
+
+This is an **open note, open book** exam, but **do not use the internet beyond our class website, or contact each other**^[Google won't help you here. Everything you need should be in your notes, homeworks, or slides anyway!] I will interpret substantially-similarly-written answers, or obviously-googled answers as cheating or plagiarism, respectively. Answers should be *in your own words*, I will deduct points for blatant copy-pastes off my slides (those are *my* words!).
+
+# Concepts Study Guide
+
+- [<i class="fas fa-file-pdf"></i> `Download PDF`](/examprep/final_exam_study_guide.pdf)
+
+# "Practice" Exam
+
+- [<i class="fas fa-file-pdf"></i> Download Old Final Exam](/examprep/Exam3.pdf)^[Note: Every semester, there may be some material that either gets cut, or is added, compared to other semesters, based on time.]
+- [<i class="far fa-life-ring"></i> Old Final Exam Answer Key](/examprep/Exam3_Answer_key.pdf)
+
+Above, you have a previous semester’s final exam. Use it to get a sense of what questions are asked, the format, and how many. Questions draw from topics in Units 3 and 4, and note that **just because topics or questions were not in the practice exam does NOT mean they may not show up on your exam.**^[I hope that this is obvious. I write this to ensure there is no misunderstanding.] Aside from minor extensions, no mathematical problem on any exam should be something you have not seen in some form before. 
+
+I will post the **answer key** on the **evening of Tuesday November 17**. I am happy to discuss other individual answers and strategies during Office Hours.
+
+# My Advice
+
+Make sure you do all of the homework problems and learn from the answer keys to the homeworks, as well as the in-class practice problems. All of the math problems are largely in the style of the homework questions. While some of the questions should be novel applications, conceptual questions on homeworks will get you in the right headspace to think about answering a question on an exam.^[The point of exams is to *apply* what you've learned, not to literally regurgitate it! Or, at least, it should be.]

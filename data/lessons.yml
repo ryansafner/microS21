@@ -143,4 +143,5 @@ lessons:
   - title: '<i class="fas fa-laptop-code"></i> **Op-Ed** Due Fri May 14'
     assignment: "op-ed"
 
-  - title: '<i class="fas fa-star"></i> **Final Exam**'
+  - title: '<i class="fas fa-star"></i> **Final Exam** week of May 16'
+    assignment: "03-exam"
