@@ -134,9 +134,12 @@ lessons:
     practice: "4.4-practice"
 
   - title: "4.5 Monopolistic Competition and Oligopoly"
-
+    content: "4.5-content"
+    slides: "4.5-slides"
+    
   - title: "4.6 Contestable Markets and Wrap Up"
-
+    content: "4.6-content"
+    
   - title: '<i class="fas fa-laptop-code"></i> **Problem Set 6** (Ungraded Practice)'
     assignment: "06-problem-set"
 

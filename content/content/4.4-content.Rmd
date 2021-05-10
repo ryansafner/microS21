@@ -1,5 +1,5 @@
 ---
-title: "4.4 — Factor Markets I: Labor Markets — Class Content"
+title: "4.4 — Factor Markets: Labor Markets — Class Content"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl
@@ -32,7 +32,7 @@ Today we focus on *labor* markets as the main factor market, and all of us are p
 
 # <i class="fas fa-book-reader fa-lg"></i> Readings
 
-- <i class="fas fas fa-book"></i> Ch. 10 in @textbook
+- <i class="fas fas fa-book"></i> Ch. 13 in @textbook
 
 Unfortunately, older versions of the textbook do not have a chapter on factor markets. 🤷
 
@@ -53,3 +53,13 @@ You are done with graded homeworks for the semester!
 Turn in Exam 1 and Exam 2 corrections by the last day of class.
 
 Don’t forget your [Op-Ed](/assignment/op-ed) is due by Friday May 14.
+
+# Appendix
+
+## Capital Markets
+
+I had originally meant to make 4.5 Factor Markets II: Capital Markets, but for time I cut it out to only focus on labor markets. The slides I had made are below:
+
+[![](/slides/capital-slides.png)](/slides/capital-slides.html)
+
+- [<i class="fas fa-file-pdf"></i> Download as PDF](/slides/capital-slides.pdf)

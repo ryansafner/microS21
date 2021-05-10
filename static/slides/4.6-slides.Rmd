@@ -1,0 +1,1120 @@
+---
+title: "4.6 — Contestable Markets & Wrap Up"
+subtitle: "ECON 306 · Microeconomic Analysis · Fall 2020"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microF20"><i class="fa fa-github fa-fw"></i>ryansafner/microF20</a><br> <a href="https://microF20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microF20.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    #seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: ocean #rainbow #monokai rainbow solarized-light #tomorrow-night -blue -eighties zenburn
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F)
+library("tidyverse")
+library("mosaic")
+library("ggrepel")
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+set.seed(256)
+```
+
+class: inverse, center, middle
+
+# Game Theory: Some Generalizations
+
+---
+
+# Game Theory: Some Generalizations
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/tymdsxbqaq2scxq/chessknights.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+There's a *lot* more to game theory than a one-shot prisoners' dilemma:
+
+- one shot vs. repeated game
+
+- discrete vs. continuous strategies
+
+- perfect vs. incomplete vs. and asymmetric information
+
+- simultaneous vs. sequential game
+
+- See my [game theory course](https://ryansafner.com/courses/econ316/) for more (likely taught next in Fall 2021)
+]
+
+---
+
+# Solution Concepts
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/j7xenkgo3p71vke/equilibriumbalance.png?raw=1)
+]
+]
+
+.pull-right[
+
+- We use .hi-purple["solution concepts"] to allow us to predict an .hi-purple[equilibrium] of a game
+
+- .hi[Nash Equilibrium] is the primarly solution concept
+  - Note it has *many* variants depending on if games are sequential vs. simultaneous, perfect vs. imperfect information, etc.
+
+]
+
+---
+
+# Solution Concepts: Nash Equilibrium
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/j7xenkgo3p71vke/equilibriumbalance.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Recall, .hi[Nash Equilibrium]: no players want to change their strategy given what everyone else is playing
+  - All players are playing a best response to each other
+
+]
+
+---
+
+# Solution Concepts: Nash Equilibrium
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/j7xenkgo3p71vke/equilibriumbalance.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Important about Nash equilibrium:
+
+- N.E. $\neq$ the "*best*" or *optimal* outcome
+  - Recall the Prisoners' Dilemma!
+
+- Game may have *multiple* N.E.
+
+- Game may have *no* N.E. (in "pure" strategies)
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/k431qrlyj2nbnc3/standards_game.png?raw=1)
+]
+]
+
+.pull-right[
+
+- A .hi-purple[Coordination Game]
+  - No dominant strategies
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/a0i4xlq2uipi360/standards_game_Nashes.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Two Nash equilibria]: (.red[A],.blue[A]) and (.red[B],.blue[B])
+  - Either just as good
+  - Coordination is most important
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/a0i4xlq2uipi360/standards_game_Nashes.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[1) Cell-by-Cell Inspection]: look in each cell, does either player want to deviate?
+  - .hi-purple[If no: a Nash equilibrium]
+  - If yes: *not a Nash equilibrium*
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/k431qrlyj2nbnc3/standards_game.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/cn8l8c81yy6tcwh/standards_game_1br.png?raw=1)
+
+.red[Player 1's] best responses
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/etk1nlasbo788h8/standards_game_2br.png?raw=1)
+
+.blue[Player 2's] best responses
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/8yzrc25hzb6fd9x/standards_game_brnashes.png?raw=1)
+
+.hi-purple[N.E.]: each player is playing a best response
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# A Change in the Game
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/8r7nkpwplojj4pd/standards_game_lockin.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Two Nash equilibria again: (.red[A],.blue[A]) and (.red[B],.blue[B])
+
+- But here (.red[A],.blue[A]) $\succ$ (.red[B],.blue[B])!
+
+]
+
+---
+
+# A Change in the Game
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/8r7nkpwplojj4pd/standards_game_lockin.png?raw=1)
+]
+]
+
+.pull-right[
+- .hi-purple[Path Dependence]: early choices may affect later ability to choose or switch
+
+- .hi-purple[Lock-in]: the switching cost of moving from one equilibrium to another becomes prohibitive
+
+- Suppose we are currently in equilibrium (B,B)
+
+- .hi-purple[Inefficient lock-in]:
+  - Standard A is superior to B
+  - But too costly to switch from B to A
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Contestable Markets
+
+---
+
+# Is Monopoly a Nash Equilibrium?
+
+.pull-left[
+
+- Now that we understand Nash equilibrium...
+
+- Are outcomes of other market structures Nash equilibria?
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/ut01gm60urzbmtl/goingoutofbusiness.jpg?raw=1)
+
+![:scale 75%](https://www.dropbox.com/s/20ghw4p6te0776x/entry.jpg?raw=1)
+]
+]
+
+---
+
+# Is Monopoly a Nash Equilibrium?
+
+.pull-left[
+
+- Now that we understand Nash equilibrium...
+
+- Are outcomes of other market structures Nash equilibria?
+
+- **Perfect competition**: no firm wants to raise or lower price given the market price $\checkmark$
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/ut01gm60urzbmtl/goingoutofbusiness.jpg?raw=1)
+
+![:scale 75%](https://www.dropbox.com/s/20ghw4p6te0776x/entry.jpg?raw=1)
+]
+]
+
+---
+
+# Is Monopoly a Nash Equilibrium?
+
+.pull-left[
+
+- **Monopolist** maximizes $\pi$ by setting $q^*$: $MR=MC$ and $p^*=Demand(q^*)$
+
+- This is *an* equilibrium, but is it the *only* equilibrium?
+
+- We've assumed just a *single* player in the model
+
+- .hi-purple[What about *potential* competition?]
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/ut01gm60urzbmtl/goingoutofbusiness.jpg?raw=1)
+
+![:scale 75%](https://www.dropbox.com/s/20ghw4p6te0776x/entry.jpg?raw=1)
+]
+]
+
+---
+
+# Contestable Markets I
+
+.pull-left[
+
+- Model the market as an .hi-purple[entry game], with two players:
+
+1. .hi-red[**Incumbent**] which sets its price $\color{red}{p_I}$
+
+2. .hi-blue[**Entrant**] decides to **stay out** or **enter** the market, setting its price $\color{blue}{p_E}$
+
+- Price competition between 2 firms with similar products $\implies$ .hi-purple[consumers buy only from firm with lower price]
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/ut01gm60urzbmtl/goingoutofbusiness.jpg?raw=1)
+
+![:scale 75%](https://www.dropbox.com/s/20ghw4p6te0776x/entry.jpg?raw=1)
+]
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- Suppose firms have costs of 
+$$\begin{align*}
+C(q)&=cq\\
+MC(q)&=c\\ \end{align*}$$
+
+- If .hi-red[Incumbent] sets $\color{red}{p_I}>c$, then .hi-blue[Entrant] would enter and set $\color{blue}{p_E}=\color{red}{p_I}-\epsilon$ (for arbitrary $\epsilon>0)$
+
+
+]
+
+.pull-right[
+
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- Suppose firms have costs of 
+$$\begin{align*}
+C(q)&=cq\\
+MC(q)&=c\\ \end{align*}$$
+  
+- If .hi-red[Incumbent] sets $\color{red}{p_I}>c$, then .hi-blue[Entrant] would enter and set $\color{blue}{p_E}=\color{red}{p_I}-\epsilon$ (for arbitrary $\epsilon>0)$
+  - .hi-red[Incumbent] would forsee this, and try to price lower than $\color{blue}{p_E}$
+  - undercutting continues until...
+
+
+]
+
+.pull-right[
+
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- .hi[Nash Equilibrium]: incumbent sets $\color{red}{p_I}=c$, **no entry**
+
+- .hi-purple[A market with a single firm, but the **competitive outcome**!]
+  - $p^*=MC$, $\color{green}{\pi=0}$
+  - competitive $q^*$
+  - max .hi-blue[Consumer Surplus], no DWL
+]
+
+.pull-right[
+
+```{r, fig.retina=3} 
+# Demand function, format: p=d-eq
+a<-10
+b<-2
+f<-5
+c<-2
+
+Demand=function(x){a-b*x}
+MR=function(x){a-2*b*x}
+MC=function(x){c}
+AC=function(x){f/x+c}
+
+q_choke=a/b
+q_PC<-(a-c)/(b)
+
+CS<-data.frame(x=c(0,0,q_PC),
+               y=c(Demand(q_PC),a,Demand(q_PC)))
+
+line_colors <- c("Demand" = "blue", "MR" = "purple", "MC" = "red", "AC" = "orange")
+surplus_colors <-c("Consumer" = "blue", "Profit" = "green", "DWL" = "black")
+
+# make plot 
+
+ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=1, aes(color="Demand"))+
+  stat_function(fun=MR, geom="line", size=1, aes(color="MR"))+
+  stat_function(fun=MC, geom="line", size=1, aes(color="MC"))+
+  # surpluses
+  geom_polygon(data=CS, aes(x=x,y=y, fill="Consumer"), alpha=0.5)+ #CS
+
+  # labels 
+  geom_segment(x=q_PC,y=0,xend=q_PC,yend=c,linetype=3)+
+  geom_point(x=q_PC,y=c, color="black", size=3)+ 
+  geom_text(x=q_PC,y=c+0.5,label="N.E.",color="black")+
+  annotate(geom = "label", x = 4.5, y = Demand(4.5), label = "Demand",
+           color = "blue") +
+  annotate(geom = "label", x = 2.25, y = MR(2.25), label = "MR",
+           color = "purple") +
+  annotate(geom = "label", x = 4.5, y = c, label = "MC",
+           color = "red") +
+  annotate(geom = "label", x = 1.3, y = 5, label = "Consumer Surplus",
+           color = "blue") +
+  scale_x_continuous(breaks = c(0,q_PC),
+                     labels = c(0,expression(q[p=MC])),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,c,a),
+                     labels = c(0,expression(c),expression(a)),
+                     limits = c(0,a),
+                     expand=c(0,0))+
+  scale_colour_manual("Curves", values = line_colors)+
+  scale_fill_manual("Surpluses", values = surplus_colors, guide = guide_legend(override.aes = list(alpha = 0.5)))+
+  guides(color = F, fill = F)+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+```
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- What if the .hi-blue[entrant] has *higher costs* than the .hi-red[incumbent]: $\color{blue}{c_E}>\color{red}{c_I}$?
+
+]
+
+.pull-right[
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- What if the .hi-blue[entrant] has *higher costs* than the .hi-red[incumbent]: $\color{blue}{c_E}>\color{red}{c_I}$?
+
+- .hi[Nash equilibrium]: .hi-red[incumbent] sets $\color{red}{p_I}=\color{blue}{p_E}-\epsilon$
+  - arbitrary $\epsilon > 0$
+
+- .hi-blue[Entrant] stays out
+  
+- One firm, but not a *worst case* monopoly
+]
+
+--
+
+.pull-right[
+
+```{r, fig.retina=3} 
+a<-10
+b<-2
+f<-5
+c<-2
+d<-4.5
+e<-4
+
+Demand=function(x){a-b*x}
+MR=function(x){a-2*b*x}
+MCi=function(x){c}
+MCe=function(x){d}
+AC=function(x){f/x+c}
+
+q_choke=a/b
+q_PC<-(a-c)/(b)
+
+q_star<-(a-e)/b
+q_monopoly<-(a-c)/(2*b)
+
+CS<-data.frame(x=c(0,0,q_star),
+               y=c(Demand(q_star),a,Demand(q_star)))
+DWL<-data.frame(x=c(q_star,q_star,q_PC),
+               y=c(c,e,c))
+
+line_colors <- c("Demand" = "blue", "MR" = "purple", "MCi" = "red", "MCe" = "red4")
+surplus_colors <-c("Consumer" = "blue", "Profit" = "green", "DWL" = "black")
+
+# make plot 
+
+library("ggplot2")
+ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=1, aes(color="Demand"))+
+  stat_function(fun=MR, geom="line", size=1, aes(color="MR"))+
+  stat_function(fun=MCi, geom="line", size=1, aes(color="MCi"))+
+  stat_function(fun=MCe, geom="line", size=1, aes(color="MCe"))+
+  # surpluses
+  geom_polygon(data=CS, aes(x=x,y=y, fill="Consumer"), alpha=0.5)+ #CS
+  geom_rect(aes(xmin=0,xmax=q_star,ymin=c,ymax=e,fill="Profit"),alpha=0.25) + # Profits
+  geom_polygon(data=DWL, aes(x=x,y=y, fill="DWL"), alpha=0.5)+ #CS
+  # labels 
+  
+  # P.C. point 
+  geom_segment(aes(x=q_PC,y=0),xend=q_PC,yend=c,linetype=3)+
+  geom_point(x=q_PC,y=c, color="black", size=3)+ 
+  geom_text(x=q_PC,y=c+0.5,label="P.C.",color="black")+
+  
+  # N.E. point 
+  geom_segment(aes(x=q_star,y=0),xend=q_star,yend=e,linetype=3)+
+  geom_segment(aes(x=0,y=e),xend=q_star,yend=e,linetype=3)+
+  geom_point(aes(x=q_star,y=e), color="black", size=3)+ 
+  geom_text(x=q_star+0.5,y=e,label="N.E.", color="black")+
+  
+  # Monopoly point 
+  geom_segment(aes(x=q_monopoly,y=0),xend=q_monopoly,yend=Demand(q_monopoly),linetype=3)+
+  geom_segment(aes(x=0,y=Demand(q_monopoly)),xend=q_monopoly,yend=Demand(q_monopoly),linetype=3)+
+  geom_point(aes(x=q_monopoly,y=Demand(q_monopoly)), color="black", size=3)+ 
+  geom_text(aes(x=q_monopoly,y=Demand(q_monopoly)),label="Monopoly", hjust=-0.1, vjust=-0.25, color="black")+
+  annotate(geom = "label", x = 4.5, y = Demand(4.5), label = "Demand",
+           color = "blue") +
+  annotate(geom = "label", x = 2.25, y = MR(2.25), label = "MR",
+           color = "purple") +
+  annotate(geom = "label", x = 4.5, y = c, label = expression(MC[i]),
+           color = "red") +
+  annotate(geom = "label", x = 4.5, y = d, label = expression(MC[e]),
+           color = "red4") +
+  annotate(geom = "label", x = 1.25, y = 6, label = "Consumer Surplus",
+           color = "blue") +
+  annotate(geom = "label", x = 1.25, y = 3, label = "Profit",
+           color = "green") +
+  annotate(geom = "label", x = 3.2, y = 3, label = "DWL",
+           color = "black") +
+  scale_x_continuous(breaks = c(0,q_monopoly,q_star,q_PC),
+                     labels = c(0,expression(q[m]),expression(q[NE]),expression(q[p=MC])),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,c,d,e,Demand(q_monopoly),a),
+                     labels = c(0,expression(MC[i]),expression(MC[e]),expression(p[i]==MC[e]-epsilon),expression(p[m]),expression(a)),
+                     limits = c(0,a),
+                     expand=c(0,0))+
+  theme_light()+
+  scale_colour_manual("Curves", values = line_colors)+
+  scale_fill_manual("Surpluses", values = surplus_colors, guide = guide_legend(override.aes = list(alpha = 0.5)))+
+  guides(color = F, fill = F)+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+```
+]
+
+---
+
+# Contestable Markets III
+
+.pull-left[
+
+- What if there are **fixed costs**, $f$?
+
+$$\begin{align*}
+C(q)&=cq+f \\
+MC(q)&=c \\
+AC(q)&=c+\frac{f}{q} \\
+\end{align*}$$
+
+- With high enough $f$, .hi[Economies of scale] may prevent marginal cost pricing from a being profitable Nash Equilibrium
+
+$$\pi_{p=MC}=-\frac{f}{q}<0$$
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3} 
+# Demand function, format: p=d-eq
+a<-10
+b<-2
+f<-5
+c<-2
+
+Demand=function(x){a-b*x}
+MR=function(x){a-2*b*x}
+MC=function(x){c}
+AC=function(x){f/x+c}
+
+q_choke<-(a/b)
+MR_choke<-(a/(2*b))
+q_PC<-(a-c)/(b)
+
+CS<-data.frame(x=c(0,0,q_PC),
+               y=c(Demand(q_PC),a,Demand(q_PC)))
+
+line_colors <- c("Demand" = "blue", "MR" = "purple", "MC" = "red", "AC" = "orange")
+surplus_colors <-c("Consumer" = "blue", "Loss" = "black", "DWL" = "black")
+
+# make plot 
+
+library("ggplot2")
+ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=1, aes(color="Demand"))+
+  stat_function(fun=MR, geom="line", size=1, aes(color="MR"))+
+  stat_function(fun=MC, geom="line", size=1, aes(color="MC"))+
+  stat_function(fun=AC, geom="line", size=1, aes(color="AC"))+
+  
+  # surpluses
+  geom_rect(aes(xmin=0,xmax=q_PC,ymin=c,ymax=AC(q_PC),fill="Loss"),alpha=0.25) + # Losses
+  
+   # labels 
+  geom_segment(aes(x=q_PC,y=0),xend=q_PC,yend=c,linetype=3)+
+  geom_point(aes(x=q_PC,y=c), color="black", size=3)+ 
+  geom_text(x=q_PC+0.5,y=c,label="P.C.", color="black")+
+  annotate(geom = "label", x = 4.5, y = Demand(4.5), label = "Demand",
+           color = "blue") +
+  annotate(geom = "label", x = 2.25, y = MR(2.25), label = "MR",
+           color = "purple") +
+  annotate(geom = "label", x = 4.5, y = c, label = "MC",
+           color = "red") +
+  annotate(geom = "label", x = 4.5, y = AC(d), label = "AC",
+           color = "orange") +
+  annotate(geom = "label", x = 1.25, y = 2.5, label = "Loss",
+           color = "black") +
+  scale_x_continuous(breaks = c(0,q_PC),
+                     labels = c(0,expression(q[p=MC])),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,c,AC(q_PC),a),
+                     labels = c(0,expression(c),expression(c+f/q),expression(a)),
+                     limits = c(0,a),
+                     expand=c(0,0))+
+  theme_light(base_family = "Yanone Kaffeesatz Regular")+
+  scale_colour_manual("Curves", values = line_colors)+
+  scale_fill_manual("Surpluses", values = surplus_colors, guide = guide_legend(override.aes = list(alpha = 0.5)))+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  guides(color = F, fill = F)+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+```
+]
+
+---
+
+# Contestable Markets IV
+
+.pull-left[
+
+- .hi[Nash equilibrium]: .hi-red[Incumbent] prices at $\color{red}{p_I}=AC$ earns $\pi=0$
+
+- .hi-blue[Entrant] stays out
+
+- Again, single firm, but not a monopoly
+  - no profits
+  - not allocatively efficient, $p>MC$, some DWL
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3} 
+# Demand function, format: p=d-eq
+a<-10
+b<-2
+f<-5
+c<-2
+
+Demand=function(x){a-b*x}
+MR=function(x){a-2*b*x}
+MC=function(x){c}
+AC=function(x){f/x+c}
+
+q_choke<-(a/b)
+MR_choke<-(a/(2*b))
+q_PC<-(a-c)/(b)
+q_AC<-((a-c)+sqrt((a-c)^2-4*b*f))/(2*b) # needed quadratic formula, heh 
+
+CS<-data.frame(x=c(0,0,q_AC),
+               y=c(Demand(q_AC),a,Demand(q_AC)))
+
+DWL<-data.frame(x=c(q_AC,q_AC,q_PC),
+                        y=c(c,Demand(q_AC),c))
+
+line_colors <- c("Demand" = "blue", "MR" = "purple", "MC" = "red", "AC" = "orange")
+surplus_colors <-c("Consumer" = "blue", "Profit" = "green", "DWL" = "black")
+
+# make plot 
+ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=1, aes(color="Demand"))+
+  stat_function(fun=MR, geom="line", size=1, aes(color="MR"))+
+  stat_function(fun=MC, geom="line", size=1, aes(color="MC"))+
+  stat_function(fun=AC, geom="line", size=1, aes(color="AC"))+
+  
+  # surpluses
+  geom_polygon(data=CS, aes(x=x,y=y, fill="Consumer"), alpha=0.5)+ #CS
+  geom_polygon(data=DWL, aes(x=x,y=y, fill="DWL"), alpha=0.5)+ #DWL
+  
+   # labels 
+  geom_segment(aes(x=q_PC,y=0),xend=q_PC,yend=c,linetype=3)+
+  geom_point(aes(x=q_PC,y=c), color="black",size=3)+ 
+  geom_text(x=q_PC+0.25,y=c,label="P.C.", color="black")+
+  geom_segment(aes(x=q_AC,y=0),xend=q_AC,yend=Demand(q_AC), linetype=3)+
+  geom_segment(aes(x=0,y=Demand(q_AC)),xend=q_AC,yend=Demand(q_AC), linetype=3)+
+  geom_point(x=q_AC,y=Demand(q_AC), color="black",size=3)+ 
+  geom_text(x=q_AC+0.25,y=Demand(q_AC),label="N.E.", color="black")+
+  annotate(geom = "label", x = 4.5, y = Demand(4.5), label = "Demand",
+           color = "blue") +
+  annotate(geom = "label", x = 2.25, y = MR(2.25),  label = "MR",
+           color = "purple") +
+  annotate(geom = "label", x = 4.5, y = c, label = "MC",
+           color = "red") +
+  annotate(geom = "label", x = 4.5, y = AC(d), label = "AC",
+           color = "orange") +
+  annotate(geom = "label", x = 1.25, y = 6, label = "Consumer Surplus",
+           color = "blue") +
+  annotate(geom = "label", x = 3.5, y = 2.5, label = "DWL",
+           color = "black") +
+  scale_x_continuous(breaks = c(0,q_AC,q_PC),
+                     labels = c(0,expression(q[p=AC]),expression(q[p=MC])),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,c,AC(q_AC),a),
+                     labels = c(0,expression(c),expression(c+f/q),expression(a)),
+                     limits = c(0,a),
+                     expand=c(0,0))+
+  theme_light(base_size=22,base_family = "Yanone Kaffeesatz Regular")+
+  scale_colour_manual("Curves", values = line_colors)+
+  scale_fill_manual("Surpluses", values = surplus_colors, guide = guide_legend(override.aes = list(alpha = 0.5)))+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  guides(color = F, fill = F)+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+```
+]
+
+---
+
+# Contestable Markets: Recap
+
+.pull-left[
+- .hi-purple[Markets are **contestable** if]:
+  1. There are no barriers to entry or exit
+  2. Firms have similar technologies (i.e. similar cost structure)
+  3. There are no sunk costs
+  
+- Economies of scale need not be inconsistent with competitive markets (as is assumed) if they are contestable
+
+- Generalizes "prefect competition" model in more realistic way, also game-theoretic
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+---
+
+# Contestable Markets: Summary
+
+.left-column[
+
+.center[
+![:scale 80%](https://www.dropbox.com/s/1jv6qkmg15bmvq5/baumol1.jpg?raw=1)
+
+William Baumol
+
+(1922--2017)
+
+]
+]
+
+.right-column[
+
+> "This means that...an incumbent, even if he can threaten retaliation after entry, dare not offer profit-making opportunities to potential entrants because an entering firm can hit and run, gathering in the available profits and departing when the going gets rough." 
+
+]
+
+.source[Baumol, William, J, 1982, "Contestable Markets: An Uprising in the Theory of Industry Structure," *American Economic Review,* 72(1): 1-15]
+
+---
+# Implications for Competition
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+- Regulation & antitrust (once) focus(ed) on *number* of firms
+    - "Count the number of firms, if it's 1, it's a monopoly!"
+
+- .hi-purple[Perfect competition as "gold standard", only market arrangement that is socially efficient]:
+  - .hi-purple[Allocatively efficient]: $p=MC$, $DWL=0$
+  - .hi-purple[Productively efficient]: $p=AC_{min}$
+]
+
+---
+
+# Implications for Competition
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+- But number of firms is **endogenous** and **can evolve over time**!
+  - Function of how firms mutually interact strategically
+
+- A more **dynamic** situation: firms respond over time
+
+]
+
+---
+
+# Implications for Competition
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+- Perfect competition not the only socially efficient market-structure
+  - Small number of firms (including 1) may be efficient .hi[if they are contestable]
+
+- .hi-purple[Regulation and antitrust should consider whether a market is *contestable*, not just the *number* of firms]
+  - Free entry
+  - No sunk costs
+]
+
+---
+# Implications for Competition
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+- Firms engaging in egregious monopolistic behavior $(\downarrow q$, $\uparrow p$, $p>MC$, $\pi>0$) largely persist because of .hi-purple[barriers to entry]
+  - Attempts to make market **uncontestable**
+
+- Business activities or political dealings with the goal to raise $\color{blue}{c_E}>\color{red}{c_I}$
+  - ower your own costs, or raise your rivals'!
+
+]
+
+---
+
+# Monopoly Or Contestable Market?
+
+.center[
+![](https://www.dropbox.com/s/tl7qk98zyhi0od7/microsoftantitrust.png?raw=1)
+]
+
+---
+
+# Contestable Markets
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/2i4r8go8mi8yr3m/browsers.png?raw=1)
+]
+]
+
+.pull-right[
+
+> "Of far greater concern to Microsoft is the competition from new and emerging technologies, some of which are currently visible and others of which certainly are not. This array of known, emerging, and wholly unknown competitors places enormous pressure on Microsoft to price competitively and innovate aggressively." (Schmalensee 1999)
+
+]
+
+---
+
+# Contestable Markets
+
+.center[
+![](https://www.dropbox.com/s/qwnx5pnuvugz6qj/amazoncloudcontest3.png?raw=1)
+]
+
+---
+
+# So What's the Point of the Models?
+
+.pull-left[
+- In perfect competition (model):
+  - price-taking firms set price equal to marginal cost
+  - long run economic profits are zero
+  - allocative efficiency: consumer and producer surplus maximized
+
+- This is a *tendency* .hi[only because of **free entry and exit**]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/2xhn4z2xle73n6v/donotenter.png?raw=1)
+]
+]
+
+---
+
+# So What's the Point of the Models?
+
+.pull-left[
+
+- **Don't judge real markets by their similarity to the perfect competition model**
+
+- Judge them more on their level of contestability, ease of potential entry
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/17cb7ceqipgi8fs/citymodel.jpg?raw=1)
+]
+]
+
+---
+
+# So What's the Point of the Models?
+
+.pull-left[
+
+.quitesmall[
+> "...In that Empire, the Art of Cartography attained such Perfection that the map of a single Province occupied the entirety of a City, and the map of the Empire, the entirety of a Province.  In time, those Unconscionable Maps no longer satisfied, and the Cartographers Guilds struck a Map of the Empire whose size was that of the Empire, and which coincided point for point with it. The following Generations, who were not so fond of the Study of Cartography as their Forebears had been, saw that that vast Map was Useless..."
+
+]
+
+.source[Jorge Luis Borges, 1658, *On Exactitude in Science*]
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/17cb7ceqipgi8fs/citymodel.jpg?raw=1)
+]
+]
+
+---
+
+# Economics Uses, but Is Not Limited to, Math
+
+```{r, fig.width=12}
+red_pink <- "#e64173"
+blue <- "#2b59c3"
+
+venn_colors <- c(red_pink, blue)
+venn_lines <- rep("solid", 10)
+# Locations of circles
+venn_df <- tibble(
+  x  = c( 0.0,   2.0),
+  y  = c( 0.0,   0.0),
+  r  = c( 2.0,   2.0),
+  l  = c( "Math \n Modeling", "Thinking Like \n an Economist"),
+  xl = c( -1.0,    3.0),
+  yl = c( 0.0,   0.0))
+# Venn
+ggplot(data = venn_df, aes(x0 = x, y0 = y, r = r, fill = l, color = l)) +
+ggforce::geom_circle(aes(linetype = l), alpha = 0.3, size = 0.75) +
+theme_void() +
+theme(legend.position = "none") +
+scale_fill_manual(values = venn_colors) +
+scale_color_manual(values = venn_colors) +
+scale_linetype_manual(values = venn_lines) +
+  geom_text(aes(x = xl, y = yl, label = l), size = 8, family = "Fira Sans Condensed") +
+coord_equal()
+```
+
+---
+
+# The Two Major Models of Economics as a “Science”
+
+.pull-left[
+
+## Optimization
+
+- Agents have .hi[objectives] they value
+
+- Agents face .hi[constraints]
+
+- Make .hi[tradeoffs] to maximize objectives within constraints
+
+.center[
+![](../images/optimize.jpeg)
+]
+]
+
+--
+
+.pull-right[
+
+## Equilibrium
+
+- Agents .hi[compete] with others over **scarce** resources
+
+- Agents .hi[adjust] behaviors based on prices
+
+- .hi[Stable outcomes] when adjustments stop
+
+.center[
+![](../images/equilibriumbalance.png)
+]
+
+]
+
+
+---
+
+# Economics Is Broader Than You Think
+
+.center[
+![:scale 82%](../images/cooleconbooks.png)
+]
