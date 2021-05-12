@@ -51,7 +51,7 @@ class: inverse
 
 ### [Game Theory: Some Generalizations](#3)
 ### [Contestable Markets](#17)
-### [Wrapping Up the Semester](#40)
+### [Wrapping Up the Semester](#39)
 
 ---
 
@@ -596,8 +596,6 @@ ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
   - But not as bad as monopoly!
 ]
 
---
-
 .pull-right[
 
 ```{r, fig.retina=3} 
@@ -796,13 +794,11 @@ ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
 
 .pull-left[
 
-- .hi[Nash equilibrium]: .hi-red[Incumbent] prices at $\color{red}{p_I}=AC$ earns $\pi=0$
+- .hi-purple[Nash equilibrium]: $\big(\color{red}{p_I}=AC$, .blue[Stay Out] $\big)$
 
-- .hi-blue[Entrant] stays out
-
-- Again, single firm, but not a monopoly
-  - no profits
-  - not allocatively efficient, $p>MC$, some DWL
+- Again, only a single firm with some inefficiency
+  - But not as bad as monopoly!
+  - .red[Incumbent] earns no profits!
 
 ]
 
