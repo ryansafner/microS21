@@ -12,8 +12,8 @@ library(pander)
 **UNGRADED: For final exam practice only!**
 
 - [<i class="fas fa-file-pdf"></i> Download as PDF](/assignment/06-problem-set-pdf.pdf)
-<!-- [<i class="far fa-life-ring"></i> Answer Key](https://www.youtube.com/watch/dQw4w9WgXcQ)
-- [<i class="fas fa-file-pdf"></i> Answer Key (PDF)](https://www.youtube.com/watch/dQw4w9WgXcQ) -->
+- [<i class="far fa-life-ring"></i> Answer Key](/assignment/06-problem-set-answers.html)
+<!-- [<i class="fas fa-file-pdf"></i> Answer Key (PDF)](/assignment/06-problem-set-answers-pdf.pdf)-->
 
 # Concepts and Critical Thinking
 
@@ -193,7 +193,7 @@ q_T&=25-0.1p\\
 
 ### Part A
 
-Suppose it must charge a single price to all customers. Find the profit-maximizing quantity, price, and the total profits.
+#### Suppose it must charge a single price to all customers. Find the profit-maximizing quantity, price, and the total profits.
 
 ### Part B
 
@@ -240,7 +240,7 @@ Calculate the price elasticity of labor supply at the monoposony wage from part 
 
 Now suppose a new commuter rail service allows workers to cheaply commute to nearby towns to work, making the labor supply curve instead:
 
-$$w=0.4L+8$$
+$$w=0.2L+20$$
 
 What quantity of workers will the firm hire, and what wage will it pay its workers?^[Hint: first find the new $MC(L)$ equation.]
 
