@@ -30,7 +30,7 @@ We wrap up today by discussing some more about game theory (beyond mere prisoner
 
 # <i class="fas fa-book-reader fa-lg"></i> Readings
 
-- <i class="fas fas fa-book"></i> Ch. 12 in @textbook
+None
 
 # <i class="fas fa-chalkboard-teacher"></i> Slides
 
