@@ -19,7 +19,7 @@ This is an **open note, open book** exam, but **do not use the internet beyond o
 
 # Concepts Study Guide
 
-- [<i class="fas fa-file-pdf"></i> `Download PDF`](/examprep/final_exam_study_guide.pdf)
+- [<i class="fas fa-file-pdf"></i> Download PDF](/examprep/exam_3_study_guide.pdf)
 
 # "Practice" Exam
 
