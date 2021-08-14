@@ -12,7 +12,7 @@ library(pander)
 **UNGRADED: For final exam practice only!**
 
 - [<i class="fas fa-file-pdf"></i> Download as PDF](/assignment/06-problem-set-pdf.pdf)
-- [<i class="far fa-life-ring"></i> Answer Key](/assignment/06-problem-set-answers.html)
+- [<i class="far fa-life-ring"></i> Answer Key](https://www.youtube.com/watch/dQw4w9WgXcQ)
 <!-- [<i class="fas fa-file-pdf"></i> Answer Key (PDF)](/assignment/06-problem-set-answers-pdf.pdf)-->
 
 # Concepts and Critical Thinking

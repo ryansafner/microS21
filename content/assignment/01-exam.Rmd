@@ -37,7 +37,7 @@ Note that we skipped some excess content about preferences this semester, so som
 # "Practice" Exam
 
 - [<i class="fas fa-file-pdf"></i> Download Old Exam 1](/examprep/Exam1.pdf)
-- [<i class="fas fa-file-pdf"></i> Old Exam 1 Answer Key](/examprep/Exam1_Answer_Key.pdf)
+- [<i class="fas fa-file-pdf"></i> Old Exam 1 Answer Key](https://www.youtube.com/watch/dQw4w9WgXcQ)
 
 Above, you have a previous semester's actual exam. Use it to get a sense of what questions are asked, the format, and how many. 
 
